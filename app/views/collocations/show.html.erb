@@ -1,0 +1,44 @@
+
+<%= link_to 'Edit', edit_collocation_path %>
+|
+<%= link_to 'Delete', collocation_path(@collocation.id), method: 'delete' %>
+
+
+<h2><em><%= @collocation.title %></em></h2>
+
+<p>
+    <strong>introduction: </strong>
+    <br>
+    <%= @collocation.introduction %>
+</p>
+
+<p>
+    <strong>My Match: </strong>
+    <br>
+    <%= image_tag @collocation.image, alt: @collocation.title, class: 'collocation_image' %>
+</p>
+
+<p>
+    <strong>They are from: </strong>
+    <br>
+    <ul>
+
+        <% @collocation.garments.each do |item|  %>
+            <li>
+                <%= link_to (image_tag item.image, alt: item.name, class: 'garment_iamge_collocation'), garment_path(item.id) %>
+                <br>
+
+                <%= link_to item.name, garment_path(item.id) %>            
+            </li>
+            <br>
+        <% end %>
+    
+    </ul>
+</p>
+
+
+
+
+
+
+

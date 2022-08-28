@@ -112,7 +112,45 @@ o4.garments << g2 << g3 << g4
 o5.garments << g4
 
 puts "occasions >-< garments many to many associations:"
-puts "• the gatment #{Garment.first.name} has the occasions: #{Garment.first.occasions.pluck(:title).join(', ')}"
+puts "• the garment #{Garment.first.name} has the occasions: #{Garment.first.occasions.pluck(:title).join(', ')}"
+
+
+###############################################################
+
+puts ".......Creating Collocations......."
+
+Collocation.destroy_all
+
+c1 = Collocation.create!(
+    title: 'White Sweater & Jeans',
+    introduction: 'You will be absolutely glowing in these!',
+    image: 'https://media.lexception.com/img/products/maje/120371-maje-topmopline-04-zoom.jpg'
+)
+
+c2 = Collocation.create!(
+    title: 'V-Neck seater & Jeans',
+    introduction: 'You are able to wear these everywhere!!!',
+    image: 'https://image.s5a.com/is/image/saks/0400007834384_BLACK_ASTL?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0'
+)
+
+c3 = Collocation.create!(
+    title: 'Mickey Mouse & Jeans',
+    introduction: 'Well... Who can say no to Micky Mouse?!',
+    image: 'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F90%2F3d%2F903d40efde430525b54ed045b5cd6d229f6e78d2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]'
+)
+
+
+puts "• Created #{Collocation.count} matches:"
+puts "• #{Collocation.pluck(:title).join(', ')}"
+
+c1.garments << g3 << g6
+c2.garments << g1 << g6
+c3.garments << g5 << g6
+
+puts "collocations >-< garments many to many associations:"
+puts "• the garment #{Garment.last.name} has the occasions: #{Garment.last.collocations.pluck(:title).join(', ')}"
+
+
 
 
 

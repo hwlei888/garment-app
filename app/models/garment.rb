@@ -3,4 +3,6 @@ class Garment < ApplicationRecord
 
     has_and_belongs_to_many :occasions
 
+    has_and_belongs_to_many :collocations
+
 end

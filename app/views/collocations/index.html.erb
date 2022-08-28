@@ -1,0 +1,14 @@
+
+<h2>All Collocations</h2>
+
+<ul>
+    <% @collocations.each do |item| %>
+        <li>
+            <%= link_to item.title, collocation_path(item.id) %>
+        </li>
+    <% end %>
+
+
+</ul>
+
+

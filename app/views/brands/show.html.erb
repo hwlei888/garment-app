@@ -18,6 +18,18 @@
     <%= @brand.introduction %>
 </p>
 
+<p>
+    <strong>We provide options: </strong>
+    <ul>
+        <% @brand.occasion.each do |item| %>
+            <li>
+                <%= link_to item.title, occasion_path(item.id) %>            
+            </li>
+        <% end %>
+    
+    </ul>
+</p>
+
 
 <p><strong>Our Products:</strong></p>
 

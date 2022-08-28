@@ -29,7 +29,7 @@ name (string)
 
 ### Occasion
 title (text)
-garment_id:integer
+(extra table: garment_id:integer)
 - for school
 - for outdoor
 - for casual meet-up
@@ -49,6 +49,13 @@ garment_id:integer
 ### User
 
 ### Collocation
+title (string)
+introduction (text)
+image (text)
+user_id (integer)
+(extra table: garment_id:integer)
+
+
 
 ### Comment (later)
 
