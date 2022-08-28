@@ -8,11 +8,12 @@
     <em><%= @garment.name %></em>
 </h2>
 
-<p>
-    by
-    <strong><%= link_to @garment.brand.name, brand_path(@garment.brand.id) %></strong>
-</p>
-
+<% if @garment.brand.present?%>
+    <p>
+        by
+        <strong><%= link_to @garment.brand.name, brand_path(@garment.brand.id) %></strong>
+    </p>
+<% end %>
 
 <p>
     <strong>Price: </strong>

@@ -1,2 +1,42 @@
-<h1>Brands#show</h1>
-<p>Find me in app/views/brands/show.html.erb</p>
+
+<%= link_to 'Edit', edit_brand_path %>
+|
+<%= link_to 'Delete', brand_path(@brand.id), method: 'delete' %>
+
+<h2>
+    <em><%= @brand.name %></em>
+</h2>
+
+<p>
+    <strong>Founded: </strong>
+    <%= @brand.country %>
+</p>
+
+<p>
+    <strong>Our Aim: </strong>
+    <br>
+    <%= @brand.introduction %>
+</p>
+
+
+<p><strong>Our Products:</strong></p>
+
+<ul>
+    <% @brand.garments.each do |item| %>
+        <li>
+            <%= link_to (image_tag item.image, alt: item.name, class: 'garment_image_brand'),  garment_path(item.id)%>
+            <br>
+            
+            <%= link_to item.name, garment_path(item.id)  %>
+        </li>
+        <br>
+
+    <% end %>
+
+</ul>
+
+
+
+
+
+
