@@ -1,0 +1,32 @@
+
+<%= link_to 'Edit', edit_garment_path(@garment.id) %>
+|
+<%= link_to 'Delete', garment_path(@garment.id), method: 'delete'  %>
+
+
+<h2>
+    <em><%= @garment.name %></em>
+</h2>
+
+<p>
+    by
+    <strong><%= link_to @garment.brand.name, brand_path(@garment.brand.id) %></strong>
+</p>
+
+
+<p>
+    <strong>Price: </strong>
+    $<%= @garment.price %>
+</p>
+
+<p>
+    <strong>Fabrication: </strong>
+    <%= @garment.fabrication %>
+</p>
+
+
+<%= image_tag @garment.image, alt: @garment.name, class: 'garment_image' %>
+
+
+
+

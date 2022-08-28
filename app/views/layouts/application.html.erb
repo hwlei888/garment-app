@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GarmentProject2</title>
+    <title>Garment App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,39 @@
   </head>
 
   <body>
+
+  <nav>
+    <h1>Get Up & Dress Up</h1>
+
+    <%= link_to 'Home', root_path %>
+    |
+    <%= link_to 'All Garments', garments_path %>
+    |
+    <%= link_to 'Add Garments', new_garment_path %>
+    <br>
+    <%= link_to 'All Brands', brands_path %>
+    |
+    <%= link_to 'Add Brands', new_brand_path %>
+
+    <hr>
+  </nav>
+
     <%= yield %>
+
+    <footer>
+    <hr>
+    &copy; Lei's Week6 Project 1, Aug 2022
+    
+    
+    </footer>
+
+
+
+
+
+
+
+
+
   </body>
 </html>

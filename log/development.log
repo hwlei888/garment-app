@@ -3049,3 +3049,1703 @@ Migrating to CreateGarmentsOccasions (20220828063617)
   [1m[36mGarment Load (1.0ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" ORDER BY "garments"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
   [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" ORDER BY "garments"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 4]]
   [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 89]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.6ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 85]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 85]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.2ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 86]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 86]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 87]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 87]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 88]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 88]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 89]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 89]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 90]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 90]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mGarment Create (0.7ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Colle Sweater"], ["price", 460.0], ["fabrication", "90% wool, 10% cashmere"], ["image", "https://www.davidjones.com/productimages/medium/1/2155873_20507834_3701052.jpg"], ["created_at", "2022-08-28 10:08:30.578565"], ["updated_at", "2022-08-28 10:08:30.578565"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGarment Create (0.1ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Faustine Woven Dress"], ["price", 720.0], ["fabrication", "49% cotton, 25% viscose, 20% acrylic, 6% polyamide"], ["image", "https://www.davidjones.com/productimages/medium/1/2281730_21036062_5444904.jpg"], ["created_at", "2022-08-28 10:08:30.580081"], ["updated_at", "2022-08-28 10:08:30.580081"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mGarment Create (0.1ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mopline Sweater"], ["price", 201.0], ["fabrication", "64% viscose, 34% polyamide, 2% elastane"], ["image", "https://www.davidjones.com/productimages/medium/1/2279143_21025819_5444615.jpg"], ["created_at", "2022-08-28 10:08:30.580619"], ["updated_at", "2022-08-28 10:08:30.580619"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mGarment Create (0.1ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dancer Spliced Mini Dress"], ["price", 650.0], ["fabrication", "100% linen"], ["image", "https://www.davidjones.com/productimages/medium/1/2363712_21455584_6538043.jpg"], ["created_at", "2022-08-28 10:08:30.581162"], ["updated_at", "2022-08-28 10:08:30.581162"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mGarment Create (0.1ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "T-shirt with Motif"], ["price", 12.99], ["fabrication", "Recycled cotton"], ["image", "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F5e%2F20%2F5e200126be39e79e0868c47bfcddb4acdab22706.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/fullscreen]"], ["created_at", "2022-08-28 10:08:30.581677"], ["updated_at", "2022-08-28 10:08:30.581677"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mGarment Create (0.1ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Wide High Jeans"], ["price", 34.99], ["fabrication", "Cotton 99%, Spandex 1%"], ["image", "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa8%2Ff5%2Fa8f533d3296018949fef41f478af53c999b4a6b2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/fullscreen]"], ["created_at", "2022-08-28 10:08:30.582191"], ["updated_at", "2022-08-28 10:08:30.582191"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "garments"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "garments"."name" FROM "garments"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mBrand Destroy (0.3ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = $1[0m  [["id", 49]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mBrand Destroy (0.1ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = $1[0m  [["id", 50]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mBrand Destroy (0.1ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = $1[0m  [["id", 51]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mBrand Destroy (0.1ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = $1[0m  [["id", 52]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mBrand Create (0.2ms)[0m  [1m[32mINSERT INTO "brands" ("name", "country", "introduction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sandro Paris"], ["country", "France"], ["introduction", "Through its collections, the Brand expresses the essence of cool and chic Parisian spirit, the French effortless elegance, with a unique twist."], ["created_at", "2022-08-28 10:08:30.589697"], ["updated_at", "2022-08-28 10:08:30.589697"]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mBrand Create (0.1ms)[0m  [1m[32mINSERT INTO "brands" ("name", "country", "introduction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Maje"], ["country", "France"], ["introduction", "Maje embodies the effortless style of the Parisian woman. Sophisticated yet unafraid of contemporary styles."], ["created_at", "2022-08-28 10:08:30.590328"], ["updated_at", "2022-08-28 10:08:30.590328"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mBrand Create (0.1ms)[0m  [1m[32mINSERT INTO "brands" ("name", "country", "introduction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Zimmermann"], ["country", "Australia"], ["introduction", "Sophisticated femininity, clever colour combinations and delicate original prints."], ["created_at", "2022-08-28 10:08:30.590830"], ["updated_at", "2022-08-28 10:08:30.590830"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mBrand Create (0.1ms)[0m  [1m[32mINSERT INTO "brands" ("name", "country", "introduction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "H&M"], ["country", "Sweden"], ["introduction", "We Are committed to always delivering fashion and quality at the best price."], ["created_at", "2022-08-28 10:08:30.591324"], ["updated_at", "2022-08-28 10:08:30.591324"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "brands"[0m
+  ↳ db/seeds.rb:81
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "brands"."name" FROM "brands"[0m
+  ↳ db/seeds.rb:82
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-28 10:08:30.593160"], ["brand_id", 53], ["id", 91]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-28 10:08:30.593888"], ["brand_id", 53], ["id", 92]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:85
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-28 10:08:30.594455"], ["brand_id", 54], ["id", 93]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:86
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-28 10:08:30.594991"], ["brand_id", 55], ["id", 94]]
+  ↳ db/seeds.rb:86
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:87
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-28 10:08:30.595556"], ["brand_id", 56], ["id", 95]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:87
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:87
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-28 10:08:30.596131"], ["brand_id", 56], ["id", 96]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:87
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" ORDER BY "brands"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" ORDER BY "brands"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "garments"."name" FROM "garments" WHERE "garments"."brand_id" = $1[0m  [["brand_id", 53]]
+  ↳ db/seeds.rb:90
+  [1m[36mOccasion Load (0.3ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion::HABTM_Garments Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 21]]
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion Destroy (0.1ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion::HABTM_Garments Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 22]]
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion Destroy (0.1ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion::HABTM_Garments Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 23]]
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion Destroy (0.1ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion::HABTM_Garments Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 24]]
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion Destroy (0.1ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion::HABTM_Garments Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 25]]
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion Destroy (0.1ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mOccasion Create (0.2ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For School"], ["created_at", "2022-08-28 10:08:30.606501"], ["updated_at", "2022-08-28 10:08:30.606501"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:100
+  [1m[36mOccasion Create (0.1ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For Casual Meet-up"], ["created_at", "2022-08-28 10:08:30.607163"], ["updated_at", "2022-08-28 10:08:30.607163"]]
+  ↳ db/seeds.rb:100
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:100
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mOccasion Create (0.1ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For Family Get-together"], ["created_at", "2022-08-28 10:08:30.607684"], ["updated_at", "2022-08-28 10:08:30.607684"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:102
+  [1m[36mOccasion Create (0.1ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For Graduation"], ["created_at", "2022-08-28 10:08:30.608213"], ["updated_at", "2022-08-28 10:08:30.608213"]]
+  ↳ db/seeds.rb:102
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:102
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:103
+  [1m[36mOccasion Create (0.1ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For Wedding"], ["created_at", "2022-08-28 10:08:30.608732"], ["updated_at", "2022-08-28 10:08:30.608732"]]
+  ↳ db/seeds.rb:103
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:103
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "occasions"[0m
+  ↳ db/seeds.rb:105
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "occasions"."title" FROM "occasions"[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 91], ["occasion_id", 26]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 93], ["occasion_id", 26]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 94], ["occasion_id", 26]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 95], ["occasion_id", 26]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 96], ["occasion_id", 26]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:109
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 91], ["occasion_id", 27]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:109
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 93], ["occasion_id", 27]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:109
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 95], ["occasion_id", 27]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:109
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 96], ["occasion_id", 27]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 91], ["occasion_id", 28]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 93], ["occasion_id", 28]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 94], ["occasion_id", 28]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 95], ["occasion_id", 28]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 96], ["occasion_id", 28]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 92], ["occasion_id", 29]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 93], ["occasion_id", 29]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 94], ["occasion_id", 29]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:112
+  [1m[36mOccasion::HABTM_Garments Create (0.0ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 94], ["occasion_id", 30]]
+  ↳ db/seeds.rb:112
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:112
+  [1m[36mGarment Load (0.1ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" ORDER BY "garments"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:115
+  [1m[36mGarment Load (0.1ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" ORDER BY "garments"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:115
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "occasions"."title" FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 91]]
+  ↳ db/seeds.rb:115
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:22:27 +1000
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/leilei/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 282ms (Views: 281.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:36:39 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:37:17 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:38:15 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:38:55 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:48:20 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:48:40 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:49:53 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:50:37 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:50:50 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:51:02 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 20:51:30 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-08-28 20:54:17 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [9 times] (4.9ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.4ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 21:00:31 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 21:00:41 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 21:00:42 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 21:01:31 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 21:14:09 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:14:10 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (2.0ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 61ms (Views: 19.8ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:17:14 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.2ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  Rendered garments/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 10.8ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:18:01 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  Rendered garments/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-08-28 21:20:51 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (2.9ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-08-28 21:21:12 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (1.6ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.5ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-08-28 21:22:30 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (3.4ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-08-28 21:23:24 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (2.0ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.5ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:25:15 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 101ms (Views: 55.7ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:25:33 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (1.9ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 33ms (Views: 24.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:25:39 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 20.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:26:01 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 28ms (Views: 23.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:26:16 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (4.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 20ms (Views: 14.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:31:28 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 10.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:31:56 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (1.2ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (4.7ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 25ms (Views: 14.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 21:32:05 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:32:16 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (1.1ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/garments/92" for 127.0.0.1 at 2022-08-28 21:32:17 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/garments/92" for 127.0.0.1 at 2022-08-28 21:32:18 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 29ms (Views: 24.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-28 21:32:21 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 26ms (Views: 21.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-28 21:32:56 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 53ms (Views: 49.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:33:01 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:33:05 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (3.3ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 49ms (Views: 32.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:33:10 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (6.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 46ms (Views: 35.5ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-28 21:33:12 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 33ms (Views: 25.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/garments/95" for 127.0.0.1 at 2022-08-28 21:33:14 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (1.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 36ms (Views: 29.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/garments/94" for 127.0.0.1 at 2022-08-28 21:33:18 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"94"}
+  [1m[36mGarment Load (1.0ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 94], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/garments/92" for 127.0.0.1 at 2022-08-28 21:33:21 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/garments/93" for 127.0.0.1 at 2022-08-28 21:33:23 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"93"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:33:36 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 20.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-28 21:33:44 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (2.8ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 29ms (Views: 16.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/garments/95" for 127.0.0.1 at 2022-08-28 21:33:48 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:18
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 35ms (Views: 30.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:39:01 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 36ms (Views: 18.7ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:39:02 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.2ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 40ms (Views: 19.4ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:39:04 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 25ms (Views: 21.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/garments/92" for 127.0.0.1 at 2022-08-28 21:39:05 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:39:19 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 31ms (Views: 19.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:39:20 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 44ms (Views: 30.7ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/garments/92" for 127.0.0.1 at 2022-08-28 21:39:22 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/garments/94" for 127.0.0.1 at 2022-08-28 21:39:23 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"94"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 94], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/garments/95" for 127.0.0.1 at 2022-08-28 21:39:25 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:39:29 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.9ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:39:29 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:39:30 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:39:30 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (1.0ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:39:41 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.9ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 33ms (Views: 18.9ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:39:42 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.2ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 38ms (Views: 18.7ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:49:59 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (1.2ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 39ms (Views: 20.3ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:50:01 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 35ms (Views: 25.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:50:02 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/garments/new" for 127.0.0.1 at 2022-08-28 21:50:03 +1000
+Processing by GarmentsController#new as HTML
+  Rendering garments/new.html.erb within layouts/application
+  [1m[36mBrand Load (1.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (25.2ms)
+  Rendered garments/new.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/garments/new" for 127.0.0.1 at 2022-08-28 21:54:19 +1000
+Processing by GarmentsController#new as HTML
+  Rendering garments/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (9.0ms)
+  Rendered garments/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/garments" for 127.0.0.1 at 2022-08-28 21:54:25 +1000
+Processing by GarmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0B8sciwfFLrRvmZuAdL4gnoKJFKplaJdij+9AUKqcwPaB27/wCquqwnuWX/Ailkzva4PMIrhMi74gNnvdCiHsQ==", "garment"=>{"name"=>"JAVA Shorts", "price"=>"445", "fabrication"=>"100% polyester", "image"=>"https://www.davidjones.com/productimages/medium/1/2409399_21688062_7467867.jpg", "brand_id"=>"53"}, "commit"=>"Create Garment"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:9
+  [1m[36mGarment Create (0.7ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at", "brand_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "JAVA Shorts"], ["price", 445.0], ["fabrication", "100% polyester"], ["image", "https://www.davidjones.com/productimages/medium/1/2409399_21688062_7467867.jpg"], ["created_at", "2022-08-28 11:54:25.193638"], ["updated_at", "2022-08-28 11:54:25.193638"], ["brand_id", 53]]
+  ↳ app/controllers/garments_controller.rb:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:9
+Redirected to http://localhost:3000/garments
+Completed 302 Found in 6ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 21:54:25 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 21:54:26 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (1.1ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 24.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:54:48 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:8
+  Rendered garments/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:56:10 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (2.6ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:11
+  Rendered garments/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 40ms (Views: 31.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 21:58:27 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 22:04:13 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 50ms (Views: 16.8ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 22:04:18 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:04:20 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (2.7ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 16.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/garments/97/edit" for 127.0.0.1 at 2022-08-28 22:04:21 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  Rendered garments/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:04:42 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/garments/97/edit" for 127.0.0.1 at 2022-08-28 22:04:43 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (12.2ms)
+  Rendered garments/edit.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/garments/97" for 127.0.0.1 at 2022-08-28 22:04:51 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MnLRpDhXkRIqLn657Ofxb+hzQB7Y0DAPBCoGmUDo3EE4apMp1GIrA/J+Qagtv1DeL9drfPukoHx2lWJ3dmoo8w==", "garment"=>{"name"=>"JAVA Shortsssssssssssssss", "price"=>"445.0", "fabrication"=>"100% polyester", "image"=>"https://www.davidjones.com/productimages/medium/1/2409399_21688062_7467867.jpg", "brand_id"=>"53"}, "commit"=>"Update Garment", "id"=>"97"}
+  [1m[36mGarment Load (2.6ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[36mGarment Update (0.8ms)[0m  [1m[33mUPDATE "garments" SET "name" = $1, "updated_at" = $2 WHERE "garments"."id" = $3[0m  [["name", "JAVA Shortsssssssssssssss"], ["updated_at", "2022-08-28 12:04:51.451289"], ["id", 97]]
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/97
+Completed 302 Found in 17ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:04:51 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/garments/97/edit" for 127.0.0.1 at 2022-08-28 22:04:55 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (8.9ms)
+  Rendered garments/edit.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/garments/97" for 127.0.0.1 at 2022-08-28 22:04:57 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fxdrEPzuUKwTX8+ySlzbyxcJOnxwZanETIlY/b3Q1vN1DymdENvqvcsP8KOLBHp60K0RHlMRObc+NjwTi1IiQQ==", "garment"=>{"name"=>"JAVA Shortsssssssssssssss", "price"=>"445.0", "fabrication"=>"100% polyester", "image"=>"https://www.davidjones.com/productimages/medium/1/2409399_21688062_7467867.jpg", "brand_id"=>"54"}, "commit"=>"Update Garment", "id"=>"97"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[36mGarment Update (0.6ms)[0m  [1m[33mUPDATE "garments" SET "brand_id" = $1, "updated_at" = $2 WHERE "garments"."id" = $3[0m  [["brand_id", 54], ["updated_at", "2022-08-28 12:04:57.947402"], ["id", 97]]
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/97
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:04:57 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/garments/97/edit" for 127.0.0.1 at 2022-08-28 22:04:59 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.9ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (12.0ms)
+  Rendered garments/edit.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 32ms (Views: 27.4ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/garments/97" for 127.0.0.1 at 2022-08-28 22:05:01 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JZUOfSrf2uzxYduZUle0SPpq8GkH183bDHN5Yid4jXovjUzwxupg/Skx5IiTDxX5Pc7bCySjXah+zB2MEfp5yA==", "garment"=>{"name"=>"JAVA Shortsssssssssssssss", "price"=>"445.0", "fabrication"=>"100% polyester", "image"=>"https://www.davidjones.com/productimages/medium/1/2409399_21688062_7467867.jpg", "brand_id"=>"53"}, "commit"=>"Update Garment", "id"=>"97"}
+  [1m[36mGarment Load (1.2ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[36mGarment Update (0.7ms)[0m  [1m[33mUPDATE "garments" SET "brand_id" = $1, "updated_at" = $2 WHERE "garments"."id" = $3[0m  [["brand_id", 53], ["updated_at", "2022-08-28 12:05:01.757518"], ["id", 97]]
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/97
+Completed 302 Found in 19ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:05:01 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 20ms (Views: 16.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/garments/97/edit" for 127.0.0.1 at 2022-08-28 22:05:11 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (3.5ms)
+  Rendered garments/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/garments/97" for 127.0.0.1 at 2022-08-28 22:05:15 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8VltT7rQOVLm5F2UxGHdDOw+VtG538X+5HxUwxVkhfz7QS/CVuWDQz60YoUFOXy9K5p9s5qrVY2WwzAtI+ZxTg==", "garment"=>{"name"=>"JAVA Shortsssssssssssssss", "price"=>"445.0", "fabrication"=>"100% polyester", "image"=>"https://www.davidjones.com/productimages/medium/1/2409399_21688062_7467867.jpg", "brand_id"=>"56"}, "commit"=>"Update Garment", "id"=>"97"}
+  [1m[36mGarment Load (1.8ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[36mGarment Update (0.8ms)[0m  [1m[33mUPDATE "garments" SET "brand_id" = $1, "updated_at" = $2 WHERE "garments"."id" = $3[0m  [["brand_id", 56], ["updated_at", "2022-08-28 12:05:15.918272"], ["id", 97]]
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/97
+Completed 302 Found in 12ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:05:15 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (1.6ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 22ms (Views: 16.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/garments/97/edit" for 127.0.0.1 at 2022-08-28 22:05:18 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (2.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (11.6ms)
+  Rendered garments/edit.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 34ms (Views: 27.0ms | ActiveRecord: 3.0ms)
+
+
+Started PATCH "/garments/97" for 127.0.0.1 at 2022-08-28 22:05:24 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dyajt9F+5393g7XSLOX7HgAkZuJN4iiwZBD82sb3eJcFPuE6PUtdbq/TisPtvVqvx4BNgG6WuMMWr5g08HWMJQ==", "garment"=>{"name"=>"JAVA Shortsssssssssssssss", "price"=>"445.0", "fabrication"=>"100% polyester", "image"=>"https://www.davidjones.com/productimages/medium/1/2409399_21688062_7467867.jpg", "brand_id"=>"53"}, "commit"=>"Update Garment", "id"=>"97"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[36mGarment Update (0.7ms)[0m  [1m[33mUPDATE "garments" SET "brand_id" = $1, "updated_at" = $2 WHERE "garments"."id" = $3[0m  [["brand_id", 53], ["updated_at", "2022-08-28 12:05:24.264500"], ["id", 97]]
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/97
+Completed 302 Found in 12ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:05:24 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 32ms (Views: 28.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/garments/97/edit" for 127.0.0.1 at 2022-08-28 22:05:25 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (7.7ms)
+  Rendered garments/edit.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 34ms (Views: 29.3ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/garments/97" for 127.0.0.1 at 2022-08-28 22:05:28 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b65R5ptlhgZttsJq0gr2wQSJzhd/W4AV1wbmb38D81RlthNrd1A8F7Xm/XsTUldwwy3ldVwvEGaluYKBSYEH5g==", "garment"=>{"name"=>"JAVA Shortsssssssssssssss", "price"=>"445.0", "fabrication"=>"100% polyester", "image"=>"https://www.davidjones.com/productimages/medium/1/2409399_21688062_7467867.jpg", "brand_id"=>""}, "commit"=>"Update Garment", "id"=>"97"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[36mGarment Update (0.8ms)[0m  [1m[33mUPDATE "garments" SET "brand_id" = $1, "updated_at" = $2 WHERE "garments"."id" = $3[0m  [["brand_id", nil], ["updated_at", "2022-08-28 12:05:28.035655"], ["id", 97]]
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/97
+Completed 302 Found in 12ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:05:28 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  Rendered garments/show.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:     by
+    13:     <strong><%= @garment.brand.name  %></strong>
+    14: </p>
+    15: 
+    16: 
+  
+app/views/garments/show.html.erb:13:in `_app_views_garments_show_html_erb__2893330423248545353_51480'
+Started PATCH "/garments/97" for 127.0.0.1 at 2022-08-28 22:05:34 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b65R5ptlhgZttsJq0gr2wQSJzhd/W4AV1wbmb38D81RlthNrd1A8F7Xm/XsTUldwwy3ldVwvEGaluYKBSYEH5g==", "garment"=>{"name"=>"JAVA Shortsssssssssssssss", "price"=>"445.0", "fabrication"=>"100% polyester", "image"=>"https://www.davidjones.com/productimages/medium/1/2409399_21688062_7467867.jpg", "brand_id"=>"53"}, "commit"=>"Update Garment", "id"=>"97"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[36mGarment Update (1.0ms)[0m  [1m[33mUPDATE "garments" SET "brand_id" = $1, "updated_at" = $2 WHERE "garments"."id" = $3[0m  [["brand_id", 53], ["updated_at", "2022-08-28 12:05:34.702610"], ["id", 97]]
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/97
+Completed 302 Found in 13ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:05:34 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:08:42 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 47ms (Views: 22.2ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/garments/97/edit" for 127.0.0.1 at 2022-08-28 22:08:43 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (8.4ms)
+  Rendered garments/edit.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/garments/97" for 127.0.0.1 at 2022-08-28 22:08:45 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vqDMfOy/iGDQ9udsOD14XeXBRSVOWVNaMa/CL7gyba60uI7xAIoycQim2H35ZdnsImVuR20twylDEKbBjrCZHA==", "garment"=>{"name"=>"JAVA Shortsssssssssssssss", "price"=>"445.0", "fabrication"=>"100% polyester", "image"=>"https://www.davidjones.com/productimages/medium/1/2409399_21688062_7467867.jpg", "brand_id"=>"53"}, "commit"=>"Update Garment", "id"=>"97"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/97
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:08:45 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 22:08:46 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (2.2ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 28ms (Views: 23.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/garments/97" for 127.0.0.1 at 2022-08-28 22:08:47 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"97"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/garments/97" for 127.0.0.1 at 2022-08-28 22:08:48 +1000
+Processing by GarmentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kEw1mB6TfaEf3GuL4KLOBVIottWM4EyCTfn59xkfPQGaVHcV8qbHsMeMVJoh+m+0lYydt6+U3PE/Rp0ZL53Jsw==", "id"=>"97"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 97], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:40
+  [1m[36mGarment::HABTM_Occasions Destroy (1.0ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 97]]
+  ↳ app/controllers/garments_controller.rb:40
+  [1m[36mGarment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 97]]
+  ↳ app/controllers/garments_controller.rb:40
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:40
+Redirected to http://localhost:3000/garments
+Completed 302 Found in 33ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 22:08:49 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-28 22:08:50 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.9ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 24.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-28 22:09:10 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 33ms (Views: 29.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 22:10:47 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/brands/53" for 127.0.0.1 at 2022-08-28 22:10:48 +1000
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"53"}
+  Rendering brands/show.html.erb within layouts/application
+  Rendered brands/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/brands/53" for 127.0.0.1 at 2022-08-28 22:10:51 +1000
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"53"}
+  Rendering brands/show.html.erb within layouts/application
+  Rendered brands/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/garments/93" for 127.0.0.1 at 2022-08-28 22:10:52 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"93"}
+  [1m[36mGarment Load (1.8ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 33ms (Views: 26.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/brands/54" for 127.0.0.1 at 2022-08-28 22:10:53 +1000
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"54"}
+  Rendering brands/show.html.erb within layouts/application
+  Rendered brands/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 22:11:00 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.9ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 33ms (Views: 27.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/brands/53" for 127.0.0.1 at 2022-08-28 22:11:01 +1000
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"53"}
+  Rendering brands/show.html.erb within layouts/application
+  Rendered brands/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/garments/91" for 127.0.0.1 at 2022-08-28 22:12:29 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:13
+  Rendered garments/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 22:12:30 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 22:14:10 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-28 22:14:14 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  Rendered brands/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/brands/new" for 127.0.0.1 at 2022-08-28 22:14:15 +1000
+Processing by BrandsController#new as HTML
+  Rendering brands/new.html.erb within layouts/application
+  Rendered brands/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-28 22:14:16 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  Rendered brands/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 22:14:18 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+

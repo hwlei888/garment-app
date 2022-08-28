@@ -1,0 +1,14 @@
+
+<h2>All Garments</h2>
+
+<ul>
+    <% @garments.each do |item| %>
+        <li>
+            <%= link_to item.name, garment_path(item.id) %>
+        </li>
+
+    <% end %>
+
+</ul>
+
+

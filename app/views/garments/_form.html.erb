@@ -1,0 +1,27 @@
+
+<%= form_with model: @garment, local: true do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br><br>
+
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+    <br><br>
+
+    <%= f.label :fabrication %>
+    <%= f.text_field :fabrication %>
+    <br><br>
+
+    <%= f.label :image, 'Image URL' %>
+    <%= f.text_field :image %>
+    <br><br>
+
+    <%= f.label :brand_id, 'Brand' %>
+    <%= f.collection_select :brand_id, Brand.all, :id, :name, include_blank: true %>
+    <br><br>
+
+    <%= f.submit %>
+
+<% end %>
+

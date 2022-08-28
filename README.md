@@ -51,3 +51,34 @@ garment_id:integer
 ### Collocation
 
 ### Comment (later)
+
+
+
+
+
+label
+
+
+  “The best colour in the world is the one that looks good on you.”
+Your wardrobe will always be one less dress.
+"Style is something each of us already has, all we need to do is find it."
+
+<h2>
+    Playing dress-up begins at age five and never truly ends.
+</h2>
+
+<p>
+    By Kate Spade
+</p>
+
+
+
+
+* REMEMBER!!!!!
+to update
+
+  def garment_params
+    params.require(:garment).permit(:name, :price, :fabrication, :image, :brand_id)
+  end
+
+
