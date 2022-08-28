@@ -6,10 +6,13 @@ body{
     width: 30%;
 }
 
-.garment_image_brand{
+.garment_image_brand,
+.garment_image_occasion
+{
     width: 20%;
 }
 
 .garment_image_index{
     width: 8%;
 }
+

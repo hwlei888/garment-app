@@ -6911,3 +6911,1437 @@ Processing by BrandsController#index as HTML
 Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/brands" for 127.0.0.1 at 2022-08-28 23:56:17 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 42ms (Views: 31.3ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 23:56:20 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-08-28 23:56:54 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [25 times] (4.1ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-28 23:58:05 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-28 23:59:22 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  Rendered occasions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/occasions/new" for 127.0.0.1 at 2022-08-28 23:59:23 +1000
+Processing by OccasionsController#new as HTML
+  Rendering occasions/new.html.erb within layouts/application
+  Rendered occasions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-29 01:20:11 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:20:11 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (1.9ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (19.1ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 9.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Occasion:0x000000013e17fe00>):
+     5: 
+     6:     <% @occasions.each do |item| %>
+     7:         <li>
+     8:             <%= link_to item.name, occasion_path(item.id) %>        
+     9:         </li>
+    10:     <% end %>
+    11: 
+  
+app/views/occasions/index.html.erb:8:in `block in _app_views_occasions_index_html_erb__494610762216943488_100100'
+app/views/occasions/index.html.erb:6:in `_app_views_occasions_index_html_erb__494610762216943488_100100'
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:20:40 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:20:44 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:20:45 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  Rendered occasions/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 27.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/occasions/29" for 127.0.0.1 at 2022-08-29 01:20:46 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  Rendered occasions/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:21:46 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:21:47 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  Rendered occasions/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 22.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:25:13 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.3ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.7ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (60.1ms)
+Completed 200 OK in 81ms (Views: 70.1ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:26:00 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (1.0ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:26:09 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:26:34 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 44ms (Views: 39.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:26:43 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 71ms (Views: 40.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:26:49 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.9ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 42ms (Views: 33.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:27:07 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/occasions/27" for 127.0.0.1 at 2022-08-29 01:27:08 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 27]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:27:13 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (4.5ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 41ms (Views: 35.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/occasions/28" for 127.0.0.1 at 2022-08-29 01:27:13 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 28]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:27:17 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions/30" for 127.0.0.1 at 2022-08-29 01:27:18 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.2ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 30]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 31ms (Views: 25.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:27:20 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (1.1ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/occasions/29" for 127.0.0.1 at 2022-08-29 01:27:22 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mOccasion Load (1.0ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 29]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:27:25 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/occasions/28" for 127.0.0.1 at 2022-08-29 01:27:26 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 28]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 31ms (Views: 25.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-29 01:27:27 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (2.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 54ms (Views: 23.6ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:27:27 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions/27" for 127.0.0.1 at 2022-08-29 01:27:28 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:16
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 27]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 40ms (Views: 34.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:27:33 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-08-29 01:28:37 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [25 times] (4.1ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:35:15 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (3.1ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 41ms (Views: 15.9ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:35:16 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (47.8ms)
+Completed 200 OK in 63ms (Views: 49.9ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:40:32 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (1.0ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 38ms (Views: 16.4ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:40:33 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 65ms (Views: 50.1ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/occasions/new" for 127.0.0.1 at 2022-08-29 01:40:34 +1000
+Processing by OccasionsController#new as HTML
+  Rendering occasions/new.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (3.2ms)
+  Rendered occasions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:40:37 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 41ms (Views: 36.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:47:27 +1000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/leilei/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 77ms (Views: 68.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/occasions/30" for 127.0.0.1 at 2022-08-29 01:47:28 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 30]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 55ms (Views: 40.8ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/occasions/new" for 127.0.0.1 at 2022-08-29 01:48:18 +1000
+Processing by OccasionsController#new as HTML
+  Rendering occasions/new.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (21.7ms)
+  Rendered occasions/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:48:52 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/occasions/new" for 127.0.0.1 at 2022-08-29 01:48:53 +1000
+Processing by OccasionsController#new as HTML
+  Rendering occasions/new.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (4.6ms)
+  Rendered occasions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:55:56 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (4.8ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 39ms (Views: 19.5ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:55:58 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 01:55:58 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:9
+  Rendered occasions/show.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 74ms (Views: 57.5ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-29 01:56:03 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (1.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 40ms (Views: 25.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/brands/53" for 127.0.0.1 at 2022-08-29 01:56:04 +1000
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:20
+  Rendering brands/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT "garments".* FROM "garments" WHERE "garments"."brand_id" = $1[0m  [["brand_id", 53]]
+  ↳ app/views/brands/show.html.erb:25
+  Rendered brands/show.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 38ms (Views: 32.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-29 01:56:06 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-29 01:56:07 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 01:56:08 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 02:01:56 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (2.4ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 30ms (Views: 25.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 02:01:57 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 36ms (Views: 29.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/occasions/26/edit" for 127.0.0.1 at 2022-08-29 02:01:59 +1000
+Processing by OccasionsController#edit as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:25
+  Rendering occasions/edit.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (4.3ms)
+  Rendered occasions/edit.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/occasions/26" for 127.0.0.1 at 2022-08-29 02:02:01 +1000
+Processing by OccasionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oRN7ii1aplRZDrIuPoHUPjXTUWStCMYb8YiFiBXeyFKrCzkHwW8cRYFejT//2XWP8nd6Bo58VmiDN+FmI1w84A==", "occasion"=>{"title"=>"For School"}, "commit"=>"Update Occasion", "id"=>"26"}
+  [1m[36mOccasion Load (0.9ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:29
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `requre' for #<ActionController::Parameters:0x000000013c843220>
+Did you mean?  require
+               required):
+  
+app/controllers/occasions_controller.rb:44:in `occasion_params'
+app/controllers/occasions_controller.rb:31:in `update'
+Started PATCH "/occasions/26" for 127.0.0.1 at 2022-08-29 02:02:11 +1000
+Processing by OccasionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oRN7ii1aplRZDrIuPoHUPjXTUWStCMYb8YiFiBXeyFKrCzkHwW8cRYFejT//2XWP8nd6Bo58VmiDN+FmI1w84A==", "occasion"=>{"title"=>"For School"}, "commit"=>"Update Occasion", "id"=>"26"}
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/occasions_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/occasions_controller.rb:31
+Redirected to http://localhost:3000/occasions/26
+Completed 302 Found in 21ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 02:02:11 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (2.6ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 33ms (Views: 22.8ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/occasions/26/edit" for 127.0.0.1 at 2022-08-29 02:02:12 +1000
+Processing by OccasionsController#edit as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:25
+  Rendering occasions/edit.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (9.5ms)
+  Rendered occasions/edit.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 51ms (Views: 42.4ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/occasions/26" for 127.0.0.1 at 2022-08-29 02:02:15 +1000
+Processing by OccasionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W5+5mPu1Yx8f/7SADAjKOUbW07Tz85shXTUa92cjAUBRh/sVF4DZDsevi5HNUGuIgXL41tCHC1Ivin4ZUaH18g==", "occasion"=>{"title"=>"For School"}, "commit"=>"Update Occasion", "id"=>"26"}
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/occasions_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/occasions_controller.rb:31
+Redirected to http://localhost:3000/occasions/26
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 02:02:15 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (3.3ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.0ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 24ms (Views: 17.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/occasions/new" for 127.0.0.1 at 2022-08-29 02:02:16 +1000
+Processing by OccasionsController#new as HTML
+  Rendering occasions/new.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (3.8ms)
+  Rendered occasions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/occasions" for 127.0.0.1 at 2022-08-29 02:02:31 +1000
+Processing by OccasionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jzYvfIuNy3lxhu+ZvCuv1oJ3vNyifacEA4dWwnBeSOyFLm3xZ7hxaKnW0Ih9cw5nRdOXvoEJN3dxODIsRty8Xg==", "occasion"=>{"title"=>"For Job Interview"}, "commit"=>"Create Occasion"}
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/occasions_controller.rb:9
+  [1m[36mOccasion Create (2.0ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For Job Interview"], ["created_at", "2022-08-28 16:02:31.491129"], ["updated_at", "2022-08-28 16:02:31.491129"]]
+  ↳ app/controllers/occasions_controller.rb:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/occasions_controller.rb:9
+Redirected to http://localhost:3000/occasions
+Completed 302 Found in 15ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 02:02:31 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/occasions/31" for 127.0.0.1 at 2022-08-29 02:02:32 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 31]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/occasions/31/edit" for 127.0.0.1 at 2022-08-29 02:02:37 +1000
+Processing by OccasionsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:25
+  Rendering occasions/edit.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (4.0ms)
+  Rendered occasions/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/occasions/31" for 127.0.0.1 at 2022-08-29 02:02:38 +1000
+Processing by OccasionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RowzL3FaRFhUubaczeOFpcBY1ezH9wSA/OTtkaoDte9MlHGinW/+SYzpiY0MuyQUB/z+juSDlPOOW4l/nIFBXQ==", "occasion"=>{"title"=>"For Job Interview"}, "commit"=>"Update Occasion", "id"=>"31"}
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/occasions_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/occasions_controller.rb:31
+Redirected to http://localhost:3000/occasions/31
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/occasions/31" for 127.0.0.1 at 2022-08-29 02:02:38 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mOccasion Load (0.3ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 31]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions/31/edit" for 127.0.0.1 at 2022-08-29 02:02:39 +1000
+Processing by OccasionsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:25
+  Rendering occasions/edit.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (4.3ms)
+  Rendered occasions/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/occasions/31" for 127.0.0.1 at 2022-08-29 02:02:41 +1000
+Processing by OccasionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TFGMIIZn+du3fkw8gAjyQq8Mn2xYTLJWkR38UEJoBGlGSc6talJDym8ucy1BUFPzaKi0Dns4IiXjopi+dOrw2w==", "occasion"=>{"title"=>"For Job Interviewwwwww"}, "commit"=>"Update Occasion", "id"=>"31"}
+  [1m[36mOccasion Load (0.3ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/occasions_controller.rb:31
+  [1m[36mOccasion Update (0.9ms)[0m  [1m[33mUPDATE "occasions" SET "title" = $1, "updated_at" = $2 WHERE "occasions"."id" = $3[0m  [["title", "For Job Interviewwwwww"], ["updated_at", "2022-08-28 16:02:41.677233"], ["id", 31]]
+  ↳ app/controllers/occasions_controller.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/occasions_controller.rb:31
+Redirected to http://localhost:3000/occasions/31
+Completed 302 Found in 9ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/occasions/31" for 127.0.0.1 at 2022-08-29 02:02:41 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 31]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 02:02:43 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.9ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/occasions/30" for 127.0.0.1 at 2022-08-29 02:02:46 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 30]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/occasions/31" for 127.0.0.1 at 2022-08-29 02:02:49 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mOccasion Load (0.3ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 31]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/occasions/31/edit" for 127.0.0.1 at 2022-08-29 02:02:51 +1000
+Processing by OccasionsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:25
+  Rendering occasions/edit.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (4.6ms)
+  Rendered occasions/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/occasions/31" for 127.0.0.1 at 2022-08-29 02:02:52 +1000
+Processing by OccasionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pLiqWaQ/efZ9Rll4aqPkgrniQ7Kqyu1zpXL4KhLN/KauoOjUSArD56UWZmmr+0UzfkZo0Im+fQDXzZzEJE8IFA==", "occasion"=>{"title"=>"For Job Interviewwwwww"}, "commit"=>"Update Occasion", "id"=>"31"}
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/occasions_controller.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/occasions_controller.rb:31
+Redirected to http://localhost:3000/occasions/31
+Completed 302 Found in 11ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/occasions/31" for 127.0.0.1 at 2022-08-29 02:02:52 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 31]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 29ms (Views: 21.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 02:02:54 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/occasions/new" for 127.0.0.1 at 2022-08-29 02:02:56 +1000
+Processing by OccasionsController#new as HTML
+  Rendering occasions/new.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (4.6ms)
+  Rendered occasions/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/occasions" for 127.0.0.1 at 2022-08-29 02:02:57 +1000
+Processing by OccasionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kNhn5rdgL6ImR2SxsNej0d1dyMYLJ8HYdmyY07FQK1eawCVrW1WVs/4XW6BxjwJgGvnjpChTUasE0/w9h9Lf5Q==", "occasion"=>{"title"=>"asdfasdf"}, "commit"=>"Create Occasion"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/occasions_controller.rb:9
+  [1m[36mOccasion Create (0.9ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "asdfasdf"], ["created_at", "2022-08-28 16:02:57.955039"], ["updated_at", "2022-08-28 16:02:57.955039"]]
+  ↳ app/controllers/occasions_controller.rb:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/occasions_controller.rb:9
+Redirected to http://localhost:3000/occasions
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 02:02:57 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions/32" for 127.0.0.1 at 2022-08-29 02:02:59 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 32]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions/32/edit" for 127.0.0.1 at 2022-08-29 02:03:00 +1000
+Processing by OccasionsController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:25
+  Rendering occasions/edit.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (10.1ms)
+  Rendered occasions/edit.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/occasions/32" for 127.0.0.1 at 2022-08-29 02:03:01 +1000
+Processing by OccasionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p2IffSJieGYzqs4BEQqJcjGZ2r1tIUX2hsf9SUcy7Yqtel3wzlfCd+v68RDQUijD9j3x305V1YX0eJmncbAZOA==", "occasion"=>{"title"=>"asdfasdfddddd"}, "commit"=>"Update Occasion", "id"=>"32"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/occasions_controller.rb:31
+  [1m[36mOccasion Update (0.9ms)[0m  [1m[33mUPDATE "occasions" SET "title" = $1, "updated_at" = $2 WHERE "occasions"."id" = $3[0m  [["title", "asdfasdfddddd"], ["updated_at", "2022-08-28 16:03:01.808252"], ["id", 32]]
+  ↳ app/controllers/occasions_controller.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/occasions_controller.rb:31
+Redirected to http://localhost:3000/occasions/32
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/occasions/32" for 127.0.0.1 at 2022-08-29 02:03:01 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 32]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 27ms (Views: 19.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 02:03:03 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 02:04:21 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 28ms (Views: 12.7ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/occasions/32" for 127.0.0.1 at 2022-08-29 02:04:22 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.2ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 32]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 51ms (Views: 37.4ms | ActiveRecord: 7.0ms)
+
+
+Started DELETE "/occasions/32" for 127.0.0.1 at 2022-08-29 02:04:24 +1000
+Processing by OccasionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SzoXM2SEIrOZnDxa+QL+TUf8QwCrbaoSw3nPtjEcCJhBIlW+iLGYokHMA0s4Wl/8gFhoYogZOmGxxqtYB578Kg==", "id"=>"32"}
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/occasions_controller.rb:38
+  [1m[36mOccasion::HABTM_Garments Destroy (1.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 32]]
+  ↳ app/controllers/occasions_controller.rb:38
+  [1m[36mOccasion Destroy (0.7ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 32]]
+  ↳ app/controllers/occasions_controller.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/occasions_controller.rb:38
+Redirected to http://localhost:3000/occasions
+Completed 302 Found in 11ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 02:04:24 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-29 02:04:49 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 25ms (Views: 14.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-29 02:04:54 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (2.1ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 36ms (Views: 20.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/brands/53" for 127.0.0.1 at 2022-08-29 02:04:56 +1000
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:20
+  Rendering brands/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT "garments".* FROM "garments" WHERE "garments"."brand_id" = $1[0m  [["brand_id", 53]]
+  ↳ app/views/brands/show.html.erb:25
+  Rendered brands/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 31ms (Views: 24.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-29 02:04:58 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-29 02:04:59 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:11
+  Rendered garments/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 29ms (Views: 22.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-29 02:07:54 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:11
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 96]]
+  ↳ app/views/garments/show.html.erb:32
+  Rendered garments/show.html.erb within layouts/application (35.2ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 5.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Occasion:0x0000000159ebb978>):
+    31: 
+    32:         <% @garment.occasions.each do |item| %>
+    33:             <li>
+    34:             <%= item.name %>
+    35:             </li>
+    36:         <% end %>
+    37: 
+  
+app/views/garments/show.html.erb:34:in `block in _app_views_garments_show_html_erb___3176339406007971939_35280'
+app/views/garments/show.html.erb:32:in `_app_views_garments_show_html_erb___3176339406007971939_35280'
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-29 02:08:02 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:11
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 96]]
+  ↳ app/views/garments/show.html.erb:32
+  Rendered garments/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 44ms (Views: 38.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-29 02:08:34 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (1.1ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:11
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 96]]
+  ↳ app/views/garments/show.html.erb:32
+  Rendered garments/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 29ms (Views: 23.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 02:08:35 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (0.2ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/occasions/27" for 127.0.0.1 at 2022-08-29 02:08:38 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 27]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 33ms (Views: 25.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/occasions/28" for 127.0.0.1 at 2022-08-29 02:08:40 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 28]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 32ms (Views: 25.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/occasions/26" for 127.0.0.1 at 2022-08-29 02:08:50 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mOccasion Load (1.0ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 26]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 33ms (Views: 28.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/garments/96/edit" for 127.0.0.1 at 2022-08-29 02:08:58 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  [1m[36mBrand Load (1.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (23.2ms)
+  Rendered garments/edit.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 42ms (Views: 36.8ms | ActiveRecord: 1.7ms)
+
+
+Started PATCH "/garments/96" for 127.0.0.1 at 2022-08-29 02:09:03 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h+QCSryFIbGJHq+dnucVxF5WycUc+OSNXZ4YXUOJJjWN/EDHULCboFFOkIxfv7R1mfLipz+MdP4vIXyzdQvShw==", "garment"=>{"name"=>"Wide High Jeansddd", "price"=>"34.99", "fabrication"=>"Cotton 99%, Spandex 1%", "image"=>"https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa8%2Ff5%2Fa8f533d3296018949fef41f478af53c999b4a6b2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/fullscreen]", "brand_id"=>"56"}, "commit"=>"Update Garment", "id"=>"96"}
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[36mGarment Update (1.0ms)[0m  [1m[33mUPDATE "garments" SET "name" = $1, "updated_at" = $2 WHERE "garments"."id" = $3[0m  [["name", "Wide High Jeansddd"], ["updated_at", "2022-08-28 16:09:03.294870"], ["id", 96]]
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/96
+Completed 302 Found in 16ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-29 02:09:03 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:11
+  [1m[36mOccasion Load (0.9ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 96]]
+  ↳ app/views/garments/show.html.erb:32
+  Rendered garments/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 27ms (Views: 22.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/garments/96/edit" for 127.0.0.1 at 2022-08-29 02:09:05 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (10.2ms)
+  Rendered garments/edit.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 31ms (Views: 25.9ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/garments/96" for 127.0.0.1 at 2022-08-29 02:09:09 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6vtfm1k4repaJ5kyCEfnBw/A5h19hnpBKj0WT+o1Zq5s6/zgVFYpnE4oXUJeb4t25so+laCiZp2F5C3CSohKA==", "garment"=>{"name"=>"Wide High Jeans", "price"=>"34.99", "fabrication"=>"Cotton 99%, Spandex 1%", "image"=>"https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa8%2Ff5%2Fa8f533d3296018949fef41f478af53c999b4a6b2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/fullscreen]", "brand_id"=>"56"}, "commit"=>"Update Garment", "id"=>"96"}
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[36mGarment Update (0.8ms)[0m  [1m[33mUPDATE "garments" SET "name" = $1, "updated_at" = $2 WHERE "garments"."id" = $3[0m  [["name", "Wide High Jeans"], ["updated_at", "2022-08-28 16:09:09.138606"], ["id", 96]]
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/96
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/garments/96" for 127.0.0.1 at 2022-08-29 02:09:09 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 96], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:11
+  [1m[36mOccasion Load (0.6ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 96]]
+  ↳ app/views/garments/show.html.erb:32
+  Rendered garments/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/garments/new" for 127.0.0.1 at 2022-08-29 02:09:16 +1000
+Processing by GarmentsController#new as HTML
+  Rendering garments/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (7.7ms)
+  Rendered garments/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 29ms (Views: 25.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/garments" for 127.0.0.1 at 2022-08-29 02:09:29 +1000
+Processing by GarmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iU2S2KzidZPGDZdd7Z7LGaLAYlVjBgAQ7z5mQ2wQZ0ODVdBVQNfPgh5dqEwsxmqoZWRJN0BykGOdgQKtWpKT8Q==", "garment"=>{"name"=>"d", "price"=>"1", "fabrication"=>"ddd", "image"=>"http://sdfadsf", "brand_id"=>""}, "commit"=>"Create Garment"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:9
+  [1m[36mGarment Create (1.2ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "d"], ["price", 1.0], ["fabrication", "ddd"], ["image", "http://sdfadsf"], ["created_at", "2022-08-28 16:09:29.646054"], ["updated_at", "2022-08-28 16:09:29.646054"]]
+  ↳ app/controllers/garments_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:9
+Redirected to http://localhost:3000/garments
+Completed 302 Found in 10ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-29 02:09:29 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/garments/99" for 127.0.0.1 at 2022-08-29 02:09:36 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 99]]
+  ↳ app/views/garments/show.html.erb:32
+  Rendered garments/show.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 28ms (Views: 24.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/garments/99/edit" for 127.0.0.1 at 2022-08-29 02:09:46 +1000
+Processing by GarmentsController#edit as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:27
+  Rendering garments/edit.html.erb within layouts/application
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/garments/_form.html.erb:21
+  Rendered garments/_form.html.erb (8.2ms)
+  Rendered garments/edit.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 33ms (Views: 25.2ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/garments/99" for 127.0.0.1 at 2022-08-29 02:09:48 +1000
+Processing by GarmentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+2g9nRDZtKdUmP/5aQF7MrpnvBc75Wu1N/A1wzzTQIHxcH8Q/OwOtozIwOioWdqDfcOXdRiR+8ZFT1EtClG0Mw==", "garment"=>{"name"=>"d", "price"=>"1.0", "fabrication"=>"ddd", "image"=>"http://sdfadsf", "brand_id"=>"53"}, "commit"=>"Update Garment", "id"=>"99"}
+  [1m[36mGarment Load (1.0ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:31
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[36mGarment Update (0.6ms)[0m  [1m[33mUPDATE "garments" SET "brand_id" = $1, "updated_at" = $2 WHERE "garments"."id" = $3[0m  [["brand_id", 53], ["updated_at", "2022-08-28 16:09:48.650665"], ["id", 99]]
+  ↳ app/controllers/garments_controller.rb:33
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:33
+Redirected to http://localhost:3000/garments/99
+Completed 302 Found in 10ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/garments/99" for 127.0.0.1 at 2022-08-29 02:09:48 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:22
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:11
+  [1m[36mOccasion Load (0.3ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 99]]
+  ↳ app/views/garments/show.html.erb:32
+  Rendered garments/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 34ms (Views: 28.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/brands/53" for 127.0.0.1 at 2022-08-29 02:09:53 +1000
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:20
+  Rendering brands/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" WHERE "garments"."brand_id" = $1[0m  [["brand_id", 53]]
+  ↳ app/views/brands/show.html.erb:25
+  Rendered brands/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 32ms (Views: 26.1ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/garments/99" for 127.0.0.1 at 2022-08-29 02:09:56 +1000
+Processing by GarmentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H1fJ+wnomScKhLqj5wTbyxzFF4/qX61xMjZlwaVHQlgVT4t25d0jNtLUhbImXHp622E87ckrPQJAiQEvk8W26g==", "id"=>"99"}
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/garments_controller.rb:40
+  [1m[36mGarment::HABTM_Occasions Destroy (0.6ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 99]]
+  ↳ app/controllers/garments_controller.rb:40
+  [1m[36mGarment Destroy (1.3ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 99]]
+  ↳ app/controllers/garments_controller.rb:40
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/garments_controller.rb:40
+Redirected to http://localhost:3000/garments
+Completed 302 Found in 15ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-29 02:09:56 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 02:10:05 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/occasions/31" for 127.0.0.1 at 2022-08-29 02:10:07 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mOccasion Load (0.3ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 31]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/occasions/31" for 127.0.0.1 at 2022-08-29 02:10:08 +1000
+Processing by OccasionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jRyUJD1NhqFSIvJQjtGuJKsJo8PaM/X1mNtQCa10bpGHBNap0Xg8sIpyzUFPiQ+VbK2IoflHZYbqZDTnm/aaIw==", "id"=>"31"}
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/occasions_controller.rb:38
+  [1m[36mOccasion::HABTM_Garments Destroy (0.6ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 31]]
+  ↳ app/controllers/occasions_controller.rb:38
+  [1m[36mOccasion Destroy (0.3ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 31]]
+  ↳ app/controllers/occasions_controller.rb:38
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/occasions_controller.rb:38
+Redirected to http://localhost:3000/occasions
+Completed 302 Found in 16ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 02:10:08 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.5ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/occasions/new" for 127.0.0.1 at 2022-08-29 02:10:09 +1000
+Processing by OccasionsController#new as HTML
+  Rendering occasions/new.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (4.8ms)
+  Rendered occasions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/occasions/27" for 127.0.0.1 at 2022-08-29 02:10:12 +1000
+Processing by OccasionsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mOccasion Load (1.6ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:20
+  Rendering occasions/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "garments_occasions" ON "garments"."id" = "garments_occasions"."garment_id" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 27]]
+  ↳ app/views/occasions/show.html.erb:13
+  Rendered occasions/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 31ms (Views: 25.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/occasions/27/edit" for 127.0.0.1 at 2022-08-29 02:10:14 +1000
+Processing by OccasionsController#edit as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mOccasion Load (0.3ms)[0m  [1m[34mSELECT  "occasions".* FROM "occasions" WHERE "occasions"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/occasions_controller.rb:25
+  Rendering occasions/edit.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (4.1ms)
+  Rendered occasions/edit.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-29 02:10:19 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-08-29 02:10:22 +1000
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.8ms)
+
+

@@ -53,6 +53,10 @@ garment_id:integer
 ### Comment (later)
 
 
+## What will do later
+- [ ] many to many tables, when create or edit garments, can choose many occasions
+
+
 
 
 

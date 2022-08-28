@@ -25,6 +25,19 @@
     <%= @garment.fabrication %>
 </p>
 
+<p>
+    <strong>You can wear: </strong>
+    <ul>
+
+        <% @garment.occasions.each do |item| %>
+            <li>
+            <%= link_to item.title, occasion_path(item.id) %>
+            </li>
+        <% end %>
+
+    </ul>
+</p>
+
 
 <%= image_tag @garment.image, alt: @garment.name, class: 'garment_image' %>
 

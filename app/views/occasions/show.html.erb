@@ -1,0 +1,31 @@
+
+<%= link_to 'Edit', edit_occasion_path %>
+|
+<%= link_to 'Delete', occasion_path(@occasion.id), method: 'delete' %>
+
+<h2>
+    <em><%= @occasion.title %></em>
+</h2>
+
+<p><strong>We can choose: </strong></p>
+
+<ul>
+    <% @occasion.garments.each do |item| %>
+
+        <li>
+            <%= link_to (image_tag item.image, alt: item.name, class: 'garment_image_occasion'), garment_path(item.id) %>
+            <br>
+
+            <%= link_to item.name, garment_path(item.id) %>
+        </li>
+        <br>
+
+    <% end %>
+
+</ul>
+
+
+
+
+
+
