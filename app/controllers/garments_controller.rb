@@ -6,10 +6,17 @@ class GarmentsController < ApplicationController
   end
 
   def create
-    Garment.create garment_params
 
-    redirect_to garments_path
-  end
+    @garment = Garment.create garment_params
+
+    if @garment.persisted?
+      @garment.occasions << Occasion.find(params[:occasion_ids])
+      redirect_to garments_path
+    else
+      render :new
+    end # if
+
+  end # create
 
 
   # READ 

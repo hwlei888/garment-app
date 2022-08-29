@@ -15,7 +15,8 @@
     <h1>Get Up & Dress Up</h1>
 
     <%= link_to 'Home', root_path %>
-    |
+    <br>
+    
     <%= link_to 'All Garments', garments_path %>
     |
     <%= link_to 'Add Garments', new_garment_path %>
@@ -40,7 +41,7 @@
 
     <%= link_to 'All Users', users_path %>
     <br>
-    
+
     <% if @current_user.present? %>
       Welcome, <%= @current_user.name %>
       |

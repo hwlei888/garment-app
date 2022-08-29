@@ -21,6 +21,12 @@
     <%= f.collection_select :brand_id, Brand.all, :id, :name, include_blank: true %>
     <br><br>
 
+    <% Occasion.all.each do |item| %>
+        <%= check_box_tag 'occasion_ids[]', item.id %>
+        <%= item.title %>
+        <br>
+    <% end %>
+
     <%= f.submit %>
 
 <% end %>
