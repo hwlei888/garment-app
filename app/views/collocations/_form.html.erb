@@ -1,4 +1,18 @@
 
+<% if @collocation.errors.any? %>
+
+    <strong>Please correct the following errors: </strong>
+    <ul>
+        <% @collocation.errors.full_messages.each do |e| %>
+            <li><%= e %></li>
+        <% end %>
+    </ul>
+
+<% end %>
+
+
+
+
 <%= form_with model: @collocation, local: true do |f| %>
 
     <%= f.label :title %>
@@ -14,12 +28,16 @@
     <%= f.text_field :image %>
     <br><br>
 
-    <%= f.label :garment_id, 'Must-Haves Items' %>
-    <br>
-    <%= f.collection_select :garment_id, Garment.all, :id, :name, include_blank: true %>
-    <br><br>
-    <%= f.collection_select :garment_id, Garment.all, :id, :name, include_blank: true %>
-    <br><br>
+    <p>Must-Haves Items: </p>
+    <% Garment.all.each do |item| %>
+        <%= check_box_tag 'garment_id[]', item.id %>
+        
+        <%= link_to item.name, garment_path(item.id) %>
+        <br>
+
+        <%= link_to (image_tag item.image, alt: item.name, class: 'garment_image_collocation_form' ), garment_path(item.id)  %>
+        <br>
+    <% end %>
 
     <%= f.submit %>
 

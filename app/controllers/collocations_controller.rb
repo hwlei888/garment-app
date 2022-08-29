@@ -10,10 +10,28 @@ class CollocationsController < ApplicationController
   end
 
   def create
-    Collocation.create collocation_params
+    
+    @collocation = Collocation.new collocation_params
+    @collocation.user_id = @current_user.id
+    @collocation.save
 
-    redirect_to collocations_path
-  end
+    # if user tick garment checkbox
+    if params[:garment_id].present?
+      @collocation.garments << Garment.find(params[:garment_id])
+    end # if params[:garment_id].present?
+    
+    
+    # check if the collocation is saved correctly
+    if @collocation.persisted?
+
+      redirect_to collocations_path
+    else
+      render :new
+
+    end # if @collocation.persisted?
+
+  
+  end # create
 
   # READ
   def index

@@ -10,7 +10,8 @@ class UsersController < ApplicationController
 
     # Check if @user.id != nil if we create an object saved into the DB
     if @user.persisted?
-      session[:user_id] = @user.id
+      # after sign up, login automatically
+      session[:user_id] = @user.id 
       redirect_to user_path(@user.id)
     else
 

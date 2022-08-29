@@ -1,4 +1,15 @@
 
+<% if @garment.errors.any? %>
+    <strong>Please correct the following errors: </strong>
+    <ul>
+        <% @garment.errors.full_messages.each do |e|%>
+            <li><%= e %></li>
+        <% end %>
+    </ul>
+
+<% end %>
+
+
 <%= form_with model: @garment, local: true do |f| %>
 
     <%= f.label :name %>
@@ -21,12 +32,14 @@
     <%= f.collection_select :brand_id, Brand.all, :id, :name, include_blank: true %>
     <br><br>
 
+    <p>Occasions: </p>
     <% Occasion.all.each do |item| %>
         <%= check_box_tag 'occasion_ids[]', item.id %>
         <%= item.title %>
         <br>
     <% end %>
 
+    <br>
     <%= f.submit %>
 
 <% end %>

@@ -64,10 +64,16 @@ user_id (integer)
 
 
 ## What will do later
-- [ ] many to many tables, when create or edit garments, can choose many occasions
 - [ ] garments can be sorted by price
+- [ ] In add matches, garment items can be selected by types, like if choose tops, there are several tops show up
+- [ ] User name and password more restrictions
 
-- [ ] collocation form tables, can add many garments
+
+
+
+
+- [x] collocation form tables, can add many garments
+- [x] many to many tables, when create or edit garments, can choose many occasions
 
 
 

@@ -4,9 +4,11 @@
 <% if @user.errors.any? %>
 
     <strong>Please correct the following errors: </strong>
-    <% @user.errors.full_messages.each do |e| %>
-        <li><%= e %></li>
-    <% end %>
+    <ul>
+        <% @user.errors.full_messages.each do |e| %>
+            <li><%= e %></li>
+        <% end %>
+    </ul>
     
 <% end %>
 

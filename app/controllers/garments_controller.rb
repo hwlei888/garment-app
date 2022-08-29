@@ -9,12 +9,20 @@ class GarmentsController < ApplicationController
 
     @garment = Garment.create garment_params
 
-    if @garment.persisted?
+    # if user tick garment checkbox
+    if params[:occasion_ids].present?
+      # like what we do in seeds.rb
+      # o1.garments << g1 << g3 << g4 << g5 << g6
       @garment.occasions << Occasion.find(params[:occasion_ids])
+    end # if params[:occasion_ids]
+
+
+    # if @garment.id != nil
+    if @garment.persisted?
       redirect_to garments_path
     else
       render :new
-    end # if
+    end # if @garment
 
   end # create
 

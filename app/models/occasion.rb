@@ -3,4 +3,6 @@ class Occasion < ApplicationRecord
 
     has_many :brands, through: 'garments'
 
+    validates :title, presence: true, uniqueness: true
+
 end

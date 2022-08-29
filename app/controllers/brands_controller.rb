@@ -6,10 +6,15 @@ class BrandsController < ApplicationController
   end
 
   def create
-    Brand.create brand_params
+    @brand = Brand.create brand_params
 
-    redirect_to brands_path
-  end
+    if @brand.persisted?
+      redirect_to brands_path
+    else
+      render :new
+    end # if
+
+  end # create
 
   # READ
   def index

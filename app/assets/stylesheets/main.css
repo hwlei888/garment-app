@@ -13,13 +13,19 @@ body{
     width: 20%;
 }
 
-.garment_image_index{
+.garment_image_index,
+.garment_image_collocation_form
+{
     width: 8%;
 }
 
 .collocation_image{
     width: 35%;
 }
+
+
+
+
 
 .field_with_errors input{
     border: 1px solid red;

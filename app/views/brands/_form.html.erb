@@ -1,4 +1,17 @@
 
+<% if @brand.errors.any? %>
+
+    <strong>Please correct the following errors: </strong>
+    <ul>
+        <% @brand.errors.full_messages.each do |e| %>
+            <li><%= e %></li>
+        <% end %>
+    </ul>
+
+<% end %>
+
+
+
 <%= form_with model: @brand, local: true do |f| %>
 
     <%= f.label :name %>

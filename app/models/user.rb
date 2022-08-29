@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-    validates :name, length: { minimum: 2 }
+    validates :name, length: { minimum: 2 }, uniqueness: true
 
     validates :email, presence: true, uniqueness: true
 

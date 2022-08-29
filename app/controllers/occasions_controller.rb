@@ -6,10 +6,15 @@ class OccasionsController < ApplicationController
   end
 
   def create
-    Occasion.create occasion_params
+    @occasion = Occasion.create occasion_params
 
-    redirect_to occasions_path
-  end
+    if @occasion.persisted?
+      redirect_to occasions_path
+    else
+      render :new
+    end # if
+
+  end # create
 
   # READ
   def index

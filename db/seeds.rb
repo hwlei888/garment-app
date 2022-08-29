@@ -105,7 +105,8 @@ o5 = Occasion.create! title: 'For Wedding'
 puts "• Created #{Occasion.count} occasions:"
 puts "• #{Occasion.pluck(:title).join(', ')}"
 
-o1.garments << g1 << g3 << g4 << g5 << g6
+# o1.garments << g1 << g3 << g4 << g5 << g6
+o1.garments << [g1, g3, g4, g5, g6]
 o2.garments << g1 << g3 << g5 << g6
 o3.garments << g1 << g3 << g4 << g5 << g6
 o4.garments << g2 << g3 << g4
