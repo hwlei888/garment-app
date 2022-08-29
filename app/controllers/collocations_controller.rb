@@ -1,5 +1,9 @@
 class CollocationsController < ApplicationController
 
+  # Index and Show don't require a user to be logged in
+  before_action :check_if_logged_in, except: [ :index, :show ]
+
+
   # CREATE
   def new
     @collocation = Collocation.new

@@ -1,0 +1,12 @@
+
+<h2>All Users</h2>
+
+<ul>
+
+    <% @users.each do |item| %>
+        <li>
+            <%= link_to item.name, user_path(item.id) %>
+        </li>
+    <% end %>
+
+</ul>

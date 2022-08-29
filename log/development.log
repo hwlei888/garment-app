@@ -14991,3 +14991,1859 @@ Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 1.4ms)
   ↳ db/seeds.rb:164
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."name" FROM "users"[0m
   ↳ db/seeds.rb:165
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mGarment Load (6.1ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Collocations Destroy (0.5ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."garment_id" = $1[0m  [["garment_id", 160]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.5ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 160]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 160]]
+  ↳ db/seeds.rb:3
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Collocations Destroy (0.3ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."garment_id" = $1[0m  [["garment_id", 161]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.3ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 161]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 161]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Collocations Destroy (0.2ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."garment_id" = $1[0m  [["garment_id", 162]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.2ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 162]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 162]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Collocations Destroy (0.1ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."garment_id" = $1[0m  [["garment_id", 163]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.2ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 163]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 163]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Collocations Destroy (0.2ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."garment_id" = $1[0m  [["garment_id", 164]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.7ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 164]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 164]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Collocations Destroy (0.2ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."garment_id" = $1[0m  [["garment_id", 165]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment::HABTM_Occasions Destroy (0.2ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 165]]
+  ↳ db/seeds.rb:3
+  [1m[36mGarment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "garments" WHERE "garments"."id" = $1[0m  [["id", 165]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mGarment Create (1.1ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Colle Sweater"], ["price", 460.0], ["fabrication", "90% wool, 10% cashmere"], ["image", "https://www.davidjones.com/productimages/medium/1/2155873_20507834_3701052.jpg"], ["created_at", "2022-08-29 01:52:34.889651"], ["updated_at", "2022-08-29 01:52:34.889651"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGarment Create (0.2ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Faustine Woven Dress"], ["price", 720.0], ["fabrication", "49% cotton, 25% viscose, 20% acrylic, 6% polyamide"], ["image", "https://www.davidjones.com/productimages/medium/1/2281730_21036062_5444904.jpg"], ["created_at", "2022-08-29 01:52:34.891655"], ["updated_at", "2022-08-29 01:52:34.891655"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mGarment Create (0.2ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Mopline Sweater"], ["price", 201.0], ["fabrication", "64% viscose, 34% polyamide, 2% elastane"], ["image", "https://www.davidjones.com/productimages/medium/1/2279143_21025819_5444615.jpg"], ["created_at", "2022-08-29 01:52:34.892555"], ["updated_at", "2022-08-29 01:52:34.892555"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mGarment Create (0.2ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Dancer Spliced Mini Dress"], ["price", 650.0], ["fabrication", "100% linen"], ["image", "https://www.davidjones.com/productimages/medium/1/2363712_21455584_6538043.jpg"], ["created_at", "2022-08-29 01:52:34.893391"], ["updated_at", "2022-08-29 01:52:34.893391"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mGarment Create (0.2ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "T-shirt with Motif"], ["price", 12.99], ["fabrication", "Recycled cotton"], ["image", "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F5e%2F20%2F5e200126be39e79e0868c47bfcddb4acdab22706.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/fullscreen]"], ["created_at", "2022-08-29 01:52:34.894323"], ["updated_at", "2022-08-29 01:52:34.894323"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mGarment Create (0.2ms)[0m  [1m[32mINSERT INTO "garments" ("name", "price", "fabrication", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Wide High Jeans"], ["price", 34.99], ["fabrication", "Cotton 99%, Spandex 1%"], ["image", "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fa8%2Ff5%2Fa8f533d3296018949fef41f478af53c999b4a6b2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bladies_jeans%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/fullscreen]"], ["created_at", "2022-08-29 01:52:34.895176"], ["updated_at", "2022-08-29 01:52:34.895176"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "garments"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "garments"."name" FROM "garments"[0m
+  ↳ db/seeds.rb:48
+  [1m[36mBrand Load (2.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mBrand Destroy (0.2ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = $1[0m  [["id", 99]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mBrand Destroy (0.2ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = $1[0m  [["id", 100]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mBrand Destroy (0.1ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = $1[0m  [["id", 101]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mBrand Destroy (0.2ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = $1[0m  [["id", 102]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mBrand Create (0.5ms)[0m  [1m[32mINSERT INTO "brands" ("name", "country", "introduction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sandro Paris"], ["country", "France"], ["introduction", "Through its collections, the Brand expresses the essence of cool and chic Parisian spirit, the French effortless elegance, with a unique twist."], ["created_at", "2022-08-29 01:52:34.912542"], ["updated_at", "2022-08-29 01:52:34.912542"]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mBrand Create (0.3ms)[0m  [1m[32mINSERT INTO "brands" ("name", "country", "introduction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Maje"], ["country", "France"], ["introduction", "Maje embodies the effortless style of the Parisian woman. Sophisticated yet unafraid of contemporary styles."], ["created_at", "2022-08-29 01:52:34.913973"], ["updated_at", "2022-08-29 01:52:34.913973"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mBrand Create (0.2ms)[0m  [1m[32mINSERT INTO "brands" ("name", "country", "introduction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Zimmermann"], ["country", "Australia"], ["introduction", "Sophisticated femininity, clever colour combinations and delicate original prints."], ["created_at", "2022-08-29 01:52:34.914900"], ["updated_at", "2022-08-29 01:52:34.914900"]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mBrand Create (0.2ms)[0m  [1m[32mINSERT INTO "brands" ("name", "country", "introduction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "H&M"], ["country", "Sweden"], ["introduction", "We Are committed to always delivering fashion and quality at the best price."], ["created_at", "2022-08-29 01:52:34.915663"], ["updated_at", "2022-08-29 01:52:34.915663"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "brands"[0m
+  ↳ db/seeds.rb:81
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "brands"."name" FROM "brands"[0m
+  ↳ db/seeds.rb:82
+  [1m[35m (5.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mGarment Update (0.2ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-29 01:52:34.923783"], ["brand_id", 103], ["id", 166]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:84
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-29 01:52:34.924871"], ["brand_id", 103], ["id", 167]]
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:84
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:85
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-29 01:52:34.925664"], ["brand_id", 104], ["id", 168]]
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:85
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:86
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-29 01:52:34.926356"], ["brand_id", 105], ["id", 169]]
+  ↳ db/seeds.rb:86
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:86
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:87
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-29 01:52:34.927014"], ["brand_id", 106], ["id", 170]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:87
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:87
+  [1m[36mGarment Update (0.1ms)[0m  [1m[33mUPDATE "garments" SET "updated_at" = $1, "brand_id" = $2 WHERE "garments"."id" = $3[0m  [["updated_at", "2022-08-29 01:52:34.927626"], ["brand_id", 106], ["id", 171]]
+  ↳ db/seeds.rb:87
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:87
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" ORDER BY "brands"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[36mBrand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" ORDER BY "brands"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:90
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "garments"."name" FROM "garments" WHERE "garments"."brand_id" = $1[0m  [["brand_id", 103]]
+  ↳ db/seeds.rb:90
+  [1m[36mOccasion Load (0.4ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion::HABTM_Garments Destroy (0.3ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 83]]
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion Destroy (2.1ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 83]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion::HABTM_Garments Destroy (0.2ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 84]]
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion Destroy (0.1ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 84]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion::HABTM_Garments Destroy (1.4ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 85]]
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion Destroy (1.2ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 85]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion::HABTM_Garments Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 86]]
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion Destroy (0.2ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 86]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion::HABTM_Garments Destroy (0.1ms)[0m  [1m[31mDELETE FROM "garments_occasions" WHERE "garments_occasions"."occasion_id" = $1[0m  [["occasion_id", 87]]
+  ↳ db/seeds.rb:97
+  [1m[36mOccasion Destroy (0.1ms)[0m  [1m[31mDELETE FROM "occasions" WHERE "occasions"."id" = $1[0m  [["id", 87]]
+  ↳ db/seeds.rb:97
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:99
+  [1m[36mOccasion Create (0.5ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For School"], ["created_at", "2022-08-29 01:52:34.943808"], ["updated_at", "2022-08-29 01:52:34.943808"]]
+  ↳ db/seeds.rb:99
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:99
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:100
+  [1m[36mOccasion Create (0.2ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For Casual Meet-up"], ["created_at", "2022-08-29 01:52:34.945032"], ["updated_at", "2022-08-29 01:52:34.945032"]]
+  ↳ db/seeds.rb:100
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:100
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:101
+  [1m[36mOccasion Create (0.2ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For Family Get-together"], ["created_at", "2022-08-29 01:52:34.945854"], ["updated_at", "2022-08-29 01:52:34.945854"]]
+  ↳ db/seeds.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:101
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:102
+  [1m[36mOccasion Create (0.4ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For Graduation"], ["created_at", "2022-08-29 01:52:34.946584"], ["updated_at", "2022-08-29 01:52:34.946584"]]
+  ↳ db/seeds.rb:102
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:102
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:103
+  [1m[36mOccasion Create (0.2ms)[0m  [1m[32mINSERT INTO "occasions" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "For Wedding"], ["created_at", "2022-08-29 01:52:34.947616"], ["updated_at", "2022-08-29 01:52:34.947616"]]
+  ↳ db/seeds.rb:103
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:103
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "occasions"[0m
+  ↳ db/seeds.rb:105
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "occasions"."title" FROM "occasions"[0m
+  ↳ db/seeds.rb:106
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mOccasion::HABTM_Garments Create (0.4ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 166], ["occasion_id", 88]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mOccasion::HABTM_Garments Create (0.2ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 168], ["occasion_id", 88]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mOccasion::HABTM_Garments Create (0.2ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 169], ["occasion_id", 88]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 170], ["occasion_id", 88]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:108
+  [1m[36mOccasion::HABTM_Garments Create (0.2ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 171], ["occasion_id", 88]]
+  ↳ db/seeds.rb:108
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:108
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:109
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 166], ["occasion_id", 89]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:109
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 168], ["occasion_id", 89]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:109
+  [1m[36mOccasion::HABTM_Garments Create (0.3ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 170], ["occasion_id", 89]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:109
+  [1m[36mOccasion::HABTM_Garments Create (1.2ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 171], ["occasion_id", 89]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 166], ["occasion_id", 90]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 168], ["occasion_id", 90]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 169], ["occasion_id", 90]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 170], ["occasion_id", 90]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:110
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 171], ["occasion_id", 90]]
+  ↳ db/seeds.rb:110
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:110
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 167], ["occasion_id", 91]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mOccasion::HABTM_Garments Create (0.5ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 168], ["occasion_id", 91]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:111
+  [1m[36mOccasion::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 169], ["occasion_id", 91]]
+  ↳ db/seeds.rb:111
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:111
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:112
+  [1m[36mOccasion::HABTM_Garments Create (0.2ms)[0m  [1m[32mINSERT INTO "garments_occasions" ("garment_id", "occasion_id") VALUES ($1, $2) RETURNING "id"[0m  [["garment_id", 169], ["occasion_id", 92]]
+  ↳ db/seeds.rb:112
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:112
+  [1m[36mGarment Load (0.2ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" ORDER BY "garments"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:115
+  [1m[36mGarment Load (0.1ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" ORDER BY "garments"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:115
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "occasions"."title" FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 166]]
+  ↳ db/seeds.rb:115
+  [1m[36mCollocation Load (0.5ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mCollocation::HABTM_Garments Destroy (0.9ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 30]]
+  ↳ db/seeds.rb:122
+  [1m[36mCollocation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "collocations" WHERE "collocations"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:122
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mCollocation::HABTM_Garments Destroy (0.1ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 31]]
+  ↳ db/seeds.rb:122
+  [1m[36mCollocation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "collocations" WHERE "collocations"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:122
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:122
+  [1m[36mCollocation::HABTM_Garments Destroy (0.1ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 32]]
+  ↳ db/seeds.rb:122
+  [1m[36mCollocation Destroy (0.1ms)[0m  [1m[31mDELETE FROM "collocations" WHERE "collocations"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:122
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:122
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:124
+  [1m[36mCollocation Create (0.4ms)[0m  [1m[32mINSERT INTO "collocations" ("title", "introduction", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "White Sweater & Jeans"], ["introduction", "You will be absolutely glowing in these!"], ["image", "https://media.lexception.com/img/products/maje/120371-maje-topmopline-04-zoom.jpg"], ["created_at", "2022-08-29 01:52:34.982601"], ["updated_at", "2022-08-29 01:52:34.982601"]]
+  ↳ db/seeds.rb:124
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:124
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:130
+  [1m[36mCollocation Create (0.1ms)[0m  [1m[32mINSERT INTO "collocations" ("title", "introduction", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "V-Neck seater & Jeans"], ["introduction", "You are able to wear these everywhere!!!"], ["image", "https://image.s5a.com/is/image/saks/0400007834384_BLACK_ASTL?wid=984&hei=1312&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0"], ["created_at", "2022-08-29 01:52:34.983685"], ["updated_at", "2022-08-29 01:52:34.983685"]]
+  ↳ db/seeds.rb:130
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:130
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:136
+  [1m[36mCollocation Create (0.1ms)[0m  [1m[32mINSERT INTO "collocations" ("title", "introduction", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Mickey Mouse & Jeans"], ["introduction", "Well... Who can say no to Micky Mouse?!"], ["image", "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F90%2F3d%2F903d40efde430525b54ed045b5cd6d229f6e78d2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]"], ["created_at", "2022-08-29 01:52:34.984331"], ["updated_at", "2022-08-29 01:52:34.984331"]]
+  ↳ db/seeds.rb:136
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:136
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "collocations"[0m
+  ↳ db/seeds.rb:143
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "collocations"."title" FROM "collocations"[0m
+  ↳ db/seeds.rb:144
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mCollocation::HABTM_Garments Create (0.4ms)[0m  [1m[32mINSERT INTO "collocations_garments" ("collocation_id", "garment_id") VALUES ($1, $2) RETURNING "id"[0m  [["collocation_id", 33], ["garment_id", 168]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:146
+  [1m[36mCollocation::HABTM_Garments Create (0.2ms)[0m  [1m[32mINSERT INTO "collocations_garments" ("collocation_id", "garment_id") VALUES ($1, $2) RETURNING "id"[0m  [["collocation_id", 33], ["garment_id", 171]]
+  ↳ db/seeds.rb:146
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:146
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:147
+  [1m[36mCollocation::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "collocations_garments" ("collocation_id", "garment_id") VALUES ($1, $2) RETURNING "id"[0m  [["collocation_id", 34], ["garment_id", 166]]
+  ↳ db/seeds.rb:147
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:147
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:147
+  [1m[36mCollocation::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "collocations_garments" ("collocation_id", "garment_id") VALUES ($1, $2) RETURNING "id"[0m  [["collocation_id", 34], ["garment_id", 171]]
+  ↳ db/seeds.rb:147
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:147
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mCollocation::HABTM_Garments Create (0.1ms)[0m  [1m[32mINSERT INTO "collocations_garments" ("collocation_id", "garment_id") VALUES ($1, $2) RETURNING "id"[0m  [["collocation_id", 35], ["garment_id", 170]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:148
+  [1m[36mCollocation::HABTM_Garments Create (0.2ms)[0m  [1m[32mINSERT INTO "collocations_garments" ("collocation_id", "garment_id") VALUES ($1, $2) RETURNING "id"[0m  [["collocation_id", 35], ["garment_id", 171]]
+  ↳ db/seeds.rb:148
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:148
+  [1m[36mGarment Load (0.2ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" ORDER BY "garments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:151
+  [1m[36mGarment Load (0.1ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" ORDER BY "garments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:151
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "collocations"."title" FROM "collocations" INNER JOIN "collocations_garments" ON "collocations"."id" = "collocations_garments"."collocation_id" WHERE "collocations_garments"."garment_id" = $1[0m  [["garment_id", 171]]
+  ↳ db/seeds.rb:151
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:158
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:158
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:158
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:158
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:158
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:158
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:158
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:158
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:158
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:158
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:160
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "aaa"], ["email", "aaa@gmail.com"], ["password_digest", "$2a$12$zpPVy/QxkYlRmaSmgmvmbe3r3hRrpz6LwPa5sGzbsnRDqnCGPXr/2"], ["created_at", "2022-08-29 01:52:35.251390"], ["updated_at", "2022-08-29 01:52:35.251390"]]
+  ↳ db/seeds.rb:160
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:160
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:161
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "bbb"], ["email", "bbb@gmail.com"], ["password_digest", "$2a$12$ym7J1m57htXx3oWQIa.6B.FnvAf//MD9fPQ0NhxaqXUWl8CfMv.ma"], ["created_at", "2022-08-29 01:52:35.494741"], ["updated_at", "2022-08-29 01:52:35.494741"]]
+  ↳ db/seeds.rb:161
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:161
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:162
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ccc"], ["email", "ccc@gmail.com"], ["password_digest", "$2a$12$A/dyH65KcQiFLitabW34u.7e/xyTxW2jNNVFa.UEXE0O25hRrlLne"], ["created_at", "2022-08-29 01:52:35.741342"], ["updated_at", "2022-08-29 01:52:35.741342"]]
+  ↳ db/seeds.rb:162
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:162
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:164
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "users"."name" FROM "users"[0m
+  ↳ db/seeds.rb:165
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:167
+  [1m[36mCollocation Update (0.3ms)[0m  [1m[33mUPDATE "collocations" SET "user_id" = $1, "updated_at" = $2 WHERE "collocations"."id" = $3[0m  [["user_id", 7], ["updated_at", "2022-08-29 01:52:35.747786"], ["id", 33]]
+  ↳ db/seeds.rb:167
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:167
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:167
+  [1m[36mCollocation Update (0.2ms)[0m  [1m[33mUPDATE "collocations" SET "user_id" = $1, "updated_at" = $2 WHERE "collocations"."id" = $3[0m  [["user_id", 7], ["updated_at", "2022-08-29 01:52:35.749262"], ["id", 35]]
+  ↳ db/seeds.rb:167
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:167
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:168
+  [1m[36mCollocation Update (0.2ms)[0m  [1m[33mUPDATE "collocations" SET "user_id" = $1, "updated_at" = $2 WHERE "collocations"."id" = $3[0m  [["user_id", 8], ["updated_at", "2022-08-29 01:52:35.750155"], ["id", 34]]
+  ↳ db/seeds.rb:168
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:168
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:171
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:171
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "collocations"."title" FROM "collocations" WHERE "collocations"."user_id" = $1[0m  [["user_id", 7]]
+  ↳ db/seeds.rb:171
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-08-29 12:31:56 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [41 times] (5.2ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2022-08-29 12:48:45 +1000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [44 times] (5.5ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/actionpack-5.2.8.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /Users/leilei/.rvm/gems/ruby-2.7.2/gems/railties-5.2.8.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 12:50:46 +1000
+Processing by CollocationsController#index as HTML
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (1.7ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 74ms (Views: 56.3ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/collocations/33" for 127.0.0.1 at 2022-08-29 12:50:48 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mCollocation Load (0.9ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:20
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mGarment Load (4.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 33]]
+  ↳ app/views/collocations/show.html.erb:26
+  Rendered collocations/show.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 77ms (Views: 34.0ms | ActiveRecord: 31.2ms)
+
+
+Started GET "/collocations/35" for 127.0.0.1 at 2022-08-29 12:50:50 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mCollocation Load (0.9ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:20
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.1ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 35]]
+  ↳ app/views/collocations/show.html.erb:26
+  Rendered collocations/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 36ms (Views: 30.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/collocations/34" for 127.0.0.1 at 2022-08-29 12:50:51 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mCollocation Load (4.0ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:20
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 34]]
+  ↳ app/views/collocations/show.html.erb:26
+  Rendered collocations/show.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 41ms (Views: 31.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 12:52:48 +1000
+Processing by CollocationsController#index as HTML
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.7ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 12:52:50 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 12:53:25 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 12:53:51 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:13:43 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:4: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...fer.append=( if flash[:error] );@output_buffer.safe_append='
+...                              ^
+/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:12: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:32: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:34: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/session/new.html.erb:4: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/session/new.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/session/new.html.erb:32: syntax error, unexpected `ensure', expecting ')'
+app/views/session/new.html.erb:34: syntax error, unexpected `end', expecting ')'
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:13:53 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:4: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...fer.append=( if flash[:error] );@output_buffer.safe_append='
+...                              ^
+/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:12: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:32: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:34: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/session/new.html.erb:4: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/session/new.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/session/new.html.erb:32: syntax error, unexpected `ensure', expecting ')'
+app/views/session/new.html.erb:34: syntax error, unexpected `end', expecting ')'
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 13:20:09 +1000
+Processing by CollocationsController#index as HTML
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (3.1ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 60ms (Views: 34.0ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:20:10 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:4: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+...fer.append=( if flash[:error] );@output_buffer.safe_append='
+...                              ^
+/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:12: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:32: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/Users/leilei/sei/projects/garment-project2/app/views/session/new.html.erb:34: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/session/new.html.erb:4: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/session/new.html.erb:12: syntax error, unexpected `end', expecting ')'
+app/views/session/new.html.erb:32: syntax error, unexpected `ensure', expecting ')'
+app/views/session/new.html.erb:34: syntax error, unexpected `end', expecting ')'
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:20:38 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:20:40 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vc+XUEXYocooAQ9jEEB2EFK4Wnb0kyoWJ+w6T89E5nSnCvpjKtH2V5Sj6o8PtlQ9sXbRoo8iZhW8KTGHEvBLIA==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<SessionController:0x000000013d3c7420>
+Did you mean?  super):
+  
+app/controllers/session_controller.rb:11:in `create'
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:21:01 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:21:33 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:21:34 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:21:35 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EmBRBZQMGN7JXC24DRs+XPFyVR+GM5dE4qRyBiAebkoIpTw2+wVPQ3X+yFQS7RxxErzey/2C20d5YXnO/arDHg==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<SessionController:0x000000013d1c4128>
+Did you mean?  super):
+  
+app/controllers/session_controller.rb:9:in `create'
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:25:22 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:25:23 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 28ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:25:25 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Femt0r7s+6KCH7RUnPc0CsLBaA8cSlRu4OHb/tDWqqkPLMDh0eWsPz69UbiDARYnIQ/j22f7GG17JNA2DWIH/Q==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 3.4ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/session_controller.rb:12:in `create'
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:25:46 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:25:56 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BHn2jViKB09p9X7nXSeZscfzPrfgMsbwGCyFqtdb2WgevJu+N4NQ0tVXmwtC0bucJD21Y5uDivOD6Y5iCu90PA==", "email"=>"aaa@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaa@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+  Rendering session/create.html.erb within layouts/application
+  Rendered session/create.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 44ms (Views: 19.6ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:26:09 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:26:38 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pkRecaSi9VlTZ+XqOpWKjcEAx0QmMPpWJeW2o1QoRTK8gTNCy6uixO/FAAYlY6igIs5MkF2BtlW+IL1riZzoZg==", "email"=>"aaa@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaa@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+No template found for SessionController#create, rendering head :no_content
+Completed 204 No Content in 32ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:26:43 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:28:05 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D04P/bumWzKpz159tX2YKdhqcnortLGDBGe54bUmpUoVi2LO1K8MrxVtu5Gqi7oEO6T5rlAF/YCforIpaJIIHg==", "email"=>"aaa@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaa@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 264ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:28:05 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:28:06 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HC+kR+ZC70cPt2EjxIj/DHrO2acIK/xu/R0wQ/aCjXcG6sl0iUu42rMVhM/bft0hmQBSc3OasG1m2DuLKzYgIw==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 8ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:28:06 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:28:07 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"syhljymwEkW8YN5rpRcPxXFcz1CuvHxQQ7qMfoQPNx2p7Qi8RrlF2ADCO4e64S3okpJEhNUNMFPYf4e2WbuaSQ==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 11ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:28:07 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:28:08 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cOGrvFqepukGayXGZUhqpwVxSbiUjdpuy0TrUUWs1V9qJMaPNZfxdLrJwCp6vkiK5r/CbO88lm1QgeCZmBh4Cw==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:28:08 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:28:09 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kWKOVf/eYmCSeP7QD0oD/Bls6pWxD78ZESySPOdX77OLp+NmkNc1/S7aGzwQvCHR+qJhQcq+8xqK6Zn0OuNC5w==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:28:09 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:28:13 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p66hyarVdPoFAj3W+/YqE+t6O8byI2TFQ5nkn//so2m9a8z6xdwjZ7mg2DrkAAg+CLSwEomSKMbYXO9XIlgOPQ==", "email"=>"aaa@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaa@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 267ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 13:28:13 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 13:28:23 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LdLq12speMWnTECnZEqlFqO6vu+qqROD6BWCngGKzuU3F4fkBCAvWBvupUt7vIc7QHQ1O9EYX4Bz0IlW3D5jsQ==", "email"=>"aaa@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaa@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/
+Completed 302 Found in 281ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-29 13:28:23 +1000
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-29 14:07:35 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 14.8ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-29 14:07:52 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2022-08-29 14:07:57 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"f3eHMNapaTiFdjEYcWTN1QOvh7WU6nPozzRA3PBh+fRlsuoDuaA+pTnU1PRuku/44GEMYe9bP+tU8UsULdVUoA=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+No template found for SessionController#destroy, rendering head :no_content
+Completed 204 No Content in 36ms (ActiveRecord: 0.7ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2022-08-29 14:07:58 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"f3eHMNapaTiFdjEYcWTN1QOvh7WU6nPozzRA3PBh+fRlsuoDuaA+pTnU1PRuku/44GEMYe9bP+tU8UsULdVUoA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+No template found for SessionController#destroy, rendering head :no_content
+Completed 204 No Content in 30ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 14:08:02 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (1.3ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 54ms (Views: 36.9ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-29 14:08:05 +1000
+Processing by OccasionsController#index as HTML
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (5.6ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 51ms (Views: 20.0ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/occasions/new" for 127.0.0.1 at 2022-08-29 14:08:06 +1000
+Processing by OccasionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering occasions/new.html.erb within layouts/application
+  Rendered occasions/_form.html.erb (6.5ms)
+  Rendered occasions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 44ms (Views: 33.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-29 14:08:07 +1000
+Processing by BrandsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (6.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 44ms (Views: 19.8ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 14:08:08 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (1.1ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 44ms (Views: 34.6ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2022-08-29 14:08:12 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0090qVbMXXK+Nz950OX3Qar9WKl65hSX0CKPMNwMnJHJihmaOcUK7wKV2pXPE9VsSTPTfQFXWJRL54T4AbgxxQ=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+No template found for SessionController#destroy, rendering head :no_content
+Completed 204 No Content in 35ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/collocations/33" for 127.0.0.1 at 2022-08-29 14:08:16 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (0.5ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:20
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 33]]
+  ↳ app/views/collocations/show.html.erb:26
+  Rendered collocations/show.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 67ms (Views: 45.6ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 14:08:20 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.6ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 46ms (Views: 34.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 14:08:30 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 14:08:36 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uEjohH7f2nTho5+MhMbethHbWTvjrkSjQ5B99guFMFWijYW3EdaN6V0BemCbMPyb8hXS75gfCKDYVXY+1jGdAQ==", "email"=>"luke@ga.co", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "luke@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 10ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 14:08:36 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 14:08:38 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hfu1EE8Q91L8M7U84zSuK8xh+ZWTfJ4tD5yi6W8RaAQHPtgjIBmgz0CRUND8wowGL69yQejN0i6UWakhsqXFUA==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 14:08:38 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20ms (Views: 16.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 14:08:38 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WfLbbKvq1bNB/j/i0jaTbz31wyR3+iLveUH9p/x/j1NDN7ZfxOOCLv1c2g7NwLFC3jtI8AxLbuzihPZvIcsiBw==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 11ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 14:08:38 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 31ms (Views: 23.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 14:08:39 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 14:08:45 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.4ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 14:10:38 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.7ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 14:10:38 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (1.6ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 14:11:19 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.5ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/collocations/new" for 127.0.0.1 at 2022-08-29 14:11:20 +1000
+Processing by CollocationsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/new.html.erb within layouts/application
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/collocations/_form.html.erb:19
+  [1m[36mCACHE Garment Load (0.0ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/collocations/_form.html.erb:21
+  Rendered collocations/_form.html.erb (15.0ms)
+  Rendered collocations/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 38ms (Views: 31.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-29 15:14:41 +1000
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/leilei/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 100ms (Views: 81.9ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 15:15:08 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 27ms (Views: 17.6ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 15:15:11 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZH2jOXnQ/SmzB0f7AmuM96IZDYV4R/ux4222m7Fwltt+uM4KFtmqtA+lohcdna7aQdeGUQP2t7J4qL1TbMQ7jw==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 15:15:11 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 15:15:13 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjqfDh0gEW/vQH+dY9PlbmLoLDWZwpVnE8NFYJxHM46s//I9cilG8lPimnF8JcdDgSan4eJz2WSIBk6oQfOe2g==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 10ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 15:15:13 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 15:15:14 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NinTq3cvuhzR5iiKGS0rkrZo3YsERucW8+i5cVdGya8s7L6YGCbtgW1EzWYG2wm/VaZWX3/3qxVoLbK5ivJk+w==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 15:15:14 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 15:15:24 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s1bMD3hodo0VDLKaX+oN/UeImEVkHLXLYkPYFRuTIZupk6E8F2EhEKmuV3ZAHC/QpEYTkR+t+cj5htPdxieMzw==", "email"=>"aaa@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaa@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 281ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 15:15:25 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 15:15:25 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"frmgpM9BgugxRYngSxHHnL7obGeQa8CQjZcXHbwVyfBkfM2XoEjVdY3nbAxU5+WxXSbns+vajJMWUhzVYaFkpA==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 15:15:25 +1000
+Processing by SessionController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2022-08-29 15:17:15 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Gh3qifw5Hsqb3kfwYasGjxB7PWdAHJGnrqicfiP9oaoA2Ie6kzBJVyd8ohx+XSSi87W2szut3aQ1bZe2/kkM/g=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 19ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 15:17:16 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 15:17:22 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+55um2soNtgIgntvjBV6b8Ck4u0vp+NqYqWXoe3scQvhWwOoBCFhRbQgnoOT41hCI2ppOVQWr2n5YJxpMFjcXw==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:10
+Redirected to http://localhost:3000/login
+Completed 302 Found in 7ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 15:17:22 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 15:26:23 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-08-29 15:27:13 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 78ms (Views: 29.3ms | ActiveRecord: 22.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:27:18 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cPABe1HWwkCdwDHEZLSkAg/Y1i/dxfsdHJXrsF+Fd2NqNWxIPt+V3SFi1Ch7QoYv7BZd+6Z0tx6HUOB4gjHaNw==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering users/create.html.erb within layouts/application
+  Rendered users/create.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-08-29 15:27:23 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:28:09 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tyNytNxdrcWcqGR0Z3gceBl1FgPMgpV05vruNr+Gvdyt5h+Hs1T6WCAKgZh4jj5V+rud17cz2Xd9P+X+YjIQiA==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-08-29 15:28:10 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 45ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-08-29 15:33:09 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:33:10 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0HzaXtiy5Rc/J3/gARiUk56Cy/bbf5pkftiE0rPMW33Kubdtt7uyioOFmgwe7ra+fUxAIqDO1mflHY8abnj2KQ==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 32ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-08-29 15:33:13 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-08-29 15:51:04 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 59ms (Views: 15.7ms | ActiveRecord: 29.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:51:05 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KxUkokb5kbxcqxEPAAzhRLkr6n4MxhUiAGXvGltgFdgx0EmRKfDGIeAJ9OMf+sNpWuVhqnd3WSGboOTShtS4jA==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 30ms (Views: 17.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:51:17 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9b6LcXdXXdogpPPm7xYKb1xmIlSw/k0IhVMTA6oJKHvve+ZCGF4KR5wGFgrw4ChCv6ipgMtPAQselhjLd72FLw==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 37ms (Views: 19.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:54:11 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9b6LcXdXXdogpPPm7xYKb1xmIlSw/k0IhVMTA6oJKHvve+ZCGF4KR5wGFgrw4ChCv6ipgMtPAQselhjLd72FLw==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 29ms (Views: 13.3ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:54:43 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLQy+w/rhsW9kUXwEFESFPlzxBf2nIDYRXwhiqFZ6piicV/IYOLRWAEzoBwPpzA5Gr1Pw40tzNveuSpCfO1HzA==", "user"=>{"name"=>"ddd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:55:02 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLQy+w/rhsW9kUXwEFESFPlzxBf2nIDYRXwhiqFZ6piicV/IYOLRWAEzoBwPpzA5Gr1Pw40tzNveuSpCfO1HzA==", "user"=>{"name"=>"ddd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (4.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 29ms (Views: 13.8ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:55:41 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLQy+w/rhsW9kUXwEFESFPlzxBf2nIDYRXwhiqFZ6piicV/IYOLRWAEzoBwPpzA5Gr1Pw40tzNveuSpCfO1HzA==", "user"=>{"name"=>"ddd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 17.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:56:38 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLQy+w/rhsW9kUXwEFESFPlzxBf2nIDYRXwhiqFZ6piicV/IYOLRWAEzoBwPpzA5Gr1Pw40tzNveuSpCfO1HzA==", "user"=>{"name"=>"ddd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 38ms (Views: 30.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:57:09 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLQy+w/rhsW9kUXwEFESFPlzxBf2nIDYRXwhiqFZ6piicV/IYOLRWAEzoBwPpzA5Gr1Pw40tzNveuSpCfO1HzA==", "user"=>{"name"=>"ddd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 37ms (Views: 20.5ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:57:32 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLQy+w/rhsW9kUXwEFESFPlzxBf2nIDYRXwhiqFZ6piicV/IYOLRWAEzoBwPpzA5Gr1Pw40tzNveuSpCfO1HzA==", "user"=>{"name"=>"ddd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 34ms (Views: 24.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:57:36 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zBi0av60ZanXgEMXImm6XR1KD86Pztt4xpkac57shJ/W3dlZkb0yNGsipvs9n5hw/oSEGvR/l3tdXBG7Q1gpyw==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (3.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 50ms (Views: 31.7ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:58:05 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tBhvbo2N0ZgO/ta3DmOoqpo3pt8nq/ycPoZMKqWt5xWu3QJd4oSGBbJcM1sRlYqHefktC1wasJ+lQ0fieBlKQQ==", "user"=>{"name"=>"ddd", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:58:16 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wvZYgsmLiNUUlA30/BB7tWNMKS6MJe29ihFlmOZrsNHYMzWxpoLfSKg26Bjj5lmYgIKi+veUob4R1G5QO98dhQ==", "user"=>{"name"=>"ddd", "email"=>"ddd@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (2.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ddd@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 25ms (Views: 12.3ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:58:41 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7u8VBJV6uGvEmiLXzqlm/k/GNHhaAbsrywCB2queI4n0Kng3+nPv9ng4xzvRX0TTrAi/rCGw9yhQxYoSdiqO3Q==", "user"=>{"name"=>"ddd", "email"=>"ddd@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (4.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ddd@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 285ms (Views: 6.1ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:58:42 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B1T2BAF2JdqvUuvzD8mKRhVcZNTfxWevmoL4fXLt3PkdkZs3bn9yRxPwDh8QP6hr9pLvAKR0K6wBR/O1r1lxrQ==", "user"=>{"name"=>"ddd", "email"=>"ddd@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (8.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ddd@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 33ms (Views: 18.0ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-08-29 15:58:51 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b1Gr+BDXH01hAyI+4L6yeG9KQ0GXdxbqCTY7jrwll+V1lMbLf95I0N2hx9L/SJBVjITIlezGWumS8zBGYZE6sQ==", "user"=>{"name"=>"ddd", "email"=>"ddd@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (4.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ddd@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "ddd"], ["email", "ddd@gmail.com"], ["password_digest", "$2a$12$Pd3G6JGtXu3EXBrTZChkjuE.Nb.kjRKic3b8JbkFv7TSydCXlirWW"], ["created_at", "2022-08-29 05:58:52.030203"], ["updated_at", "2022-08-29 05:58:52.030203"]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/users/10
+Completed 302 Found in 280ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2022-08-29 15:58:52 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 13ms (Views: 5.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/collocations/new" for 127.0.0.1 at 2022-08-29 15:58:58 +1000
+Processing by CollocationsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/new.html.erb within layouts/application
+  [1m[36mGarment Load (0.7ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/collocations/_form.html.erb:19
+  [1m[36mCACHE Garment Load (0.0ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/collocations/_form.html.erb:21
+  Rendered collocations/_form.html.erb (18.2ms)
+  Rendered collocations/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 44ms (Views: 22.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 15:59:00 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (3.1ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 35ms (Views: 23.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/collocations/33" for 127.0.0.1 at 2022-08-29 15:59:03 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (0.3ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:24
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mGarment Load (1.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 33]]
+  ↳ app/views/collocations/show.html.erb:26
+  Rendered collocations/show.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 60ms (Views: 44.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 16:01:59 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (1.1ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 35ms (Views: 28.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 16:02:00 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (3.2ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 36ms (Views: 27.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 16:02:33 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.7ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 30ms (Views: 12.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/collocations/33" for 127.0.0.1 at 2022-08-29 16:02:35 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (2.7ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:24
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 33]]
+  ↳ app/views/collocations/show.html.erb:26
+  Rendered collocations/show.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 51ms (Views: 35.1ms | ActiveRecord: 9.8ms)
+
+
+Started DELETE "/login" for 127.0.0.1 at 2022-08-29 16:02:36 +1000
+Processing by SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LQRkID1JWZPxCs8UeswZiUe3b/rI38868Xgkx6pfKTE3wQkTUkAODk2oKvhlOjukpHnkLrNugzlqvS8Pd+uEZQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Redirected to http://localhost:3000/login
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 16:02:36 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-08-29 16:02:37 +1000
+Processing by CollocationsController#index as HTML
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.3ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  Rendered collocations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/collocations/33" for 127.0.0.1 at 2022-08-29 16:02:39 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mCollocation Load (0.9ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:24
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 33]]
+  ↳ app/views/collocations/show.html.erb:26
+  Rendered collocations/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 29ms (Views: 22.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-08-29 16:02:43 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-08-29 16:04:05 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-08-29 16:04:11 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2022-08-29 16:04:14 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2022-08-29 16:04:20 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2022-08-29 16:04:27 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-08-29 16:04:29 +1000
+Processing by SessionController#new as HTML
+  Rendering session/new.html.erb within layouts/application
+  Rendered session/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-08-29 16:04:39 +1000
+Processing by SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JibaCbfLz47ZFumDbpqVfehk3wJ8fBcSIgVxLbGh0TI847c62MKYE2W0DG9xbLdQC6pU1gfNWxG5wHrlbBV8Zg==", "email"=>"aaa@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaa@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:10
+Redirected to http://localhost:3000/
+Completed 302 Found in 272ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-29 16:04:39 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+

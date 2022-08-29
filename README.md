@@ -65,6 +65,8 @@ user_id (integer)
 
 ## What will do later
 - [ ] many to many tables, when create or edit garments, can choose many occasions
+- [ ] garments can be sorted by price
+
 - [ ] collocation form tables, can add many garments
 
 
@@ -95,6 +97,7 @@ to update
   def garment_params
     params.require(:garment).permit(:name, :price, :fabrication, :image, :brand_id)
   end
+
 
 
 

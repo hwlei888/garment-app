@@ -87,7 +87,7 @@ b3.garments << g4
 b4.garments << g5 << g6
 
 puts "brand -< garments associations:"
-puts "• the brand #{Brand.first.name} has the garments: #{Brand.first.garments.pluck(:name).join(', ')}"
+puts "• The brand #{Brand.first.name} has the garments: #{Brand.first.garments.pluck(:name).join(', ')}"
 
 
 ###############################################################
@@ -112,7 +112,7 @@ o4.garments << g2 << g3 << g4
 o5.garments << g4
 
 puts "occasions >-< garments many to many associations:"
-puts "• the garment #{Garment.first.name} has the occasions: #{Garment.first.occasions.pluck(:title).join(', ')}"
+puts "• The garment #{Garment.first.name} has the occasions: #{Garment.first.occasions.pluck(:title).join(', ')}"
 
 
 ###############################################################
@@ -148,7 +148,7 @@ c2.garments << g1 << g6
 c3.garments << g5 << g6
 
 puts "collocations >-< garments many to many associations:"
-puts "• the garment #{Garment.last.name} has the occasions: #{Garment.last.collocations.pluck(:title).join(', ')}"
+puts "• The garment #{Garment.last.name} has the occasions: #{Garment.last.collocations.pluck(:title).join(', ')}"
 
 
 ###############################################################
@@ -164,5 +164,10 @@ u3 = User.create! email: 'ccc@gmail.com', name: 'ccc', password: 'chicken'
 puts "• Created #{User.count} users:"
 puts "• #{User.pluck(:name).join(', ')}"
 
+u1.collocations << c1 << c3
+u2.collocations << c2
+
+puts "user -< collocations associations:"
+puts "• The user #{User.first.name} has the collocations: #{User.first.collocations.pluck(:title).join(', ')}"
 
 

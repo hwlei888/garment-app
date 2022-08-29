@@ -33,9 +33,24 @@
 
     <%= link_to 'All Matches', collocations_path %>
     |
-    <%= link_to 'Add Match', new_collocation_path %>
+    <% if @current_user.present? %>
+      <%= link_to 'Add your Match', new_collocation_path %>
+    <% end %>
+    <br>
 
-  
+    <%= link_to 'All Users', users_path %>
+    <br>
+    
+    <% if @current_user.present? %>
+      Welcome, <%= @current_user.name %>
+      |
+      <%= link_to 'Logout', login_path, method: 'delete' %>
+      |
+    <% else %>
+      <%= link_to 'Login', login_path %>
+      |
+      <%= link_to 'Sign Up', new_user_path %>
+    <% end %>
 
 
     <hr>
