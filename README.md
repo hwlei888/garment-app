@@ -67,9 +67,13 @@ user_id (integer)
 - [ ] garments can be sorted by price
 - [ ] In add matches, garment items can be selected by types, like if choose tops, there are several tops show up
 - [ ] User name and password more restrictions
+- [ ] User can find their password back when lost it
+- [ ] When user change their name, there is an alert
+- [ ] User can change their password, two steps to change password, type old one first if correct can change new password
+- [ ] User can add multiple photos and self-defination items
+- [ ] User can add comments below the clothes
 
-补全 user.show
-给其他加上安全防护措施
+
 
 
 

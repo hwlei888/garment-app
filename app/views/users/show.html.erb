@@ -1,2 +1,35 @@
 
-<h2><em><%= @user.name %></em></h2>
+
+<% if @current_user.present? && @user.id == @current_user.id %>
+
+    <%= link_to 'Edit', edit_user_path %>
+    |
+    <%= link_to 'Delete', user_path(@user.id), method: 'delete' %>
+
+    <h2>Welcome, <em><%= @user.name %></em></h2>
+
+    <p>
+        <strong>Your Login Email: </strong>
+        <br>
+        <%= @user.email %>
+    </p>
+
+<% else %>
+
+    <h2><em><%= @user.name %></em></h2>
+
+<% end %>
+
+
+<p>
+    <strong>Posts: </strong>
+    <br>
+    <ul>
+        <% @user.collocations.each do |item| %>
+            <li>
+                <%= link_to item.title, collocation_path(item) %>
+            </li>
+        <% end %>
+    </ul>
+</p>
+

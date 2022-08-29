@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  before_action :check_if_logged_in, except: [:new, :create, :index, :show]
+
   # Sign up
   def new
     @user = User.new
@@ -35,14 +37,37 @@ class UsersController < ApplicationController
 
   # Update
   def edit
-  end
-
+    @user = User.find params[:id]
+    
+    if @user.id != @current_user.id
+      redirect_to login_path
+    end # if
+    
+  end # edit
+  
   def update
-  end
+    
+    @user = User.find params[:id]
+
+    if @user.id != @current_user.id
+      redirect_to login_path
+    end # if
+
+    if @user.update user_params
+      redirect_to user_path(@user.id)
+    else
+      render :edit
+    end # if
+
+
+  end # update
 
 
   # Destroy
   def destroy
+    User.destroy params[:id]
+
+    redirect_to root_path
   end
 
   private

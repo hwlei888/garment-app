@@ -44,6 +44,7 @@ class CollocationsController < ApplicationController
 
   # UPDATE
   def edit
+    
     @collocation = Collocation.find params[:id]
 
     # Don't even show the edit form if the collocation doesn't belong to this user
