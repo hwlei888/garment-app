@@ -151,6 +151,18 @@ puts "collocations >-< garments many to many associations:"
 puts "• the garment #{Garment.last.name} has the occasions: #{Garment.last.collocations.pluck(:title).join(', ')}"
 
 
+###############################################################
+
+puts ".......Creating Users......."
+
+User.destroy_all
+
+u1 = User.create! email: 'aaa@gmail.com', name: 'aaa', password: 'chicken'
+u2 = User.create! email: 'bbb@gmail.com', name: 'bbb', password: 'chicken'
+u3 = User.create! email: 'ccc@gmail.com', name: 'ccc', password: 'chicken'
+
+puts "• Created #{User.count} users:"
+puts "• #{User.pluck(:name).join(', ')}"
 
 
 

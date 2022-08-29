@@ -7,7 +7,8 @@ body{
 }
 
 .garment_image_brand,
-.garment_image_occasion
+.garment_image_occasion,
+.garment_iamge_collocation
 {
     width: 20%;
 }
@@ -20,6 +21,4 @@ body{
     width: 35%;
 }
 
-.garment_iamge_collocation{
-    width: 20%;
-}
+

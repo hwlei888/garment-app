@@ -47,6 +47,9 @@ title (text)
 • User
 
 ### User
+name (string)
+email (text)
+password_digest (text)
 
 ### Collocation
 title (string)
@@ -62,6 +65,7 @@ user_id (integer)
 
 ## What will do later
 - [ ] many to many tables, when create or edit garments, can choose many occasions
+- [ ] collocation form tables, can add many garments
 
 
 
