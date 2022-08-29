@@ -45,15 +45,34 @@ class CollocationsController < ApplicationController
   # UPDATE
   def edit
     @collocation = Collocation.find params[:id]
-  end
+
+    # Don't even show the edit form if the collocation doesn't belong to this user
+    if @collocation.user_id != @current_user.id
+      redirect_to login_path
+    end # if
+
+  end # edit
 
   def update
-    collocation = Collocation.find params[:id]
+    @collocation = Collocation.find params[:id]
 
-    collocation.update collocation_params
+    # Check AGAIN that this collocation belongs to the logged-in user, 
+    # since people can work out the edit URL
+    if @collocation.user_id != @current_user.id
+      redirect_to login_path
+      return
+    end # if
 
-    redirect_to collocation_path(collocation.id)
-  end
+
+    if @collocation.update collocation_params
+      # if no error, no rollback
+      redirect_to collocation_path(@collocation.id)
+    else
+      render :edit
+    end # if
+
+
+  end # update
 
   # DESTROY
   def destroy
@@ -66,7 +85,7 @@ class CollocationsController < ApplicationController
   private
 
   def collocation_params
-    params.require(:collocation).permit(:title, :introduction, :image)
+    params.require(:collocation).permit(:title, :introduction, :image, :user_id)
   end
 
 

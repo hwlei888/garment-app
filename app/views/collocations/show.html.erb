@@ -1,10 +1,19 @@
 
-<%= link_to 'Edit', edit_collocation_path %>
-|
-<%= link_to 'Delete', collocation_path(@collocation.id), method: 'delete' %>
+<% if @current_user.present? && @collocation.user_id == @current_user.id %>
+
+    <%= link_to 'Edit', edit_collocation_path %>
+    |
+    <%= link_to 'Delete', collocation_path(@collocation.id), method: 'delete' %>
+
+<% end %>
 
 
 <h2><em><%= @collocation.title %></em></h2>
+
+<p>
+    by
+    <%= link_to @collocation.user.name, user_path(@collocation.user) %>
+</p>
 
 <p>
     <strong>introduction: </strong>

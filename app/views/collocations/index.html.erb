@@ -5,6 +5,8 @@
     <% @collocations.each do |item| %>
         <li>
             <%= link_to item.title, collocation_path(item.id) %>
+
+            (<%= link_to item.user.name, user_path(item.user.id) %>)
         </li>
     <% end %>
 

@@ -22,19 +22,26 @@ class UsersController < ApplicationController
 
   end # create
 
+  
+  # Read
   def index
     @users = User.all
   end
 
   def show
+    @user = User.find params[:id]
   end
 
+
+  # Update
   def edit
   end
 
   def update
   end
 
+
+  # Destroy
   def destroy
   end
 

@@ -68,7 +68,8 @@ user_id (integer)
 - [ ] In add matches, garment items can be selected by types, like if choose tops, there are several tops show up
 - [ ] User name and password more restrictions
 
-
+补全 user.show
+给其他加上安全防护措施
 
 
 
@@ -103,7 +104,6 @@ to update
   def garment_params
     params.require(:garment).permit(:name, :price, :fabrication, :image, :brand_id)
   end
-
 
 
 

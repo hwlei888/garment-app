@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
     end # fetch_user
 
 
-    # If the current request (which could be any action of any controller)is coming from a user who is NOT logged in
+    # If the current request (which could be any action of any controller)is coming from a user who is NOT logged in, like changing the URL
     #redirect them to the login page
     def check_if_logged_in
 
