@@ -37,6 +37,8 @@ class UsersController < ApplicationController
 
   # Update
   def edit
+    # it is already @current_user
+
     @user = User.find params[:id]
     
     if @user.id != @current_user.id
@@ -53,8 +55,8 @@ class UsersController < ApplicationController
       redirect_to login_path
     end # if
 
-    if @user.update user_params
-      redirect_to user_path(@user.id)
+    if @current_user.update user_params
+      redirect_to user_path(@current_user.id)
     else
       render :edit
     end # if

@@ -12,7 +12,6 @@
 
 
 
-
 <%= form_with model: @collocation, local: true do |f| %>
 
     <%= f.label :title %>
@@ -28,6 +27,29 @@
     <%= f.text_field :image %>
     <br><br>
 
+
+
+    <p>More Photos: </p>
+
+    <div id = "collocation_image_link" >
+        <button type= "button">
+            Add Image
+        </button>
+    </div>
+    <br>
+
+    <% if @collocation.photos.present? %>
+
+        <% @collocation.photos.each do |item| %>
+            <%= text_field_tag "#{item.id}", item.image %>
+        <% end %>
+
+    <% end %>
+
+
+
+
+
     <p>Must-Haves Items: </p>
     <% Garment.all.each do |item| %>
         <%= check_box_tag 'garment_id[]', item.id %>
@@ -42,4 +64,9 @@
     <%= f.submit %>
 
 <% end %>
+
+
+
+
+
 

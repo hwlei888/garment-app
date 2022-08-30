@@ -1,6 +1,6 @@
 class OccasionsController < ApplicationController
 
-  # CREATE
+  # CREATE #################################################
   def new
     @occasion = Occasion.new
   end
@@ -16,7 +16,7 @@ class OccasionsController < ApplicationController
 
   end # create
 
-  # READ
+  # READ #################################################
   def index
     @occasions = Occasion.all
   end
@@ -25,7 +25,7 @@ class OccasionsController < ApplicationController
     @occasion = Occasion.find params[:id]
   end
 
-  # UPDATE
+  # UPDATE #################################################
   def edit
     @occasion = Occasion.find params[:id]
   end
@@ -38,7 +38,7 @@ class OccasionsController < ApplicationController
     redirect_to occasion_path(occasion.id)
   end
 
-  # DESTROY
+  # DESTROY #################################################
   def destroy
     Occasion.destroy params[:id]
 

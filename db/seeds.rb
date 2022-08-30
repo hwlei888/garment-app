@@ -172,3 +172,9 @@ puts "user -< collocations associations:"
 puts "• The user #{User.first.name} has the collocations: #{User.first.collocations.pluck(:title).join(', ')}"
 
 
+###############################################################
+Photo.destroy_all
+
+
+
+

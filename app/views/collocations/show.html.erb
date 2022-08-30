@@ -27,6 +27,20 @@
     <%= image_tag @collocation.image, alt: @collocation.title, class: 'collocation_image' %>
 </p>
 
+
+<% if @collocation.photos.present? %>
+    <p> 
+        <strong>More Photos: </strong>
+        <br>
+        <% @collocation.photos.each do |item| %>
+            <%= image_tag item.image, alt: "#{item.id}", class: 'collocation_image' %>
+        <% end %>
+    </p>
+<% end %>
+
+
+
+
 <p>
     <strong>Must-Haves Items: </strong>
     <br>
