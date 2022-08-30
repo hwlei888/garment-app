@@ -8,5 +8,11 @@ Rails.application.routes.draw do
   delete '/login' => 'session#destroy'
 
   resources :garments, :brands, :occasions, :collocations, :users, :comments
+  
+  get '/garments/:id' => 'comments#new' 
+  #???? when at path /garments/:id, run def new in comments controller????
+
+  post '/garments/:id' => 'comments#create' 
+  #???? how decide post url ??????
 
 end

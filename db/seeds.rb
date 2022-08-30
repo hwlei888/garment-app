@@ -175,6 +175,11 @@ puts "• The user #{User.first.name} has the collocations: #{User.first.colloca
 ###############################################################
 Photo.destroy_all
 
+###############################################################
+Comment.destroy_all
+
+
+
 
 
 
