@@ -31,12 +31,15 @@ class OccasionsController < ApplicationController
   end
 
   def update
-    occasion = Occasion.find params[:id]
+    @occasion = Occasion.find params[:id]
 
-    occasion.update occasion_params
+    if @occasion.update occasion_params
+      redirect_to occasion_path(@occasion.id)
+    else
+      render :edit
+    end # if
 
-    redirect_to occasion_path(occasion.id)
-  end
+  end # update
 
   # DESTROY #################################################
   def destroy

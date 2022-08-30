@@ -31,12 +31,15 @@ class BrandsController < ApplicationController
   end
 
   def update
-    brand = Brand.find params[:id]
+    @brand = Brand.find params[:id]
 
-    brand.update brand_params
+    if @brand.update brand_params
+      redirect_to brand_path(@brand.id)
+    else
+      render :edit
+    end # if
 
-    redirect_to brand_path(brand.id)
-  end
+  end # update
 
   # DESTROY
   def destroy

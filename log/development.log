@@ -35669,3 +35669,178 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/brands/new" for 127.0.0.1 at 2022-08-30 23:20:03 +1000
+  [1m[35m (6.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/leilei/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by BrandsController#new as HTML
+  Rendering brands/new.html.erb within layouts/application
+  Rendered brands/_form.html.erb (8.8ms)
+  Rendered brands/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 123ms (Views: 101.6ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-30 23:20:06 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (1.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 37ms (Views: 32.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/brands/new" for 127.0.0.1 at 2022-08-30 23:20:06 +1000
+Processing by BrandsController#new as HTML
+  Rendering brands/new.html.erb within layouts/application
+  Rendered brands/_form.html.erb (3.6ms)
+  Rendered brands/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/brands" for 127.0.0.1 at 2022-08-30 23:20:08 +1000
+Processing by BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zz5/ApyGWTtnr5ZVwHsSxkTSPNQmw9uRyIADUyNgMWLl2jiPXWjGiEjzFrX5b9wqzgpS3z24dxg4TTHQv+D8cA==", "brand"=>{"name"=>"dddd", "country"=>"", "introduction"=>""}, "commit"=>"Create Brand"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brands_controller.rb:9
+  [1m[36mBrand Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "brands" WHERE "brands"."name" = $1 LIMIT $2[0m  [["name", "dddd"], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:9
+  [1m[36mBrand Create (7.2ms)[0m  [1m[32mINSERT INTO "brands" ("name", "country", "introduction", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "dddd"], ["country", ""], ["introduction", ""], ["created_at", "2022-08-30 13:20:08.943115"], ["updated_at", "2022-08-30 13:20:08.943115"]]
+  ↳ app/controllers/brands_controller.rb:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/brands_controller.rb:9
+Redirected to http://localhost:3000/brands
+Completed 302 Found in 22ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-30 23:20:08 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (1.4ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 19ms (Views: 15.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/brands/115" for 127.0.0.1 at 2022-08-30 23:20:10 +1000
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"115"}
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 115], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:25
+  Rendering brands/show.html.erb within layouts/application
+  [1m[36mOccasion Load (1.8ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" INNER JOIN "garments" ON "garments_occasions"."garment_id" = "garments"."id" WHERE "garments"."brand_id" = $1[0m  [["brand_id", 115]]
+  ↳ app/models/brand.rb:7
+  [1m[36mGarment Load (0.2ms)[0m  [1m[34mSELECT "garments".* FROM "garments" WHERE "garments"."brand_id" = $1[0m  [["brand_id", 115]]
+  ↳ app/views/brands/show.html.erb:37
+  Rendered brands/show.html.erb within layouts/application (46.1ms)
+Completed 200 OK in 67ms (Views: 46.3ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/brands/115/edit" for 127.0.0.1 at 2022-08-30 23:20:11 +1000
+Processing by BrandsController#edit as HTML
+  Parameters: {"id"=>"115"}
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 115], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:30
+  Rendering brands/edit.html.erb within layouts/application
+  Rendered brands/_form.html.erb (4.6ms)
+  Rendered brands/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 27ms (Views: 21.9ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/brands/115" for 127.0.0.1 at 2022-08-30 23:20:16 +1000
+Processing by BrandsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aPRyze94PDtaBverL3egofNvDT//37gwJVz94uSdAHPqEDVALpajiHVad0sWY25NebdjNOSkFLnVkc9heB3NYQ==", "brand"=>{"name"=>"", "country"=>"", "introduction"=>""}, "commit"=>"Update Brand", "id"=>"115"}
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 115], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brands_controller.rb:36
+  [1m[36mBrand Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "brands" WHERE "brands"."name" = $1 AND "brands"."id" != $2 LIMIT $3[0m  [["name", ""], ["id", 115], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:36
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/brands_controller.rb:36
+Redirected to http://localhost:3000/brands/115
+Completed 302 Found in 11ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/brands/115" for 127.0.0.1 at 2022-08-30 23:20:16 +1000
+Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"115"}
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 115], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:25
+  Rendering brands/show.html.erb within layouts/application
+  [1m[36mOccasion Load (0.7ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" INNER JOIN "garments" ON "garments_occasions"."garment_id" = "garments"."id" WHERE "garments"."brand_id" = $1[0m  [["brand_id", 115]]
+  ↳ app/models/brand.rb:7
+  [1m[36mGarment Load (0.2ms)[0m  [1m[34mSELECT "garments".* FROM "garments" WHERE "garments"."brand_id" = $1[0m  [["brand_id", 115]]
+  ↳ app/views/brands/show.html.erb:37
+  Rendered brands/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 27ms (Views: 21.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/brands/115/edit" for 127.0.0.1 at 2022-08-30 23:21:38 +1000
+Processing by BrandsController#edit as HTML
+  Parameters: {"id"=>"115"}
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 115], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:30
+  Rendering brands/edit.html.erb within layouts/application
+  Rendered brands/_form.html.erb (1.7ms)
+  Rendered brands/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 10.2ms | ActiveRecord: 8.9ms)
+
+
+Started PATCH "/brands/115" for 127.0.0.1 at 2022-08-30 23:21:40 +1000
+Processing by BrandsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6HMl6HYK/bJrVEvGPO+k5ZF7vSwj8Xe4yIsfA2VRLm5ql2Jlt+RiAUQIyyYF+2oJG6PTJziK2zE4Ri2A+dHjfA==", "brand"=>{"name"=>"", "country"=>"", "introduction"=>""}, "commit"=>"Update Brand", "id"=>"115"}
+  [1m[36mBrand Load (1.9ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 115], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:34
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brands_controller.rb:36
+  [1m[36mBrand Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "brands" WHERE "brands"."name" = $1 AND "brands"."id" != $2 LIMIT $3[0m  [["name", ""], ["id", 115], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:36
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/brands_controller.rb:36
+  Rendering brands/edit.html.erb within layouts/application
+  Rendered brands/_form.html.erb (5.7ms)
+  Rendered brands/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 54ms (Views: 36.5ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/brands/115" for 127.0.0.1 at 2022-08-30 23:21:44 +1000
+Processing by BrandsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uveVu5QxmaSMqU+WiCl/fnYvARG8cWF7Q1Y9rjw5F6A4E9I2Vd8GF6P1z3axPbGS/PdvGqcKzfKzmw8toLnasg==", "id"=>"115"}
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 115], ["LIMIT", 1]]
+  ↳ app/controllers/brands_controller.rb:46
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brands_controller.rb:46
+  [1m[36mBrand Destroy (0.8ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = $1[0m  [["id", 115]]
+  ↳ app/controllers/brands_controller.rb:46
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/brands_controller.rb:46
+Redirected to http://localhost:3000/brands
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-30 23:21:44 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-08-30 23:21:45 +1000
+Processing by BrandsController#index as HTML
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (2.3ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-08-30 23:21:47 +1000
+Processing by OccasionsController#index as HTML
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.9ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 31ms (Views: 17.3ms | ActiveRecord: 4.6ms)
+
+
