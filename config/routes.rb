@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
 
-  resources :garments, :brands, :occasions, :collocations, :users
+  resources :garments, :brands, :occasions, :collocations, :users, :comments
 
 end

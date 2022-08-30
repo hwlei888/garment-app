@@ -8,4 +8,6 @@ class User < ApplicationRecord
 
     has_many :collocations
 
+    has_many :comments
+
 end

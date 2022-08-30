@@ -64,7 +64,10 @@ image (text)
 collocation_id (integer)
 
 
-### Comment (later)
+### Comment
+content (text)
+garment_id (integer)(one to many table)
+user_id (integer)(one to many table)
 
 
 ## What will do later
