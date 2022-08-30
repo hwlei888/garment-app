@@ -35844,3 +35844,28 @@ Processing by OccasionsController#index as HTML
 Completed 200 OK in 31ms (Views: 17.3ms | ActiveRecord: 4.6ms)
 
 
+Started GET "/garments" for 127.0.0.1 at 2022-08-30 23:32:34 +1000
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/leilei/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by GarmentsController#index as HTML
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (1.1ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 143ms (Views: 128.8ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/garments/184" for 127.0.0.1 at 2022-08-30 23:32:36 +1000
+Processing by GarmentsController#show as HTML
+  Parameters: {"id"=>"184"}
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 184], ["LIMIT", 1]]
+  ↳ app/controllers/garments_controller.rb:37
+  Rendering garments/show.html.erb within layouts/application
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/views/garments/show.html.erb:11
+  [1m[36mOccasion Load (5.9ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions" INNER JOIN "garments_occasions" ON "occasions"."id" = "garments_occasions"."occasion_id" WHERE "garments_occasions"."garment_id" = $1[0m  [["garment_id", 184]]
+  ↳ app/views/garments/show.html.erb:32
+  Rendered garments/show.html.erb within layouts/application (58.7ms)
+Completed 200 OK in 79ms (Views: 46.8ms | ActiveRecord: 23.2ms)
+
+

@@ -83,6 +83,7 @@ collocation_id (integer)
 
 - [x] collocation form tables, can add many garments
 - [x] User can add multiple photos
+- [ ] when edit, User can delete some photos
 - [ ] User can add multiple photos and self-defination items in collocation
 - [x] many to many tables, when create or edit garments, can choose many occasions
 - [ ] many to many tables, when edit garments, keep the previous tick before and can add the new tick
