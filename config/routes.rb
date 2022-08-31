@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
 
+  post '/garments/:id/like' => 'garments#like', as: 'like_garment'
+
   resources :garments, :brands, :occasions, :collocations, :users, :comments
   
 

@@ -39,8 +39,16 @@
 </p>
 
 
-<%= image_tag @garment.image, alt: @garment.name, class: 'garment_image' %>
+<%= cl_image_tag @garment.image, alt: @garment.name, class: 'garment_image' %>
 <br><br>
+
+
+<% if @garment.like_from_users.include?(@current_user) %>
+    <%= button_to 'Dislike', like_garment_path(@garment.id) %>
+<% else %>
+    <%= button_to 'Like', like_garment_path(@garment.id) %>
+<% end %>
+
 
 
 

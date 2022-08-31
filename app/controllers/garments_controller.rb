@@ -7,7 +7,16 @@ class GarmentsController < ApplicationController
 
   def create
 
-    @garment = Garment.create garment_params
+    # raise "hell"
+
+    @garment = Garment.new garment_params
+
+    if params[:garment][:image].present?
+      response = Cloudinary::Uploader.upload params[:garment][:image]
+      @garment.image = response["public_id"]
+    end
+
+    @garment.save
 
     # if user tick garment checkbox
     if params[:occasion_ids].present?
@@ -37,8 +46,24 @@ class GarmentsController < ApplicationController
     @garment = Garment.find params[:id]
 
     @comment = Comment.new # Connect comment in garment show page at here!!!!!!!
-
   end
+
+
+  def like
+    # raise "hell"
+
+    @garment = Garment.find params[:id]
+
+    unless @garment.like_from_users.include?(@current_user)
+      @garment.like_from_users << @current_user
+    else
+      @garment.like_from_users.delete(@current_user) 
+    end # unless
+    render :show
+    # redirect_to garment_path(@garment)
+
+  end # like
+
 
   # UPDATE #################################################
   def edit

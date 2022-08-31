@@ -9,4 +9,6 @@ class Garment < ApplicationRecord
 
     has_and_belongs_to_many :collocations
 
+    has_and_belongs_to_many :like_from_users, class_name: 'User'
+
 end

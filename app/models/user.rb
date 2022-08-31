@@ -10,4 +10,6 @@ class User < ApplicationRecord
 
     has_many :comments
 
+    has_and_belongs_to_many :like_garments, class_name: 'Garment'
+
 end
