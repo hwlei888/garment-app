@@ -10,19 +10,20 @@ class CommentsController < ApplicationController
   def create
     # raise "hell"
 
-    # why no comment outside when use raise hell ????????
-    @comment = Comment.create(content: params[:content],
-                              garment_id: params[:garment_id]
-    )
+    @comment = Comment.create comment_params
+
+    @comment.user_id = @current_user.id
+    @comment.save
 
     if @comment.persisted?
-      redirect_to garment_path(params[:garment_id])
+      redirect_to garment_path(params[:comment][:garment_id])
     else
-      render :new #?????
-    end
+      @garment = Garment.find params[:comment][:garment_id]
+      render 'garments/show' 
+    end # if
 
 
-  end
+  end # create
 
 
   # READ #################################################
@@ -47,9 +48,10 @@ class CommentsController < ApplicationController
 
   private
 
-  # def comment_params
-  #   params.require(:comment)permit(:content, :user_id, :garment_id)
-  # end
+  # always from the form, doorman, filter
+  def comment_params
+    params.require(:comment).permit(:content, :garment_id)
+  end
 
 
 

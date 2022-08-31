@@ -45,8 +45,10 @@
 
 
 <% @garment.comments.each do |item| %>
-    <%= item.content %>
+    <%= link_to item.user.name, user_path(item.user_id) %> say: 
     <br>
+    <%= item.content %>
+    <hr>
 <% end %>
 
 

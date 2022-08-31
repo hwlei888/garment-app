@@ -13,29 +13,36 @@ class CollocationsController < ApplicationController
     # raise "hell"
     
     @collocation = Collocation.new collocation_params
+
+    # User check
     @collocation.user_id = @current_user.id
     @collocation.save
-
-    # if user tick garment checkbox
-    if params[:garment_id].present?
-      @collocation.garments << Garment.find(params[:garment_id])
-    end # if params[:garment_id].present?
-
-
-    # User can add as many photos as they want
-    if params[:photo_links].present?
-      photo_links = params[:photo_links]
-      photo_links.each do |pic|
-        @collocation.photos << Photo.create(image: pic)
-      end
-    end
-
-
     
     # check if the collocation is saved correctly
     if @collocation.persisted?
 
+      # if user tick garment checkbox
+      if params[:garment_id].present?
+        @collocation.garments << Garment.find(params[:garment_id])
+      end # if params[:garment_id].present?
+  
+  
+      # User can add as many photos as they want
+      if params[:photo_links].present?
+        photo_links = params[:photo_links]
+        photo_links.each do |pic|
+          photo_create = Photo.create(image: pic)
+          # check if the Photo.create is saved correctly
+          if photo_create.persisted?
+            @collocation.photos << photo_create
+          else
+            render :new
+          end # if photo_create.persisted?
+        end # each do
+      end # params[:photo_links].present?
+
       redirect_to collocations_path
+
     else
       render :new
 
@@ -52,8 +59,6 @@ class CollocationsController < ApplicationController
   def show
     @collocation = Collocation.find params[:id]
   end
-
-
 
 
 
@@ -94,7 +99,7 @@ class CollocationsController < ApplicationController
     if @collocation.photos.present?
       @collocation.photos.each do |photo|
         photo_id = photo.id.to_s # 16 -> "16"
-        photo.update(image: params[photo_id]) 
+        photo.update(image: params[:photo_links_edit][photo_id]) 
         # photo_id is a hash, :key or "key"
       end
     end
@@ -134,7 +139,7 @@ class CollocationsController < ApplicationController
   private
 
   def collocation_params
-    params.require(:collocation).permit(:title, :introduction, :image, :user_id)
+    params.require(:collocation).permit(:title, :introduction, :image)
   end
 
 

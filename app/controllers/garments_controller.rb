@@ -35,6 +35,9 @@ class GarmentsController < ApplicationController
   # i.e. GET /garments/:id
   def show
     @garment = Garment.find params[:id]
+
+    @comment = Comment.new # Connect comment in garment show page at here!!!!!!!
+
   end
 
   # UPDATE #################################################

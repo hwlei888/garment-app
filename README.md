@@ -68,6 +68,7 @@ collocation_id (integer)
 content (text)
 garment_id (integer)(one to many table)
 user_id (integer)(one to many table)
+- [ ] User check
 
 
 ## What will do later

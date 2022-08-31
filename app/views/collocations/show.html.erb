@@ -33,7 +33,7 @@
         <strong>More Photos: </strong>
         <br>
         <% @collocation.photos.each do |item| %>
-            <%= image_tag item.image, alt: "#{item.id}", class: 'collocation_image' %>
+            <%= image_tag item.image, alt: item.image, class: 'collocation_image' %>
         <% end %>
     </p>
 <% end %>

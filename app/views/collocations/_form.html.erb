@@ -41,11 +41,19 @@
     <% if @collocation.photos.present? %>
 
         <% @collocation.photos.each do |item| %>
-            <%= text_field_tag "#{item.id}", item.image %>
+            <%= text_field_tag "photo_links_edit[#{item.id}]", item.image %>
         <% end %>
 
     <% end %>
 
+    <br>
+
+    <div id = "remove_link" >
+    <button type= "button">
+        Remove Image
+    </button>
+    </div>
+    <br>
 
 
 
