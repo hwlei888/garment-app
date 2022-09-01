@@ -14,6 +14,11 @@ class CollocationsController < ApplicationController
     
     @collocation = Collocation.new collocation_params
 
+    if params[:collocation][:image].present?
+      response = Cloudinary::Uploader.upload params[:collocation][:image]
+      @collocation.image = response["public_id"]
+    end
+
     # User check
     @collocation.user_id = @current_user.id
     @collocation.save
@@ -113,6 +118,12 @@ class CollocationsController < ApplicationController
     end
 
 
+    # need to delete :image in def collocation_params, or the re-upload will not work
+    if params[:collocation][:image].present?
+      response = Cloudinary::Uploader.upload params[:collocation][:image]
+      @collocation.image = response["public_id"]
+    end
+
 
     if @collocation.update collocation_params
       # if no error, no rollback
@@ -139,7 +150,7 @@ class CollocationsController < ApplicationController
   private
 
   def collocation_params
-    params.require(:collocation).permit(:title, :introduction, :image)
+    params.require(:collocation).permit(:title, :introduction)
   end
 
 

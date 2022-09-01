@@ -23,13 +23,18 @@
     <%= f.text_area :introduction, size: "50*5" %>
     <br><br>
 
+    <p>Type in Image URL or upload your graph: </p>
     <%= f.label :image, 'Image URL' %>
     <%= f.text_field :image %>
     <br><br>
 
+    <%= f.label :image, 'Image Upload' %>
+    <%= f.file_field :image %>
+    <br><br>
 
 
-    <p>More Photos: </p>
+
+    <p>More Photos (In URL): </p>
 
     <div id = "collocation_image_link" >
         <button type= "button">
@@ -46,14 +51,6 @@
 
     <% end %>
 
-    <br>
-
-
-    <div id = "remove_link">
-    <button type="button">
-        Remove Image
-    </button>
-    </div>
     <br>
 
 

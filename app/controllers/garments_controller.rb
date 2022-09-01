@@ -79,6 +79,7 @@ class GarmentsController < ApplicationController
       @garment.occasions << Occasion.find(params[:occasion_ids])
     end
 
+    # need to delete :image in def garment_params, or the re-upload will not work
     if params[:garment][:image].present?
       response = Cloudinary::Uploader.upload params[:garment][:image]
       @garment.image = response["public_id"]

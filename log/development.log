@@ -56296,3 +56296,471 @@ Processing by CollocationsController#new as HTML
 Completed 200 OK in 30ms (Views: 19.6ms | ActiveRecord: 2.5ms)
 
 
+Started GET "/collocations/new" for 127.0.0.1 at 2022-09-01 17:25:34 +1000
+Processing by CollocationsController#new as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/new.html.erb within layouts/application
+  [1m[36mGarment Load (7.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/collocations/_form.html.erb:68
+  Rendered collocations/_form.html.erb (56.6ms)
+  Rendered collocations/new.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 165ms (Views: 27.4ms | ActiveRecord: 109.9ms)
+
+
+Started GET "/collocations/new" for 127.0.0.1 at 2022-09-01 17:26:15 +1000
+Processing by CollocationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/new.html.erb within layouts/application
+  [1m[36mGarment Load (3.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/collocations/_form.html.erb:60
+  Rendered collocations/_form.html.erb (13.1ms)
+  Rendered collocations/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 31ms (Views: 22.1ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/collocations" for 127.0.0.1 at 2022-09-01 17:26:27 +1000
+Processing by CollocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zT2PzmtJQdriYpLx5TCZYyLWdRvDFl6FmZVq5W7Tivz60yeR0tJo0xK0WaRfk8QkVEENV7Hncs8lXC/EEZaIlg==", "collocation"=>{"title"=>"test4", "introduction"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x000000011a65ae58 @tempfile=#<Tempfile:/var/folders/z0/grxpfrr53xq7qm_w5jckn0dw0000gn/T/RackMultipart20220901-14844-1oi70k.jpeg>, @original_filename="pp,840x830-pad,1000x1000,f8f8f8.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"collocation[image]\"; filename=\"pp,840x830-pad,1000x1000,f8f8f8.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "garment_id"=>["195", "196"], "commit"=>"Create Collocation"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Unpermitted parameter: :image
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.4ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/collocations_controller.rb:17:in `create'
+Started GET "/collocations/new" for 127.0.0.1 at 2022-09-01 17:28:11 +1000
+Processing by CollocationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/new.html.erb within layouts/application
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/collocations/_form.html.erb:60
+  Rendered collocations/_form.html.erb (17.9ms)
+  Rendered collocations/new.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 55ms (Views: 20.7ms | ActiveRecord: 21.7ms)
+
+
+Started POST "/collocations" for 127.0.0.1 at 2022-09-01 17:28:15 +1000
+Processing by CollocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uHc+hVlor8xeN3uticnIFU+dEbV4E0nxo1DJVsdNbIuPmZba4POGxa7hsPgzapVSOQpp+QriZbsfmYx3uAhu4Q==", "collocation"=>{"title"=>"test4", "introduction"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000000104a8d590 @tempfile=#<Tempfile:/var/folders/z0/grxpfrr53xq7qm_w5jckn0dw0000gn/T/RackMultipart20220901-14844-izafan.jpeg>, @original_filename="pp,840x830-pad,1000x1000,f8f8f8.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"collocation[image]\"; filename=\"pp,840x830-pad,1000x1000,f8f8f8.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "garment_id"=>["195", "196"], "commit"=>"Create Collocation"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Unpermitted parameter: :image
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/collocations_controller.rb:24
+  [1m[36mCollocation Exists (2.8ms)[0m  [1m[34mSELECT  1 AS one FROM "collocations" WHERE "collocations"."title" = $1 LIMIT $2[0m  [["title", "test4"], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:24
+  [1m[36mCollocation Create (0.6ms)[0m  [1m[32mINSERT INTO "collocations" ("title", "introduction", "image", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "test4"], ["introduction", ""], ["image", "vsy3qxegc5hkkzhmcar9"], ["user_id", 22], ["created_at", "2022-09-01 07:28:16.822585"], ["updated_at", "2022-09-01 07:28:16.822585"]]
+  ↳ app/controllers/collocations_controller.rb:24
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/collocations_controller.rb:24
+  [1m[36mGarment Load (8.1ms)[0m  [1m[34mSELECT "garments".* FROM "garments" WHERE "garments"."id" IN ($1, $2)[0m  [["id", 195], ["id", 196]]
+  ↳ app/controllers/collocations_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/collocations_controller.rb:31
+  [1m[36mCollocation::HABTM_Garments Create (1.8ms)[0m  [1m[32mINSERT INTO "collocations_garments" ("collocation_id", "garment_id") VALUES ($1, $2) RETURNING "id"[0m  [["collocation_id", 92], ["garment_id", 195]]
+  ↳ app/controllers/collocations_controller.rb:31
+  [1m[36mCollocation::HABTM_Garments Create (0.5ms)[0m  [1m[32mINSERT INTO "collocations_garments" ("collocation_id", "garment_id") VALUES ($1, $2) RETURNING "id"[0m  [["collocation_id", 92], ["garment_id", 196]]
+  ↳ app/controllers/collocations_controller.rb:31
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/collocations_controller.rb:31
+Redirected to http://localhost:3000/collocations
+Completed 302 Found in 1491ms (ActiveRecord: 42.9ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-09-01 17:28:16 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.6ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  Rendered collocations/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 38ms (Views: 25.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/collocations/92" for 127.0.0.1 at 2022-09-01 17:28:18 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (0.3ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:65
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/show.html.erb:15
+  Rendered collocations/show.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "vsy3qxegc5hkkzhmcar9" is not present in the asset pipeline.
+):
+    24: <p>
+    25:     <strong>My Combos: </strong>
+    26:     <br>
+    27:     <%= image_tag @collocation.image, alt: @collocation.title, class: 'collocation_image' %>
+    28: </p>
+    29: 
+    30: 
+  
+app/views/collocations/show.html.erb:27:in `_app_views_collocations_show_html_erb___3310508049368558579_666300'
+Started GET "/collocations/92" for 127.0.0.1 at 2022-09-01 17:30:06 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (0.3ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:65
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/show.html.erb:15
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."collocation_id" = $1[0m  [["collocation_id", 92]]
+  ↳ app/views/collocations/show.html.erb:31
+  [1m[36mGarment Load (1.0ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 92]]
+  ↳ app/views/collocations/show.html.erb:49
+  Rendered collocations/show.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 37ms (Views: 25.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/collocations/92" for 127.0.0.1 at 2022-09-01 17:30:12 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (0.3ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:65
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/show.html.erb:15
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."collocation_id" = $1[0m  [["collocation_id", 92]]
+  ↳ app/views/collocations/show.html.erb:31
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 92]]
+  ↳ app/views/collocations/show.html.erb:49
+  Rendered collocations/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 44ms (Views: 30.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/collocations/92" for 127.0.0.1 at 2022-09-01 17:30:16 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (0.2ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:65
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/show.html.erb:15
+  [1m[36mPhoto Load (8.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."collocation_id" = $1[0m  [["collocation_id", 92]]
+  ↳ app/views/collocations/show.html.erb:31
+  [1m[36mGarment Load (0.5ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 92]]
+  ↳ app/views/collocations/show.html.erb:49
+  Rendered collocations/show.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 48ms (Views: 35.2ms | ActiveRecord: 9.9ms)
+
+
+Started DELETE "/collocations/92" for 127.0.0.1 at 2022-09-01 17:30:20 +1000
+Processing by CollocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aUnBe1QgRdO2WNt+f5JWdwwdxdX0v+5ERRvQp0eNlGhep2kk7bts2kaOECvFMQsweoq9mYZOwg750pWGOMiWAg==", "id"=>"92"}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (19.2ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:144
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/collocations_controller.rb:144
+  [1m[36mCollocation::HABTM_Garments Destroy (0.6ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 92]]
+  ↳ app/controllers/collocations_controller.rb:144
+  [1m[36mCollocation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "collocations" WHERE "collocations"."id" = $1[0m  [["id", 92]]
+  ↳ app/controllers/collocations_controller.rb:144
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/collocations_controller.rb:144
+Redirected to http://localhost:3000/collocations
+Completed 302 Found in 37ms (ActiveRecord: 26.4ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-09-01 17:30:20 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.6ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  Rendered collocations/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 34ms (Views: 28.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/collocations/new" for 127.0.0.1 at 2022-09-01 17:31:15 +1000
+Processing by CollocationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/new.html.erb within layouts/application
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/collocations/_form.html.erb:60
+  Rendered collocations/_form.html.erb (3.7ms)
+  Rendered collocations/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/collocations" for 127.0.0.1 at 2022-09-01 17:31:26 +1000
+Processing by CollocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DJ9Lh7ZD1o+IaT29HbcKlGXPeInA+FiiI7qyTKQVVJg7cePYD9j/hni/9uinFFfTE1gAxbIJdOifc/dt21BW8g==", "collocation"=>{"title"=>"test1", "introduction"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x000000013e189fe0 @tempfile=#<Tempfile:/var/folders/z0/grxpfrr53xq7qm_w5jckn0dw0000gn/T/RackMultipart20220901-14844-zvsv3g.png>, @original_filename="截屏2022-07-13 下午10.03.42.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"collocation[image]\"; filename=\"\xE6\x88\xAA\xE5\xB1\x8F2022-07-13 \xE4\xB8\x8B\xE5\x8D\x8810.03.42.png\"\r\nContent-Type: image/png\r\n">}, "garment_id"=>["195"], "commit"=>"Create Collocation"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+Unpermitted parameter: :image
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/collocations_controller.rb:24
+  [1m[36mCollocation Exists (6.6ms)[0m  [1m[34mSELECT  1 AS one FROM "collocations" WHERE "collocations"."title" = $1 LIMIT $2[0m  [["title", "test1"], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:24
+  [1m[36mCollocation Create (0.7ms)[0m  [1m[32mINSERT INTO "collocations" ("title", "introduction", "image", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "test1"], ["introduction", ""], ["image", "edy8tuclupkozjejdowg"], ["user_id", 22], ["created_at", "2022-09-01 07:31:29.840564"], ["updated_at", "2022-09-01 07:31:29.840564"]]
+  ↳ app/controllers/collocations_controller.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/collocations_controller.rb:24
+  [1m[36mGarment Load (0.3ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 195], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/collocations_controller.rb:31
+  [1m[36mCollocation::HABTM_Garments Create (0.4ms)[0m  [1m[32mINSERT INTO "collocations_garments" ("collocation_id", "garment_id") VALUES ($1, $2) RETURNING "id"[0m  [["collocation_id", 93], ["garment_id", 195]]
+  ↳ app/controllers/collocations_controller.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/collocations_controller.rb:31
+Redirected to http://localhost:3000/collocations
+Completed 302 Found in 3239ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-09-01 17:31:29 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.5ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  Rendered collocations/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 39ms (Views: 33.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/collocations/93" for 127.0.0.1 at 2022-09-01 17:31:31 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"93"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (1.8ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:65
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/show.html.erb:15
+  [1m[36mPhoto Load (2.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."collocation_id" = $1[0m  [["collocation_id", 93]]
+  ↳ app/views/collocations/show.html.erb:31
+  [1m[36mGarment Load (1.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 93]]
+  ↳ app/views/collocations/show.html.erb:49
+  Rendered collocations/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 45ms (Views: 33.8ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/collocations/93/edit" for 127.0.0.1 at 2022-09-01 17:31:34 +1000
+Processing by CollocationsController#edit as HTML
+  Parameters: {"id"=>"93"}
+  [1m[36mUser Load (14.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (0.3ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:74
+  Rendering collocations/edit.html.erb within layouts/application
+  [1m[36mPhoto Load (6.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."collocation_id" = $1[0m  [["collocation_id", 93]]
+  ↳ app/views/collocations/_form.html.erb:46
+  [1m[36mGarment Load (0.4ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/collocations/_form.html.erb:60
+  Rendered collocations/_form.html.erb (14.7ms)
+  Rendered collocations/edit.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 51ms (Views: 19.8ms | ActiveRecord: 21.9ms)
+
+
+Started PATCH "/collocations/93" for 127.0.0.1 at 2022-09-01 17:31:42 +1000
+Processing by CollocationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GbtAvPzvMf4/cqs3yzo2ZyqBXE4RIkQYfUR73obBcQsuVejjRXQY98+kYGJxmWsgXBYkAmPTaFLBjT7/+YRzYQ==", "collocation"=>{"title"=>"test1", "introduction"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x0000000105428d48 @tempfile=#<Tempfile:/var/folders/z0/grxpfrr53xq7qm_w5jckn0dw0000gn/T/RackMultipart20220901-14844-12kop00.jpeg>, @original_filename="pp,840x830-pad,1000x1000,f8f8f8.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"collocation[image]\"; filename=\"pp,840x830-pad,1000x1000,f8f8f8.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "garment_id"=>["199"], "commit"=>"Update Collocation", "id"=>"93"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (0.2ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:86
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 93]]
+  ↳ app/controllers/collocations_controller.rb:97
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/collocations_controller.rb:97
+  [1m[36mHABTM_Garments Load (0.2ms)[0m  [1m[34mSELECT "collocations_garments".* FROM "collocations_garments" WHERE "collocations_garments"."collocation_id" = $1 AND "collocations_garments"."garment_id" = $2[0m  [["collocation_id", 93], ["garment_id", 195]]
+  ↳ app/controllers/collocations_controller.rb:97
+  [1m[36mCollocation::HABTM_Garments Destroy (0.2ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."id" = $1[0m  [["id", 95]]
+  ↳ app/controllers/collocations_controller.rb:97
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/collocations_controller.rb:97
+  [1m[36mGarment Load (1.8ms)[0m  [1m[34mSELECT  "garments".* FROM "garments" WHERE "garments"."id" = $1 LIMIT $2[0m  [["id", 199], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:98
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/collocations_controller.rb:98
+  [1m[36mCollocation::HABTM_Garments Create (0.3ms)[0m  [1m[32mINSERT INTO "collocations_garments" ("collocation_id", "garment_id") VALUES ($1, $2) RETURNING "id"[0m  [["collocation_id", 93], ["garment_id", 199]]
+  ↳ app/controllers/collocations_controller.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/collocations_controller.rb:98
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."collocation_id" = $1[0m  [["collocation_id", 93]]
+  ↳ app/controllers/collocations_controller.rb:104
+Unpermitted parameter: :image
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/collocations_controller.rb:128
+  [1m[36mCollocation Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "collocations" WHERE "collocations"."title" = $1 AND "collocations"."id" != $2 LIMIT $3[0m  [["title", "test1"], ["id", 93], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:128
+  [1m[36mCollocation Update (1.8ms)[0m  [1m[33mUPDATE "collocations" SET "image" = $1, "updated_at" = $2 WHERE "collocations"."id" = $3[0m  [["image", "iybmhb4f1jtduv2p9jdw"], ["updated_at", "2022-09-01 07:31:43.466267"], ["id", 93]]
+  ↳ app/controllers/collocations_controller.rb:128
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/collocations_controller.rb:128
+Redirected to http://localhost:3000/collocations/93
+Completed 302 Found in 1303ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/collocations/93" for 127.0.0.1 at 2022-09-01 17:31:43 +1000
+Processing by CollocationsController#show as HTML
+  Parameters: {"id"=>"93"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (0.5ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:65
+  Rendering collocations/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/show.html.erb:15
+  [1m[36mPhoto Load (1.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."collocation_id" = $1[0m  [["collocation_id", 93]]
+  ↳ app/views/collocations/show.html.erb:31
+  [1m[36mGarment Load (7.8ms)[0m  [1m[34mSELECT "garments".* FROM "garments" INNER JOIN "collocations_garments" ON "garments"."id" = "collocations_garments"."garment_id" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 93]]
+  ↳ app/views/collocations/show.html.erb:49
+  Rendered collocations/show.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 40ms (Views: 24.9ms | ActiveRecord: 10.3ms)
+
+
+Started DELETE "/collocations/93" for 127.0.0.1 at 2022-09-01 17:31:47 +1000
+Processing by CollocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8I1nYhpyHFdQMPNFO7h/HV2id/E8liVJPr/vQY2lk0jHY889o+k1XqDmOBCBGyJaKzUPvU5nCQOCdqpg8uCRIg==", "id"=>"93"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  [1m[36mCollocation Load (0.3ms)[0m  [1m[34mSELECT  "collocations".* FROM "collocations" WHERE "collocations"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  ↳ app/controllers/collocations_controller.rb:144
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/collocations_controller.rb:144
+  [1m[36mCollocation::HABTM_Garments Destroy (0.6ms)[0m  [1m[31mDELETE FROM "collocations_garments" WHERE "collocations_garments"."collocation_id" = $1[0m  [["collocation_id", 93]]
+  ↳ app/controllers/collocations_controller.rb:144
+  [1m[36mCollocation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "collocations" WHERE "collocations"."id" = $1[0m  [["id", 93]]
+  ↳ app/controllers/collocations_controller.rb:144
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/collocations_controller.rb:144
+Redirected to http://localhost:3000/collocations
+Completed 302 Found in 36ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-09-01 17:31:47 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (0.3ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  Rendered collocations/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-09-01 17:31:59 +1000
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-01 17:32:02 +1000
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/garments" for 127.0.0.1 at 2022-09-01 17:34:36 +1000
+Processing by GarmentsController#index as HTML
+  [1m[36mUser Load (9.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering garments/index.html.erb within layouts/application
+  [1m[36mGarment Load (0.6ms)[0m  [1m[34mSELECT "garments".* FROM "garments"[0m
+  ↳ app/views/garments/index.html.erb:5
+  Rendered garments/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 49ms (Views: 32.9ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2022-09-01 17:34:48 +1000
+Processing by BrandsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering brands/index.html.erb within layouts/application
+  [1m[36mBrand Load (5.1ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  ↳ app/views/brands/index.html.erb:5
+  Rendered brands/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 39ms (Views: 18.7ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/occasions" for 127.0.0.1 at 2022-09-01 17:34:50 +1000
+Processing by OccasionsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering occasions/index.html.erb within layouts/application
+  [1m[36mOccasion Load (0.8ms)[0m  [1m[34mSELECT "occasions".* FROM "occasions"[0m
+  ↳ app/views/occasions/index.html.erb:6
+  Rendered occasions/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 36ms (Views: 22.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/collocations" for 127.0.0.1 at 2022-09-01 17:34:55 +1000
+Processing by CollocationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8
+  Rendering collocations/index.html.erb within layouts/application
+  [1m[36mCollocation Load (1.4ms)[0m  [1m[34mSELECT "collocations".* FROM "collocations"[0m
+  ↳ app/views/collocations/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/views/collocations/index.html.erb:9
+  Rendered collocations/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 44ms (Views: 31.2ms | ActiveRecord: 3.6ms)
+
+
