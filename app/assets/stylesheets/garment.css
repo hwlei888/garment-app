@@ -73,7 +73,16 @@
 }
 
 
+/* search.html.erb */
+.search_title{
+    text-align: center;
+    margin: 30px;
+}
 
+.search_block{
+    text-align: center;
+    margin: 20px;
+}
 
 
 

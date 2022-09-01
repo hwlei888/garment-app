@@ -1,6 +1,10 @@
 
+<div class= "user_new_title">
 <h2>Sign Up</h2>
+</div>
 
+
+<div class= "form_error">
 <% if @user.errors.any? %>
 
     <strong>Please correct the following errors: </strong>
@@ -11,33 +15,44 @@
     </ul>
     
 <% end %>
+</div>
 
 
 
 
 <%= form_with model: @user, local: true do |f| %>
 
+    <div class= "user_form_block">
     <%= f.label :name %>
     <br>
     <%= f.text_field :name %>
-    <br><br>
+    </div>
 
+
+    <div class= "user_form_block">
     <%= f.label :email %>
     <br>
     <%= f.text_field :email %>
-    <br><br>
+    </div>
 
+
+    <div class= "user_form_block">
     <%= f.label :password %>
     <br>
     <%= f.password_field :password %>
-    <br><br>
+    </div>
 
+
+    <div class= "user_form_block">
     <%= f.label :password_confirmation %>
     <br>
     <%= f.password_field :password_confirmation %>
-    <br><br>
+    </div>
 
+
+    <div class= "user_form_block">
     <%= f.submit %>
+    </div>
 
 
 <% end %>

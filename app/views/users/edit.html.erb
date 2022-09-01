@@ -1,6 +1,10 @@
 
+<div class= "user_new_title">
 <h2>Edit Your Account</h2>
+</div>
 
+
+<div class= "form_error">
 <% if @current_user.errors.any? %>
     <strong>Please correct the following errors: </strong>
     <ul>
@@ -10,16 +14,21 @@
     </ul>
 
 <% end %>
+</div>
 
 
 <%= form_with model: @current_user, local: true do |f| %>
 
+    <div class= "user_form_block">
     <%= f.label :name %>
     <br>
     <%= f.text_field :name %>
-    <br><br>
+    </div>
 
+
+    <div class= "user_form_block">
     <%= f.submit %>
+    </div>
 
 
 <% end %>

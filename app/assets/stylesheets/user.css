@@ -1,4 +1,5 @@
 
+/* index.html.erb */
 .user_index_title{
     margin-top: 30px;
     text-align: center;
@@ -14,9 +15,24 @@
     margin: 20px;
 }
 
+/* show.html.erb */
 .user_show_block{
     text-align: center;
     margin-top: 35px;
 }
+
+
+/* edit.html.erb */
+.user_new_title{
+    text-align: center;
+    margin: 30px;
+}
+
+.user_form_block{
+    text-align: center;
+    margin: 25px;
+}
+
+/* new.html.erb */
 
 

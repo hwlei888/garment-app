@@ -1,29 +1,44 @@
 
+<div class= "search_title">
 <h3><strong>Search Results of Garments:</strong></h3>
+</div>
 
+
+<div class= "search_block">
 <% @match_garments.each do |result| %>
     <%= link_to result.name, garment_path(result.id) %>
-    <br>
+    <br><br>
 <% end %>
+</div>
 
-<hr>
 
+<div class="hr"></div>
+
+<div class= "search_title">
 <h3><strong>Search Results of brands:</strong></h3>
+</div>
 
+
+<div class= "search_block">
 <% @match_brands.each do |result| %>
     <%= link_to result.name, brand_path(result.id) %>
-    <br>
+    <br><br>
 <% end %>
+</div>
 
 
-<hr>
+<div class="hr"></div>
 
+<div class= "search_title">
 <h3><strong>Garment Results of occasions:</strong></h3>
+</div>
 
+
+<div class= "search_block">
 <% @match_garment_occasions.each do |result| %>
     <%= link_to result.name, garment_path(result.id) %>
-    <br>
+    <br><br>
 <% end %>
-
+</div>
 
 

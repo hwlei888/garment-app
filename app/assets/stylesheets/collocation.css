@@ -9,6 +9,7 @@
     margin: 20px;
 }
 
+/* show.html.erb */
 .collocation_show_name{
     text-align: center;
 }
@@ -44,5 +45,46 @@
 .garment_iamge_collocation{
     width: 70%;
 }
+
+
+/* _form.html.erb */
+/* new.html.erb */
+/* edit.html.erb */
+.collocation_new_title{
+    text-align: center;
+    margin: 30px;
+}
+
+.collocation_form_block{
+    text-align: center;
+    margin: 25px;
+}
+
+.collocation_form_item{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.collocation_form_line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.collocation_form_image{
+    width: 20%;
+    height: 30%;
+    text-align: center;
+    margin: 40px 10px;
+}
+
+.garment_image_collocation_form
+{
+    width: 50%;
+}
+
+
 
 
