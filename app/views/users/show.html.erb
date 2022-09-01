@@ -33,3 +33,18 @@
     </ul>
 </p>
 
+
+<p>
+    <strong>Your likes: </strong>
+    <br>
+    <ul>
+        <% @user.like_garments.each do |item| %>
+            <li>
+                <%= link_to item.name, garment_path(item) %>
+            </li>
+        <% end %>
+    </ul>
+</p>
+
+
+

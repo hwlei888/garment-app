@@ -59,8 +59,8 @@ class GarmentsController < ApplicationController
     else
       @garment.like_from_users.delete(@current_user) 
     end # unless
-    render :show
-    # redirect_to garment_path(@garment)
+    # render :show # don't do this! it will go to garments/:id/like, and routes will mess up
+    redirect_to garment_path(@garment)
 
   end # like
 

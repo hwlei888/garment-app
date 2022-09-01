@@ -16,10 +16,10 @@ class CommentsController < ApplicationController
     @comment.save
 
     if @comment.persisted?
-      redirect_to garment_path(params[:comment][:garment_id])
+        redirect_to garment_path(params[:comment][:garment_id])
     else
       @garment = Garment.find params[:comment][:garment_id]
-      render 'garments/show' 
+      render 'garments/show' # only it is not working, use render
     end # if
 
 
@@ -36,6 +36,7 @@ class CommentsController < ApplicationController
 
   # UPDATE #################################################
   def edit
+    # if want to do the edit on the same page without changing url, it will need jquery. Like building a input and hide it, when click edit it will show up.
   end
 
   def update
@@ -44,6 +45,13 @@ class CommentsController < ApplicationController
 
   # DESTROY #################################################
   def destroy
+    # raise "hell"
+    # @garment = Comment.find(params[:id]).garment
+    comment = Comment.destroy params[:id] # will also return that destroyed comment
+    
+    redirect_to garment_path(comment.garment) 
+    #redirect to that url, if render to show, the url would be the destroyed comment url
+
   end
 
   private

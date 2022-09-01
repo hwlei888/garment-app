@@ -78,7 +78,6 @@ user_id (integer)(one to many table)
 - [ ] User can find their password back when lost it
 - [ ] When user change their name, there is an alert
 - [ ] User can change their password, two steps to change password, type old one first if correct can change new password
-- [ ] User can like (many to many table)
 - [ ] User can search
 
 
@@ -92,6 +91,7 @@ user_id (integer)(one to many table)
 - [x] many to many tables, when create or edit garments, can choose many occasions
 - [ ] many to many tables, when edit garments, keep the previous tick before and can add the new tick
 - [x] User can add comments below the clothes
+- [x] User can like (many to many table)
 
 
 

@@ -48,17 +48,29 @@
 <% else %>
     <%= button_to 'Like', like_garment_path(@garment.id) %>
 <% end %>
+<br>
 
 
+Liked by
+<br>
+<% @garment.like_from_users.each do |item| %>
+    <%= link_to item.name, user_path(item.id) %>
+<% end %>
+<br><br>
+<hr>
 
+<strong>Comments: </strong>
 
+<div>
 <% @garment.comments.each do |item| %>
     <%= link_to item.user.name, user_path(item.user_id) %> say: 
     <br>
     <%= item.content %>
-    <hr>
+    <br>
+    <%= link_to 'Delete', comment_path(item.id), method: 'delete' %>
+<hr>
 <% end %>
-
+</div>
 
 
 <%= form_with model: @comment, local: true do |f| %>
