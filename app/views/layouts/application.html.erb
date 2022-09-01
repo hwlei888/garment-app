@@ -14,67 +14,96 @@
   <body>
 
   <nav>
-    <h1>Get Up & Dress Up</h1>
 
-    <%= link_to 'Home', root_path %>
-    <br>
-    
-    <%= link_to 'All Garments', garments_path %>
-    |
-    <%= link_to 'Add Garments', new_garment_path %>
-    <br>
-
-    <%= link_to 'All Brands', brands_path %>
-    |
-    <%= link_to 'Add Brands', new_brand_path %>
-    <br>
-
-    <%= link_to 'All Occasions', occasions_path %>
-    |
-    <%= link_to 'Add Occasions', new_occasion_path %>
-    <br>
-
-    <%= link_to 'All Combos', collocations_path %>
-    |
+    <div class="link_first_line">
     <% if @current_user.present? %>
-      <%= link_to 'Add your Combo', new_collocation_path %>
-    <% end %>
-    <br>
-
-    <%= link_to 'All Users', users_path %>
-    <br>
-
-    <% if @current_user.present? %>
+      <div class= "link_first_block">
       Welcome, <%= @current_user.name %>
-      |
+      </div>
+      <br>
+
+      <div class= "link_first_block">
       <%= link_to 'My Account', user_path(@current_user.id) %>
-      |
-      <%= link_to 'Logout', login_path, method: 'delete' %>
-    
+      </div>
+      
+      <div class= "link_first_block">/</div>
+      
+      <div class= "link_first_block">
+        <%= link_to 'Logout', login_path, method: 'delete' %>      
+      </div>
+  
     <% else %>
+      <div class= "link_first_block">
       <%= link_to 'Login', login_path %>
-      |
+      </div>
+
+      <div class= "link_first_block">/</div>
+
+      <div class= "link_first_block">
       <%= link_to 'Sign Up', new_user_path %>
+      </div>
+      
     <% end %>
-    <br><br>
-
-    <%= form_with url: search_path, local: true, role:"search", method: "get" do |f| %>
-        <%= f.text_field :search, placeholder: "name or brand or occasions" %>
-        <%= f.submit 'Search' %>
-    <% end %>
+    </div>
 
 
+    <div class= "fist_title">
+      <h1>Get Up & Dress Up</h1>
+    </div>
+  
+    <div class= "link_second_line">
+      <div class= "link_second_line_block">
+        <%= link_to 'Home', root_path %>
+      </div>
 
-    <hr>
+      <div class= "link_second_line_block">
+        <%= link_to 'Garments', garments_path, class: "homelink" %>
+      </div>
+
+      <div class= "link_second_line_block">
+        <%= link_to 'Brands', brands_path, class: "homelink" %>
+      </div>
+
+      <div class= "link_second_line_block">
+        <%= link_to 'Occasions', occasions_path, class: "homelink" %>
+      </div>
+
+      <div class= "link_second_line_block">
+        <%= link_to 'Combos', collocations_path, class: "homelink" %>
+      </div>
+      
+      <div class= "link_second_line_block">
+        <%= link_to 'All Users', users_path, class: "homelink" %>
+      </div>
+    </div>
+
+    <br>
+
+
+    <div class= "search_line">
+      <%= form_with url: search_path, local: true, role:"search", method: "get" do |f| %>
+          <%= f.text_field :search, placeholder: "name or brand or occasions", size: "50*30", class: "search_line_text" %>
+          <%= f.submit 'Search', class: "search_line_btn" %>
+      <% end %>
+    </div>
+
+
   </nav>
+    
 
-    <%= yield %>
+
+    
+    <div class= "yield_section">
+
+    <div class= "hr"></div>
+      <%= yield %>
+    </div>
+
 
     <footer>
-    <hr>
+    <div class= "footer_section">
     &copy; Lei's Week6 Project 1, Aug 2022
-    
-    
+    </div>
     </footer>
 
 

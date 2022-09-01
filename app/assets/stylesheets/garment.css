@@ -1,0 +1,23 @@
+
+
+
+.garment_index_line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.garment_index_block{
+    width: 20%;
+    height: 30%;
+    text-align: center;
+    margin: 40px 10px;
+}
+
+.garment_image_index{
+    width: 50%;
+}
+
+
+

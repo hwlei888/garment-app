@@ -1,6 +1,26 @@
-body{
-    background-color: bisque;
+/* Remove padding and margin */ 
+*  
+    { 
+    margin: 0; 
+    padding: 0; 
+    /* border: 0;  */
+    font-family: 'Circular', Helvetica, Arial, sans-serif;
 }
+
+
+div{
+    /* border: 1px solid red; */
+}
+
+
+body{
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
 
 .garment_image{
     width: 30%;
@@ -13,7 +33,7 @@ body{
     width: 20%;
 }
 
-.garment_image_index,
+
 .garment_image_collocation_form
 {
     width: 8%;

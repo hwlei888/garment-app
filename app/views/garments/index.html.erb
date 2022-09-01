@@ -1,18 +1,29 @@
 
-<h2>All Garments</h2>
 
-<ul>
+
+
+<div class= "index_first_link">
+    <%= link_to 'Add Garments', new_garment_path %>
+</div>
+
+<div class= "index_title">
+    <h2>All Garments</h2>
+</div>
+
+
+<div class= "garment_index_line">
     <% @garments.each do |item| %>
-        <li>
+        <div class= "garment_index_block">
             <%= link_to (cl_image_tag item.image, alt: item.name, class: 'garment_image_index'),  garment_path(item.id)%>
             <br>
 
             <%= link_to item.name, garment_path(item.id) %>
-        </li>
-        <br>
+        </div>
 
     <% end %>
+</div>
 
-</ul>
+
+
 
 

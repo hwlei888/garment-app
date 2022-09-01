@@ -133,5 +133,5 @@ to update
 
 
 
-
+    <%= cl_image_tag "https://www.instyle.com/thmb/_XacQQcC6H3_R2ndFAOt8j6ojRM=/400x0/filters:no_upscale():max_bytes(150000):strip_icc()/coco-chanel-3-2000-5f9a369c145643958d089639038ac1d1.jpg", alt: "Coco Chanel" %>
 

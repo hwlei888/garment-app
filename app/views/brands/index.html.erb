@@ -1,11 +1,20 @@
 
+<div class= "index_first_link">
+<%= link_to 'Add Brands', new_brand_path %>
+</div>
+
+
+<div class= "index_title">
 <h2>All Brands</h2>
+</div>
 
-<ul>
+
+<div class= "brand_index_line">
     <% @brands.each do |item| %>
-        <li>
+        <div class= "brand_index_block">
             <%= link_to item.name, brand_path(item.id) %>
-        </li>
+        </div>
     <% end %>
+</div>
 
-</ul>
+
