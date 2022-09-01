@@ -1,20 +1,24 @@
 
+<div class= "index_first_link">
 <% if @current_user.present? %>
     <%= link_to 'Add your Combo', new_collocation_path %>
 <% end %>
+</div>
 
+
+<div class= "index_title">
 <h2>All Combos</h2>
+</div>
 
-<ul>
+
+<div class= "collocation_index_line">
     <% @collocations.each do |item| %>
-        <li>
+        <div class= "collocation_index_block">
             <%= link_to item.title, collocation_path(item.id) %>
 
-            (<%= link_to item.user.name, user_path(item.user.id) %>)
-        </li>
+            (by <%= link_to item.user.name, user_path(item.user.id) %>)
+        </div>
     <% end %>
-
-
-</ul>
+</div>
 
 

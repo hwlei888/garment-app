@@ -1,4 +1,5 @@
 
+<div class= "form_error">
 <% if @brand.errors.any? %>
 
     <strong>Please correct the following errors: </strong>
@@ -9,25 +10,33 @@
     </ul>
 
 <% end %>
-
+</div>
 
 
 <%= form_with model: @brand, local: true do |f| %>
 
+    <div class= "brand_form_block">
     <%= f.label :name %>
     <%= f.text_field :name %>
-    <br><br>
+    </div>
 
+
+    <div class= "brand_form_block">
     <%= f.label :country %>
     <%= f.text_field :country %>
-    <br><br>
+    </div>
 
+
+    <div class= "brand_form_block">
     <%= f.label :introduction %>
     <br>
     <%= f.text_area :introduction, size: "30*5" %>
-    <br><br>
+    </div>
 
+    
+    <div class= "brand_form_block">
     <%= f.submit %>
+    </div>
 
 <% end %>
 

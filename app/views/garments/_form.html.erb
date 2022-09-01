@@ -1,4 +1,5 @@
 
+<div class= "form_error">
 <% if @garment.errors.any? %>
     <strong>Please correct the following errors: </strong>
     <ul>
@@ -8,44 +9,64 @@
     </ul>
 
 <% end %>
+</div>
 
 
 <%= form_with model: @garment, local: true, html: {multipart: true} do |f| %>
 
+    <div class= "garment_form_block">
     <%= f.label :name %>
     <%= f.text_field :name %>
-    <br><br>
+    </div>
 
+
+    <div class= "garment_form_block">
     <%= f.label :price %>
     <%= f.text_field :price %>
-    <br><br>
+    </div>
 
+
+    <div class= "garment_form_block">
     <%= f.label :fabrication %>
     <%= f.text_field :fabrication %>
-    <br>
+    </div>
 
+
+    <div class= "garment_form_block">
     <p>Type in Image URL or upload your graph: </p>
+    </div>
+
+    <div class= "garment_form_block">
     <%= f.label :image, 'Image URL' %>
     <%= f.text_field :image %>
-    <br><br>
+    </div>
 
+
+    <div class= "garment_form_block">
     <%= f.label :image, 'Image Upload' %>
     <%= f.file_field :image %>
-    <br><br>
+    </div>
 
+
+    <div class= "garment_form_block">
     <%= f.label :brand_id, 'Brand' %>
     <%= f.collection_select :brand_id, Brand.all, :id, :name, include_blank: true %>
-    <br><br>
+    </div>
 
+
+    <div class= "garment_form_block">
     <p>Occasions: </p>
     <% Occasion.all.each do |item| %>
         <%= check_box_tag 'occasion_ids[]', item.id %>
         <%= item.title %>
         <br>
     <% end %>
+    </div>
 
-    <br>
+
+    <div class= "garment_form_block">
     <%= f.submit %>
+    </div>
 
 <% end %>
 

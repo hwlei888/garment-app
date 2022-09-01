@@ -1,28 +1,36 @@
 
+<div class= "index_first_link">
 <%= link_to 'Edit', edit_occasion_path %>
-|
+/
 <%= link_to 'Delete', occasion_path(@occasion.id), method: 'delete' %>
+</div>
 
+
+<div class= "index_title">
 <h2>
     <em><%= @occasion.title %></em>
 </h2>
+</div>
 
+
+<div class= "occasion_show_name">
 <p><strong>We can choose: </strong></p>
+</div>
 
-<ul>
+
+
+<div class= "occasion_show_image_block">
     <% @occasion.garments.each do |item| %>
 
-        <li>
+        <div class= "occasion_show_image">
             <%= link_to (cl_image_tag item.image, alt: item.name, class: 'garment_image_occasion'), garment_path(item.id) %>
             <br>
 
             <%= link_to item.name, garment_path(item.id) %>
-        </li>
-        <br>
+        </div>
 
     <% end %>
-
-</ul>
+</div>
 
 
 

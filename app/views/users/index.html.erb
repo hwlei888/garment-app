@@ -1,12 +1,12 @@
 
+<div class= "user_index_title">
 <h2>All Users</h2>
+</div>
 
-<ul>
-
+<div class= "user_index_line">
     <% @users.each do |item| %>
-        <li>
+        <div class= "user_index_block">
             <%= link_to item.name, user_path(item.id) %>
-        </li>
+        </div>
     <% end %>
-
-</ul>
+</div>

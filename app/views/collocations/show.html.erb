@@ -1,33 +1,47 @@
 
+<div class= "index_first_link">
 <% if @current_user.present? && @collocation.user_id == @current_user.id %>
 
     <%= link_to 'Edit', edit_collocation_path %>
-    |
+    /
     <%= link_to 'Delete', collocation_path(@collocation.id), method: 'delete' %>
 
 <% end %>
+</div>
 
 
+<div class= "index_title">
 <h2><em><%= @collocation.title %></em></h2>
+</div>
 
+
+<div class= "collocation_show_name">
 <p>
     by
     <%= link_to @collocation.user.name, user_path(@collocation.user) %>
 </p>
+</div>
 
+
+<div class= "collocation_show_block">
 <p>
     <strong>introduction: </strong>
     <br>
     <%= @collocation.introduction %>
 </p>
+</div>
 
+
+<div class= "collocation_show_block">
 <p>
     <strong>My Combos: </strong>
     <br>
     <%= cl_image_tag @collocation.image, alt: @collocation.title, class: 'collocation_image' %>
 </p>
+</div>
 
 
+<div class= "collocation_show_block">
 <% if @collocation.photos.present? %>
     <p> 
         <strong>More Photos: </strong>
@@ -37,27 +51,27 @@
         <% end %>
     </p>
 <% end %>
+</div>
 
 
-
-
+<div class= "collocation_show_item">
 <p>
     <strong>Must-Haves Items: </strong>
-    <br>
-    <ul>
+</p>
+</div>
 
+
+    <div class= "collocation_show_image_block">
         <% @collocation.garments.each do |item|  %>
-            <li>
+            <div class= "collocation_show_image">
                 <%= link_to (cl_image_tag item.image, alt: item.name, class: 'garment_iamge_collocation'), garment_path(item.id) %>
                 <br>
 
                 <%= link_to item.name, garment_path(item.id) %>            
-            </li>
-            <br>
+            </div>
         <% end %>
-    
-    </ul>
-</p>
+</div>
+
 
 
 

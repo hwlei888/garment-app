@@ -1,95 +1,129 @@
 
-<%= link_to 'Edit', edit_garment_path(@garment.id) %>
-|
-<%= link_to 'Delete', garment_path(@garment.id), method: 'delete'  %>
+<div class= "index_first_link">
+    <%= link_to 'Edit', edit_garment_path(@garment.id) %>
+    /
+    <%= link_to 'Delete', garment_path(@garment.id), method: 'delete'  %>
+</div>
 
 
-<h2>
-    <em><%= @garment.name %></em>
-</h2>
-
-<% if @garment.brand.present?%>
-    <p>
-        by
-        <strong><%= link_to @garment.brand.name, brand_path(@garment.brand.id) %></strong>
-    </p>
-<% end %>
-
-<p>
-    <strong>Price: </strong>
-    $<%= @garment.price %>
-</p>
-
-<p>
-    <strong>Fabrication: </strong>
-    <%= @garment.fabrication %>
-</p>
-
-<p>
-    <strong>You can wear: </strong>
-    <ul>
-
-        <% @garment.occasions.each do |item| %>
-            <li>
-            <%= link_to item.title, occasion_path(item.id) %>
-            </li>
-        <% end %>
-
-    </ul>
-</p>
+<div class= "index_title">
+    <h2>
+        <em><%= @garment.name %></em>
+    </h2>
+</div>
 
 
-<%= cl_image_tag @garment.image, alt: @garment.name, class: 'garment_image' %>
-<br><br>
-
-
-<% if @current_user.present? %>
-
-    <% if @garment.like_from_users.include?(@current_user) %>
-        <%= button_to 'Dislike', like_garment_path(@garment.id) %>
-    <% else %>
-        <%= button_to 'Like', like_garment_path(@garment.id) %>
+<div class= "garment_show_name">
+    <% if @garment.brand.present?%>
+        <p>
+            by
+            <strong><%= link_to @garment.brand.name, brand_path(@garment.brand.id) %></strong>
+        </p>
     <% end %>
-    <br>
+</div>
 
 
-    Liked by
-    <br>
-    <% @garment.like_from_users.each do |item| %>
-        <%= link_to item.name, user_path(item.id) %>
-    <% end %>
-    <br><br>
-    <hr>
+<div class= "garment_show_line">
 
-    <strong>Comments: </strong>
-
-    <div>
-    <% @garment.comments.each do |item| %>
-        <%= link_to item.user.name, user_path(item.user_id) %> say: 
-        <br>
-        <%= item.content %>
-        <br>
-        <%= link_to 'Delete', comment_path(item.id), method: 'delete' %>
-    <hr>
-    <% end %>
+    <div class= "garment_show_block">
+        <p>
+            <strong>Price: </strong>
+            $<%= @garment.price %>
+        </p>
     </div>
 
 
-    <%= form_with model: @comment, local: true do |f| %>
+    <div class= "garment_show_block">
+        <p>
+            <strong>Fabrication: </strong>
+            <%= @garment.fabrication %>
+        </p>
+    </div>
 
-        <%= f.label :content, 'Write a comment' %>
-        <br>
-        <%= f.text_area :content %>
-        <%= f.hidden_field :garment_id, value: @garment.id %>
+
+    <div class= "garment_show_block">
+        <p>
+            <strong>You can wear: </strong>
+            <ul>
+
+                <% @garment.occasions.each do |item| %>
+                    <li>
+                    <%= link_to item.title, occasion_path(item.id) %>
+                    </li>
+                <% end %>
+            </ul>
+        </p>
+    </div>
+
+
+    <div class= "garment_show_image">
+        <%= cl_image_tag @garment.image, alt: @garment.name, class: 'garment_image' %>
         <br><br>
-        <%= f.submit 'Submit' %>
+    </div>
 
-    <% end %>
 
-<% else %>
+    <div class= "garment_show_like">
+        <% if @current_user.present? %>
 
-    <p>For comments, please <%= link_to 'Login', login_path %> </p>
+            <% if @garment.like_from_users.include?(@current_user) %>
+                <%= button_to 'Dislike', like_garment_path(@garment.id) %>
+            <% else %>
+                <%= button_to 'Like', like_garment_path(@garment.id) %>
+            <% end %>
+    </div>
 
-<% end %>
+
+            <div class= "garment_show_like">
+                Liked by
+                <br>
+                <% @garment.like_from_users.each do |item| %>
+                    <%= link_to item.name, user_path(item.id) %>
+                    <br>
+                <% end %>
+            
+            </div>
+
+</div>
+
+
+            <div class="hr"></div>
+
+
+            <div class= "garment_show_comment">
+                <strong>Comments: </strong>
+                <br><br>
+            </div>
+
+            <div class= "garment_show_comment">
+                <% @garment.comments.each do |item| %>
+                    <%= link_to item.user.name, user_path(item.user_id) %> say: 
+                    <br>
+                    <%= item.content %>
+                    <br>
+                    <%= link_to 'Delete', comment_path(item.id), method: 'delete' %>
+                    <div class="comment_hr"></div>
+                    <br>
+                <% end %>
+            </div>
+
+            <div class= "garment_show_comment">
+                <%= form_with model: @comment, local: true do |f| %>
+
+                    <%= f.label :content, 'Write a comment' %>
+                    <br>
+                    <%= f.text_area :content %>
+                    <%= f.hidden_field :garment_id, value: @garment.id %>
+                    <br><br>
+                    <%= f.submit 'Submit' %>
+
+                <% end %>
+
+         <% else %>
+
+            <p>For comments, please <%= link_to 'Login', login_path %> </p>
+
+        <% end %>
+            </div>
+
 
 

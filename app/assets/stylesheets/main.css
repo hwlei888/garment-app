@@ -21,27 +21,18 @@ a{
     text-decoration: none;
 }
 
-
-.garment_image{
-    width: 30%;
+.form_error{
+    text-align: center;
+    margin: 30px;
+    color: rgb(175, 0, 0);
 }
-
-.garment_image_brand,
-.garment_image_occasion,
-.garment_iamge_collocation
-{
-    width: 20%;
-}
-
 
 .garment_image_collocation_form
 {
     width: 8%;
 }
 
-.collocation_image{
-    width: 35%;
-}
+
 
 
 

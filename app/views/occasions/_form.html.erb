@@ -1,4 +1,5 @@
 
+<div class= "form_error">
 <% if @occasion.errors.any? %>
 
     <strong>Please correct the following errors: </strong>
@@ -9,15 +10,19 @@
     </ul>
 
 <% end %>
+</div>
 
 
 <%= form_with model: @occasion, local: true do |f| %>
 
+    <div class= "garment_form_block">
     <%= f.label :title %>
     <%= f.text_field :title %>
-    <br><br>
+    </div>
 
+    <div class= "garment_form_block">
     <%= f.submit %>
+    </div>
 
 <% end %>
 

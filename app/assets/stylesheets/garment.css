@@ -1,6 +1,6 @@
 
 
-
+/* index.html.erb */
 .garment_index_line{
     display: flex;
     flex-wrap: wrap;
@@ -18,6 +18,67 @@
 .garment_image_index{
     width: 50%;
 }
+
+/* show.html.erb */
+
+.garment_show_name{
+    text-align: center;
+}
+
+.garment_show_line{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.garment_show_block{
+    margin: 15px;
+}
+
+.garment_image{
+    width: 30%;
+}
+
+.garment_show_image{
+    margin-bottom: 0;
+}
+
+.garment_show_like{
+    margin-bottom: 20px;
+}
+
+.garment_show_comment{
+    margin: 10px 20%;
+}
+
+.comment_hr{
+    border: 2px solid #e3e2e2;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* _form.html.erb */
+/* new.html.erb */
+/* edit.html.erb */
+
+.garment_new_title{
+    text-align: center;
+    margin: 30px;
+}
+
+
+.garment_form_block{
+    text-align: center;
+    margin: 25px;
+}
+
+
+
+
+
+
+
+
 
 
 

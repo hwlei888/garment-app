@@ -1,0 +1,48 @@
+
+/* index.html.erb */
+.collocation_index_line{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.collocation_index_block{
+    margin: 20px;
+}
+
+.collocation_show_name{
+    text-align: center;
+}
+
+.collocation_show_block{
+    text-align: center;
+    margin: 20px;
+}
+
+.collocation_image{
+    width: 25%;
+}
+
+.collocation_show_item{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.collocation_show_image_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.collocation_show_image{
+    width: 20%;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.garment_iamge_collocation{
+    width: 70%;
+}
+
+

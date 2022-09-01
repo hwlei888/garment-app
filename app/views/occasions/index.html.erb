@@ -1,14 +1,18 @@
 
+<div class= "index_first_link">
 <%= link_to 'Add Occasions', new_occasion_path %>
+</div>
 
+
+<div class= "index_title">
 <h2>All Occasions</h2>
+</div>
 
-<ul>
 
+<div class= "occasion_index_line">
     <% @occasions.each do |item| %>
-        <li>
+        <div class= "occasion_index_block">
             <%= link_to item.title, occasion_path(item.id) %>        
-        </li>
+        </div>
     <% end %>
-
-</ul>
+</div>

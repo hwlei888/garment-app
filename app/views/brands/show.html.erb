@@ -1,23 +1,36 @@
 
+<div class= "index_first_link">
 <%= link_to 'Edit', edit_brand_path %>
-|
+/
 <%= link_to 'Delete', brand_path(@brand.id), method: 'delete' %>
+</div>
 
+
+<div class= "index_title">
 <h2>
     <em><%= @brand.name %></em>
 </h2>
+</div>
 
+
+<div class= "brand_show_line">
 <p>
     <strong>Founded: </strong>
     <%= @brand.country %>
 </p>
+</div>
 
+
+<div class= "brand_show_line">
 <p>
     <strong>Our Aim: </strong>
     <br>
     <%= @brand.introduction %>
 </p>
+</div>
 
+
+<div class= "brand_show_line">
 <p>
     <strong>We provide options: </strong>
     <ul>
@@ -29,23 +42,26 @@
     
     </ul>
 </p>
+</div>
 
 
+<div class= "brand_show_line">
 <p><strong>Our Products:</strong></p>
+</div>
 
-<ul>
+
+<div class= "brand_show_image_block">
     <% @brand.garments.each do |item| %>
-        <li>
+
+        <div class= "brand_show_image">
             <%= link_to (cl_image_tag item.image, alt: item.name, class: 'garment_image_brand'),  garment_path(item.id)%>
             <br>
             
             <%= link_to item.name, garment_path(item.id)  %>
-        </li>
-        <br>
+        </div>
 
     <% end %>
-
-</ul>
+</div>
 
 
 

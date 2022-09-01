@@ -1,4 +1,5 @@
 
+/* index.html.erb */
 .brand_index_line{
     text-align: center;
     margin-top: 40px;
@@ -7,4 +8,54 @@
 .brand_index_block{
     margin: 20px;
 }
+
+.brand_image_index{
+    width: 50%;
+}
+
+
+/* show.html.erb */
+.brand_show_name{
+    text-align: center;
+}
+
+.brand_show_line{
+    text-align: center;
+    margin: 25px;
+}
+
+.brand_show_image_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.brand_show_image{
+    width: 25%;
+    height: 60%;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.garment_image_brand{
+    width: 60%;
+}
+
+/* _form.html.erb */
+/* new.html.erb */
+/* edit.html.erb */
+
+.brand_new_title{
+    text-align: center;
+    margin: 30px;
+}
+
+.brand_form_block{
+    text-align: center;
+    margin: 25px;
+}
+
+
+
 

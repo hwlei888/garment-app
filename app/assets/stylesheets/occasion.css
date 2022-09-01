@@ -1,0 +1,56 @@
+
+/* index.html.erb */
+.occasion_index_line{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.occasion_index_block{
+    margin: 20px;
+}
+
+/* show.html.erb */
+.occasion_show_name{
+    text-align: center;
+}
+
+.occasion_show_image_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.occasion_show_image{
+    width: 20%;
+    height: 60%;
+    text-align: center;
+    margin: 50px 10px;
+}
+
+.garment_image_occasion{
+    width: 60%;
+}
+
+
+/* _form.html.erb */
+/* new.html.erb */
+/* edit.html.erb */
+
+.occasion_new_title{
+    text-align: center;
+    margin: 30px;
+}
+
+
+.occasion_form_block{
+    text-align: center;
+    margin: 25px;
+}
+
+
+
+
+
+
