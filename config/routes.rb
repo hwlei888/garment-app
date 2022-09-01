@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   post '/garments/:id/like' => 'garments#like', as: 'like_garment'
 
+  get '/search' => 'garments#search'
+
   resources :garments, :brands, :occasions, :collocations, :users, :comments
   
 

@@ -43,44 +43,52 @@
 <br><br>
 
 
-<% if @garment.like_from_users.include?(@current_user) %>
-    <%= button_to 'Dislike', like_garment_path(@garment.id) %>
-<% else %>
-    <%= button_to 'Like', like_garment_path(@garment.id) %>
-<% end %>
-<br>
+<% if @current_user.present? %>
 
-
-Liked by
-<br>
-<% @garment.like_from_users.each do |item| %>
-    <%= link_to item.name, user_path(item.id) %>
-<% end %>
-<br><br>
-<hr>
-
-<strong>Comments: </strong>
-
-<div>
-<% @garment.comments.each do |item| %>
-    <%= link_to item.user.name, user_path(item.user_id) %> say: 
+    <% if @garment.like_from_users.include?(@current_user) %>
+        <%= button_to 'Dislike', like_garment_path(@garment.id) %>
+    <% else %>
+        <%= button_to 'Like', like_garment_path(@garment.id) %>
+    <% end %>
     <br>
-    <%= item.content %>
+
+
+    Liked by
     <br>
-    <%= link_to 'Delete', comment_path(item.id), method: 'delete' %>
-<hr>
-<% end %>
-</div>
-
-
-<%= form_with model: @comment, local: true do |f| %>
-
-    <%= f.label :content, 'Write a comment' %>
-    <br>
-    <%= f.text_area :content %>
-    <%= f.hidden_field :garment_id, value: @garment.id %>
+    <% @garment.like_from_users.each do |item| %>
+        <%= link_to item.name, user_path(item.id) %>
+    <% end %>
     <br><br>
-    <%= f.submit 'Submit' %>
+    <hr>
+
+    <strong>Comments: </strong>
+
+    <div>
+    <% @garment.comments.each do |item| %>
+        <%= link_to item.user.name, user_path(item.user_id) %> say: 
+        <br>
+        <%= item.content %>
+        <br>
+        <%= link_to 'Delete', comment_path(item.id), method: 'delete' %>
+    <hr>
+    <% end %>
+    </div>
+
+
+    <%= form_with model: @comment, local: true do |f| %>
+
+        <%= f.label :content, 'Write a comment' %>
+        <br>
+        <%= f.text_area :content %>
+        <%= f.hidden_field :garment_id, value: @garment.id %>
+        <br><br>
+        <%= f.submit 'Submit' %>
+
+    <% end %>
+
+<% else %>
+
+    <p>For comments, please <%= link_to 'Login', login_path %> </p>
 
 <% end %>
 

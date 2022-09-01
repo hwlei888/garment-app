@@ -34,10 +34,10 @@
     <%= link_to 'Add Occasions', new_occasion_path %>
     <br>
 
-    <%= link_to 'All Matches', collocations_path %>
+    <%= link_to 'All Combos', collocations_path %>
     |
     <% if @current_user.present? %>
-      <%= link_to 'Add your Match', new_collocation_path %>
+      <%= link_to 'Add your Combo', new_collocation_path %>
     <% end %>
     <br>
 
@@ -56,6 +56,13 @@
       |
       <%= link_to 'Sign Up', new_user_path %>
     <% end %>
+    <br><br>
+
+    <%= form_with url: search_path, local: true, role:"search", method: "get" do |f| %>
+        <%= f.text_field :search, placeholder: "name or brand or occasions" %>
+        <%= f.submit 'Search' %>
+    <% end %>
+
 
 
     <hr>

@@ -122,5 +122,12 @@ to update
 
 
 
-
+    <%= form_tag(search_path, method: "get") do %>
+      <div class="input-group">
+        <%= search_field_tag :search, params[:search], placeholder: "name or brand", class: "form-control" %>
+        <div class="input-group-btn" >
+          <%= button_tag "Search for Garments", class: 'btn btn-info glyphicon glyphicon-search', name: nil %>
+        </div>
+      </div>
+    <% end %>
 

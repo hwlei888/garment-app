@@ -36,7 +36,7 @@
 <ul>
     <% @brand.garments.each do |item| %>
         <li>
-            <%= link_to (image_tag item.image, alt: item.name, class: 'garment_image_brand'),  garment_path(item.id)%>
+            <%= link_to (cl_image_tag item.image, alt: item.name, class: 'garment_image_brand'),  garment_path(item.id)%>
             <br>
             
             <%= link_to item.name, garment_path(item.id)  %>

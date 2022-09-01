@@ -96,6 +96,25 @@ class GarmentsController < ApplicationController
     redirect_to garments_path
   end
 
+  #ILKE: case-insensitive
+  def search
+    if params[:search].blank?
+      redirect_to garments_path
+      return
+    else
+      # @results = Garment.all.where("lower(name) LIKE :search", search: "%#{params[:search]}%")
+      @match_garments = Garment.where("name ILIKE ?", "%#{params[:search]}%")
+      @match_brands = Brand.where("name ILIKE ?", "%#{params[:search]}%")
+      @match_garment_occasions = Garment.joins(:occasions).where("title ILIKE ?", "%#{params[:search]}%")
+
+      
+      # We can write like this when in rb file have def self.search(search)
+      # @match_garments = Garment.search(params[:search])
+      # @match_brands = Brand.search(params[:search])
+    end
+
+  end
+
 
   private
 

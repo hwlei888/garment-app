@@ -22,7 +22,7 @@
 </p>
 
 <p>
-    <strong>My Match: </strong>
+    <strong>My Combos: </strong>
     <br>
     <%= image_tag @collocation.image, alt: @collocation.title, class: 'collocation_image' %>
 </p>
@@ -48,7 +48,7 @@
 
         <% @collocation.garments.each do |item|  %>
             <li>
-                <%= link_to (image_tag item.image, alt: item.name, class: 'garment_iamge_collocation'), garment_path(item.id) %>
+                <%= link_to (cl_image_tag item.image, alt: item.name, class: 'garment_iamge_collocation'), garment_path(item.id) %>
                 <br>
 
                 <%= link_to item.name, garment_path(item.id) %>            
