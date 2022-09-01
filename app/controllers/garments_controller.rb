@@ -79,6 +79,11 @@ class GarmentsController < ApplicationController
       @garment.occasions << Occasion.find(params[:occasion_ids])
     end
 
+    if params[:garment][:image].present?
+      response = Cloudinary::Uploader.upload params[:garment][:image]
+      @garment.image = response["public_id"]
+    end
+
 
     # in case there is an error and rollback
     if @garment.update garment_params
@@ -119,7 +124,7 @@ class GarmentsController < ApplicationController
   private
 
   def garment_params
-    params.require(:garment).permit(:name, :price, :fabrication, :image, :brand_id)
+    params.require(:garment).permit(:name, :price, :fabrication, :brand_id)
   end
 
 
