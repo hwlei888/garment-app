@@ -95,22 +95,6 @@ user_id (integer)(one to many table)
 
 
 
-label
-
-
-  “The best colour in the world is the one that looks good on you.”
-Your wardrobe will always be one less dress.
-"Style is something each of us already has, all we need to do is find it."
-
-<h2>
-    Playing dress-up begins at age five and never truly ends.
-</h2>
-
-<p>
-    By Kate Spade
-</p>
-
-
 
 
 * REMEMBER!!!!!
@@ -121,17 +105,4 @@ to update
   end
 
 
-
-    <%= form_tag(search_path, method: "get") do %>
-      <div class="input-group">
-        <%= search_field_tag :search, params[:search], placeholder: "name or brand", class: "form-control" %>
-        <div class="input-group-btn" >
-          <%= button_tag "Search for Garments", class: 'btn btn-info glyphicon glyphicon-search', name: nil %>
-        </div>
-      </div>
-    <% end %>
-
-
-
-    <%= cl_image_tag "https://www.instyle.com/thmb/_XacQQcC6H3_R2ndFAOt8j6ojRM=/400x0/filters:no_upscale():max_bytes(150000):strip_icc()/coco-chanel-3-2000-5f9a369c145643958d089639038ac1d1.jpg", alt: "Coco Chanel" %>
 
