@@ -1,35 +1,40 @@
-# README
+# Welcome to Garment Share App!
 
-## database
+### A garment and outfit sharing platform using Ruby on Rails and PostgreSQL
 
-### Garment
-Name (text)
-Price (float)
-Fabrication (text)
-image (text)
-Brand (brand_id:integer)
-Occasion (occasion_id:integer)
+## App Links:
+- [GitHub Repo](https://github.com/hwlei888/garment-app)
+- [Project Demo](https://garmentapp.herokuapp.com/)
 
-Type (string)
-Color (string)
-Comment (text)
+Demo account: aaa@gmail.com
 
-• One to Many 
+password: chicken
 
-### Brand
-Name (string)
-Country (string)
-Introduction (text)
+A project as part of the General Assembly Software Intensive
 
-### Type
-name (string)
+## Overview:
+
+- Garment Share App is a sharing and social platform where users can share and comment their favorite garments and outfits.
+
+- It allows users to sign up, log in and share their favorite garments and outfits.
+
+- Users can find and search garments by brands and corresponding occasions.
 
 
-• Many to Many
+## Features:
+1. User Signup/Login/Logout
+2. Browersing all garments
+3. Browersing and searching garments by brands and occasions
+4. Showing all garments and outfits details
+5. Adding your favorite garments and outfits
+6. Leaving your comments on the garment
 
-### Occasion
-title (text)
-(extra table: garment_id:integer)
+
+## Tech Stack:
+
+Ruby on Rails, PostgreSQL, JavaScript, CSS, HTML, Cloudinary and Heroku 
+
+### Occasion we have now
 - for school
 - for outdoor
 - for casual meet-up
@@ -40,37 +45,6 @@ title (text)
 - for graduation
 - for work party
 
-
-
-### Color (later)
-
-• User
-
-### User
-name (string)
-email (text)
-password_digest (text)
-
-### Collocation
-title (string)
-introduction (text)
-image (text)
-user_id (integer)
-(extra table: garment_id:integer)
-
-### Photo (for multiple photos)
-name (string)
-image (text)
-collocation_id (integer)
-
-
-### Comment
-content (text)
-garment_id (integer)(one to many table)
-user_id (integer)(one to many table)
-
-
-
 ## What will do later
 - [ ] garments can be sorted by price
 - [ ] In add matches, garment items can be selected by types, like if choose tops, there are several tops show up
@@ -78,12 +52,7 @@ user_id (integer)(one to many table)
 - [ ] User can find their password back when lost it
 - [ ] When user change their name, there is an alert
 - [ ] User can change their password, two steps to change password, type old one first if correct can change new password
-- [ ] User can search
-
-
-
-
-
+- [x] User can search
 - [x] collocation form tables, can add many garments
 - [x] User can add multiple photos
 - [ ] when edit, User can delete some photos
@@ -94,44 +63,4 @@ user_id (integer)(one to many table)
 - [x] User can like (many to many table)
 
 
-
-label
-
-
-  “The best colour in the world is the one that looks good on you.”
-Your wardrobe will always be one less dress.
-"Style is something each of us already has, all we need to do is find it."
-
-<h2>
-    Playing dress-up begins at age five and never truly ends.
-</h2>
-
-<p>
-    By Kate Spade
-</p>
-
-
-
-
-* REMEMBER!!!!!
-to update
-
-  def garment_params
-    params.require(:garment).permit(:name, :price, :fabrication, :image, :brand_id)
-  end
-
-
-
-    <%= form_tag(search_path, method: "get") do %>
-      <div class="input-group">
-        <%= search_field_tag :search, params[:search], placeholder: "name or brand", class: "form-control" %>
-        <div class="input-group-btn" >
-          <%= button_tag "Search for Garments", class: 'btn btn-info glyphicon glyphicon-search', name: nil %>
-        </div>
-      </div>
-    <% end %>
-
-
-
-    <%= cl_image_tag "https://www.instyle.com/thmb/_XacQQcC6H3_R2ndFAOt8j6ojRM=/400x0/filters:no_upscale():max_bytes(150000):strip_icc()/coco-chanel-3-2000-5f9a369c145643958d089639038ac1d1.jpg", alt: "Coco Chanel" %>
 
